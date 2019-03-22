@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="img/favicon.ico">
-        <title>Live you Djanog App via Heroku</title>
+        <title>MDL Docs</title>
         <link href="css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/base.css" rel="stylesheet">
@@ -39,7 +39,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href=".">Live you Djanog App via Heroku</a>
+                    <a class="navbar-brand" href=".">MDL Docs</a>
                 </div>
 
                 <!-- Expanded navigation -->
@@ -78,27 +78,218 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#welcome-to-mkdocs">Welcome to MkDocs</a></li>
-            <li><a href="#commands">Commands</a></li>
-            <li><a href="#project-layout">Project layout</a></li>
+        <li class="main active"><a href="#push-your-django-app-to-heroku">Push your Django App to Heroku</a></li>
+            <li><a href="#1-preparing-your-application">1. Preparing your application</a></li>
+            <li><a href="#2-initialize-git-repositor">2. Initialize Git Repositor</a></li>
+            <li><a href="#3-add-files-to-git">3. Add Files To Git</a></li>
+            <li><a href="#4-activate-virtual-environment">4. Activate Virtual Environment</a></li>
+            <li><a href="#5-modify-settingpy-file">5 Modify Setting.py file</a></li>
+            <li><a href="#6-create-a-file-env">6. Create a file .env</a></li>
+            <li><a href="#7-adding-more-to-settingpy">7. Adding more to setting.py</a></li>
+            <li><a href="#8-static-file-serving-for-web-apps">8. Static file serving for web apps</a></li>
+            <li><a href="#9-create-a-procfile">9. Create a Procfile</a></li>
+            <li><a href="#10-run-django-server">10. Run Django Server</a></li>
+            <li><a href="#11-creating-a-file-requirementstxt">11. Creating a file requirements.txt</a></li>
+            <li><a href="#12-heroku-sign-up">12. Heroku Sign up</a></li>
+            <li><a href="#13-update-git-repository">13. Update Git repository</a></li>
+            <li><a href="#14-finally-push-to-heroku">14. Finally Push to Heroku</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+<h1 id="push-your-django-app-to-heroku">Push your Django App to Heroku</h1>
+<p>Mohsin Mahmood edited this page on May 22, 2019</p>
+<p><strong>Heroku</strong> is a cloud application platform, it is a <strong>PaaS (Platform-as-a-service)</strong> service. It allows you to deploy your web application from your localhost to cloud so that your application could be commercialized and could get production ready.</p>
+<h2 id="1-preparing-your-application">1. Preparing your application</h2>
+<hr />
+<p>Copy the Project folder separately for deployment.</p>
+<h2 id="2-initialize-git-repositor">2. Initialize Git Repositor</h2>
+<hr />
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li>Install <a href="https://git-scm.com/">Git</a></li>
+<li>Press <kbd>CTRL</kbd>+<kbd>R</kbd></li>
+<li>Type <code>cmd</code> and click OK</li>
+<li>Navigate to project folder</li>
+<li>Make sure your are in the directory where the <code>manage.py</code> exists</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<pre><code class="commandline">git config --global user.name &quot;Your Name&quot;
+git config --global user.email &quot;you@youraddress.com&quot;    
+git config --global user.email &quot;you@youraddress.com&quot;
+git init
+</code></pre>
+
+<h2 id="3-add-files-to-git">3. Add Files To Git</h2>
+<hr />
+<pre><code class="commandline">git add --all
+git commit -m &quot;Commit Message&quot;
+git push
+</code></pre>
+
+<h2 id="4-activate-virtual-environment">4. Activate Virtual Environment</h2>
+<hr />
+<p>Activating virtual environment.</p>
+<pre><code class="text">manage.py         # The configuration file.
+venv/
+    Scripts/       
+        activate
+</code></pre>
+
+<p>Run these command to activate the environment.</p>
+<pre><code class="text">cd venv/Scripts/
+activate
+</code></pre>
+
+<p>If virtual environment not already exists.
+Run these commands on command prompt. </p>
+<pre><code class="commandline">pip install virtualenv
+</code></pre>
+
+<ul>
+<li>Install all the required libraries that your project required via <code>pip</code>  command.</li>
+<li>Plus install the following dependencies in your virtual environment.</li>
+</ul>
+<pre><code class="commandline">pip install gunicorn
+pip install django-heroku
+pip install python-decouple
+</code></pre>
+
+<blockquote>
+<p>django-heroku: official package by Heroku which made our deployment simple.</p>
+</blockquote>
+<h2 id="5-modify-settingpy-file">5 Modify <code>Setting.py</code> file</h2>
+<hr />
+<p>Now, In app/settings.py file add below content</p>
+<pre><code class="python">#import os
+import django_heroku
+from decouple import config
+import dj_database_url
+</code></pre>
+
+<p>At the <strong>end</strong> of the <code>setting.py</code> file add this line also.</p>
+<pre><code class="python">django_heroku.settings(locals())
+</code></pre>
+
+<p>Now we need to hide the <code>SECRET_KEY</code> from the deployment code.
+For this, add this line of code before<br />
+<code>SECRET_KEY  = "Djfhslkdfsjf*(skdf0suerjwehksjdf"</code></p>
+<pre><code class="python">SECRET_KEY = config('SECRET_KEY')
+</code></pre>
+
+<p>Move your actual <code>SECRET_KEY</code> to the <code>.env</code> file that we are going to create.</p>
+<h2 id="6-create-a-file-env">6. Create a file <code>.env</code></h2>
+<hr />
+<p>Now, run a command in your terminal.It will create a file <code>.env</code> in your app directory.  </p>
+<pre><code class="commandline">touch .env
+</code></pre>
+
+<blockquote>
+<p>Add your <code>SECRET_KEY</code> from setting.py to <code>.env</code> file.</p>
+</blockquote>
+<h2 id="7-adding-more-to-settingpy">7. Adding more to <code>setting.py</code></h2>
+<hr />
+<p>Do this in your <strong>app/settings.py</strong>.</p>
+<pre><code class="python">STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, &quot;static&quot;)
+
+]
+</code></pre>
+
+<p>Make sure you do not have this command in setting.py file already. If so remain it as it is.</br>
+<a href="https://docs.djangoproject.com/en/2.1/howto/static-files/" target="_blank">For more info</a></p>
+<pre><code class="python">STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+</code></pre>
+
+<h2 id="8-static-file-serving-for-web-apps">8. Static file serving for web apps</h2>
+<hr />
+<p>To serve static assets I use the WhiteNoise project. To install: <code>pip install whitenoise</code>
+<a href="http://whitenoise.evans.io/en/stable/" target="_blank">For more info </a></p>
+<p>Do this in your <strong>app/settings.py</strong> file.</p>
+<pre><code class="python">#...    
+#'django.middleware.security.SecurityMiddleware',
+'whitenoise.middleware.WhiteNoiseMiddleware',
+#'django.contrib.sessions.middleware.SessionMiddleware',
+#'django.middleware.common.CommonMiddleware',
+#...
+</code></pre>
+
+<pre><code class="python">STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+</code></pre>
+
+<h2 id="9-create-a-procfile">9. Create a Procfile</h2>
+<hr />
+<p>Open the command prompt in your directory and type this command.</p>
+<blockquote>
+<p>Make sure you type <code>Procfile</code> correctly (casesensitve)</p>
+</blockquote>
+<pre><code class="commandline">touch Procfile
+</code></pre>
+
+<p>Open the Procfile and add this line in the file.</p>
+<pre><code class="text">web: gunicorn &lt;project name&gt;.wsgi
+</code></pre>
+
+<h2 id="10-run-django-server">10. Run Django Server</h2>
+<hr />
+<p>Type this command in the command promt to open the django server.</p>
+<pre><code class="commandline">python manage.py runserver
+</code></pre>
+
+<p>run this command too.</p>
+<pre><code class="commandline">python manage.py migrate
+</code></pre>
+
+<p>If your site is working correctly then move to next step.</p>
+<h2 id="11-creating-a-file-requirementstxt">11. Creating a file <code>requirements.txt</code></h2>
+<hr />
+<p>This command create a file requiremets.txt and add all the dependencies that your application needed while pushing to heroku.</p>
+<pre><code class="commandline">pip freeze &gt; requirements.txt
+</code></pre>
+
+<p>add dependency <code>requests==2.21.0</code> to the requirements.txt file. </p>
+<h2 id="12-heroku-sign-up">12. Heroku Sign up</h2>
+<hr />
+<p>Start a 
+<a href="https://signup.heroku.com/" target="_blank">heroku</a>
+account — Sign up.</p>
+<p>Install 
+<a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank">Heroku</a>
+Toolbelt commands</p>
+<p>After installing heroku toolbelt your terminal will support all the heroku commands.Open your terminal as administrator and run this code</p>
+<pre><code class="commandline">heroku login
+</code></pre>
+
+<p>login to your heroku account via terminal</p>
+<blockquote>
+<p>Enter your Heroku credentials.</p>
+</blockquote>
+<pre><code class="commandline">
+Email: example@gmail.com
+Password (typing will be hidden):
+Authentication successful.
+
+</code></pre>
+
+<p>Inside the project root, create a Heroku App:</p>
+<pre><code class="commandline">heroku create
+</code></pre>
+
+<p>Adding a Heroku app to Git remote</p>
+<pre><code class="commandline">heroku git:remote -a &lt;APPNAME&gt;
+</code></pre>
+
+<p>Open the heroku <a href="https://dashboard.heroku.com/login">dashboard</a> and navigate to your new created app.</p>
+<p>In setting tab, add the config vars: <code>SECRET_KEY</code></p>
+<p><img alt="alt text" src="img/configvar.png" /></p>
+<h2 id="13-update-git-repository">13. Update Git repository</h2>
+<hr />
+<pre><code class="commandline">git add --all
+git status    # to view all the changes
+git commit -m &quot;ready to push&quot;
+</code></pre>
+
+<h2 id="14-finally-push-to-heroku">14. Finally Push to Heroku</h2>
+<hr />
+<pre><code class="commandline">git push heroku master
 </code></pre></div>
         </div>
 
@@ -182,5 +373,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-03-21 20:50:01
+Build Date UTC : 2019-03-22 13:33:02
 -->
