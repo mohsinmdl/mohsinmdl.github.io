@@ -1,0 +1,1064 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Mohsin Mahmood Projects Documentations">
+      
+      
+        <link rel="canonical" href="https://mohsinmdl.github.io/git-guide-101/">
+      
+      
+        <meta name="author" content="Mohsin Mahmood">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>Git Guide 101 - Mohsin | Projects Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#git-guide-101" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://mohsinmdl.github.io" title="Mohsin | Projects Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Mohsin | Projects Docs
+            </span>
+            <span class="md-header-nav__topic">
+              Git Guide 101
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://mohsinmdl.github.io" title="Mohsin | Projects Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Mohsin | Projects Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Django | Heroku" class="md-nav__link">
+      Django | Heroku
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Git Guide 101
+      </label>
+    
+    <a href="./" title="Git Guide 101" class="md-nav__link md-nav__link--active">
+      Git Guide 101
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commit" title="Commit" class="md-nav__link">
+    Commit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialized-a-repository" title="Initialized a repository" class="md-nav__link">
+    Initialized a repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-file-to-the-staging-area" title="Add a file to the staging area" class="md-nav__link">
+    Add a file to the staging area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commiting-files" title="Commiting files" class="md-nav__link">
+    Commiting files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository-log" title="Repository log" class="md-nav__link">
+    Repository log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository-status" title="Repository status" class="md-nav__link">
+    Repository status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstaging-files" title="Unstaging files" class="md-nav__link">
+    Unstaging files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch" title="Branch" class="md-nav__link">
+    Branch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-branch" title="Create a branch" class="md-nav__link">
+    Create a branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merging-a-branch" title="Merging a branch" class="md-nav__link">
+    Merging a branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-branches" title="Listing branches" class="md-nav__link">
+    Listing branches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-branch" title="Removing a branch" class="md-nav__link">
+    Removing a branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-tag" title="Create a tag" class="md-nav__link">
+    Create a tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-a-tag" title="Replace a tag" class="md-nav__link">
+    Replace a tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-tags" title="Listing tags" class="md-nav__link">
+    Listing tags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-tag" title="Removing a tag" class="md-nav__link">
+    Removing a tag
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixing-common-issues" title="Fixing Common issues" class="md-nav__link">
+    Fixing Common issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-tag-to-the-latest-ammend" title="Add tag to the latest ammend" class="md-nav__link">
+    Add tag to the latest ammend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-all-changes" title="Show all changes" class="md-nav__link">
+    Show all changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkout-differert-state-in-the-repository" title="Checkout differert state in the repository" class="md-nav__link">
+    Checkout differert state in the repository
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#older-version-of-this-file" title="older version of this file" class="md-nav__link">
+    older version of this file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset-back-to-previous-commits" title="Reset Back to previous commits." class="md-nav__link">
+    Reset Back to previous commits.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-commit-gone-but-changes-sitting-there" title="Last Commit gone but changes sitting there" class="md-nav__link">
+    Last Commit gone but changes sitting there
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stash-file-no-need-to-put-into-stage" title="Stash -- file no need to put into stage" class="md-nav__link">
+    Stash -- file no need to put into stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-stash-file-to-the-staging-folder" title="Taking stash file to the staging folder" class="md-nav__link">
+    Taking stash file to the staging folder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-between-branches-ab-ba" title="Switch between branches A/B B/A" class="md-nav__link">
+    Switch between branches A/B B/A
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Design Pattern
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Design Pattern
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../designPattern/design-pattern-intro/" title="What is Design Pattern" class="md-nav__link">
+      What is Design Pattern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../designPattern/creational/creational-dp/" title="Creational Pattern" class="md-nav__link">
+      Creational Pattern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../designPattern/structural/structural-dp/" title="Structural Pattern" class="md-nav__link">
+      Structural Pattern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../designPattern/behavioural/behaviour-dp/" title="Behaviour Pattern" class="md-nav__link">
+      Behaviour Pattern
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Contact
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Contact
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Contact/about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commit" title="Commit" class="md-nav__link">
+    Commit
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialized-a-repository" title="Initialized a repository" class="md-nav__link">
+    Initialized a repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-a-file-to-the-staging-area" title="Add a file to the staging area" class="md-nav__link">
+    Add a file to the staging area
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commiting-files" title="Commiting files" class="md-nav__link">
+    Commiting files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository-log" title="Repository log" class="md-nav__link">
+    Repository log
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository-status" title="Repository status" class="md-nav__link">
+    Repository status
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#unstaging-files" title="Unstaging files" class="md-nav__link">
+    Unstaging files
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branch" title="Branch" class="md-nav__link">
+    Branch
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#create-a-branch" title="Create a branch" class="md-nav__link">
+    Create a branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#merging-a-branch" title="Merging a branch" class="md-nav__link">
+    Merging a branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-branches" title="Listing branches" class="md-nav__link">
+    Listing branches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-branch" title="Removing a branch" class="md-nav__link">
+    Removing a branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#create-a-tag" title="Create a tag" class="md-nav__link">
+    Create a tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replace-a-tag" title="Replace a tag" class="md-nav__link">
+    Replace a tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listing-tags" title="Listing tags" class="md-nav__link">
+    Listing tags
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-a-tag" title="Removing a tag" class="md-nav__link">
+    Removing a tag
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fixing-common-issues" title="Fixing Common issues" class="md-nav__link">
+    Fixing Common issues
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#add-tag-to-the-latest-ammend" title="Add tag to the latest ammend" class="md-nav__link">
+    Add tag to the latest ammend
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#show-all-changes" title="Show all changes" class="md-nav__link">
+    Show all changes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checkout-differert-state-in-the-repository" title="Checkout differert state in the repository" class="md-nav__link">
+    Checkout differert state in the repository
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#older-version-of-this-file" title="older version of this file" class="md-nav__link">
+    older version of this file
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reset-back-to-previous-commits" title="Reset Back to previous commits." class="md-nav__link">
+    Reset Back to previous commits.
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-commit-gone-but-changes-sitting-there" title="Last Commit gone but changes sitting there" class="md-nav__link">
+    Last Commit gone but changes sitting there
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stash-file-no-need-to-put-into-stage" title="Stash -- file no need to put into stage" class="md-nav__link">
+    Stash -- file no need to put into stage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#taking-stash-file-to-the-staging-folder" title="Taking stash file to the staging folder" class="md-nav__link">
+    Taking stash file to the staging folder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-between-branches-ab-ba" title="Switch between branches A/B B/A" class="md-nav__link">
+    Switch between branches A/B B/A
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="git-guide-101">Git Guide 101<a class="headerlink" href="#git-guide-101" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="commit">Commit<a class="headerlink" href="#commit" title="Permanent link">&para;</a></h2>
+<p>The "commit" command is used to save your changes to the local repository.</p>
+<hr />
+<h3 id="initialized-a-repository">Initialized a repository<a class="headerlink" href="#initialized-a-repository" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git init
+</pre></div>
+</td></tr></table>
+
+<h3 id="add-a-file-to-the-staging-area">Add a file to the staging area<a class="headerlink" href="#add-a-file-to-the-staging-area" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git add --all
+</pre></div>
+</td></tr></table>
+
+<h3 id="commiting-files">Commiting files<a class="headerlink" href="#commiting-files" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git commit -m &quot;message&quot;
+git commit -am &quot;message with adding file to the staging area &quot;
+</pre></div>
+</td></tr></table>
+
+<h3 id="repository-log">Repository log<a class="headerlink" href="#repository-log" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git log
+</pre></div>
+</td></tr></table>
+
+<h3 id="repository-status">Repository status<a class="headerlink" href="#repository-status" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git status 
+</pre></div>
+</td></tr></table>
+
+<h3 id="unstaging-files">Unstaging files<a class="headerlink" href="#unstaging-files" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git reset --hard
+
+
+git diff &lt;1stVer commit hash&gt; &lt;LastVer commit hash&gt; ::  difference btw changes made 
+</pre></div>
+</td></tr></table>
+
+<h2 id="branch">Branch<a class="headerlink" href="#branch" title="Permanent link">&para;</a></h2>
+<p>In Git, branches are a part of your everyday development process. Git branches are effectively a pointer to a snapshot of your changes. When you want to add a new feature or fix a bug—no matter how big or how small—you spawn a new branch to encapsulate your changes. This makes it harder for unstable code to get merged into the main code base, and it gives you the chance to clean up your future's history before merging it into the main branch.</p>
+<hr />
+<h3 id="create-a-branch">Create a branch<a class="headerlink" href="#create-a-branch" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git branch &lt;branch-name&gt;
+git checkout -b &lt;branch-name&gt;
+</pre></div>
+</td></tr></table>
+
+<h3 id="merging-a-branch">Merging a branch<a class="headerlink" href="#merging-a-branch" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git merge &lt;source-branch-name&gt;
+</pre></div>
+</td></tr></table>
+
+<h3 id="listing-branches">Listing branches<a class="headerlink" href="#listing-branches" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git branch 
+git brach --list
+</pre></div>
+</td></tr></table>
+
+<h3 id="removing-a-branch">Removing a branch<a class="headerlink" href="#removing-a-branch" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git brach -d
+</pre></div>
+</td></tr></table>
+
+<h3 id="create-a-tag">Create a tag<a class="headerlink" href="#create-a-tag" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git tag &lt;tag-name&gt;
+</pre></div>
+</td></tr></table>
+
+<h3 id="replace-a-tag">Replace a tag<a class="headerlink" href="#replace-a-tag" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git tag -f &lt;new-tag-name&gt;
+</pre></div>
+</td></tr></table>
+
+<h3 id="listing-tags">Listing tags<a class="headerlink" href="#listing-tags" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git tag -l
+git tag
+</pre></div>
+</td></tr></table>
+
+<h3 id="removing-a-tag">Removing a tag<a class="headerlink" href="#removing-a-tag" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git tag -d &lt;tag-name&gt;
+</pre></div>
+</td></tr></table>
+
+<h2 id="fixing-common-issues">Fixing Common issues<a class="headerlink" href="#fixing-common-issues" title="Permanent link">&para;</a></h2>
+<hr />
+<h3 id="_1"><a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git log --oneline
+</pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Be carefull!</p>
+<p>When you <code>ammend</code> a commit, this will remove the tag from the commit if it has already</p>
+</div>
+<h3 id="add-tag-to-the-latest-ammend">Add tag to the latest ammend<a class="headerlink" href="#add-tag-to-the-latest-ammend" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git tag
+git log --online
+git tag -f &lt;update-tag&gt;
+</pre></div>
+</td></tr></table>
+
+<h3 id="show-all-changes">Show all changes<a class="headerlink" href="#show-all-changes" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git reflog
+</pre></div>
+</td></tr></table>
+
+<h3 id="checkout-differert-state-in-the-repository">Checkout differert state in the repository<a class="headerlink" href="#checkout-differert-state-in-the-repository" title="Permanent link">&para;</a></h3>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git reset HEAD@{5}
+</pre></div>
+</td></tr></table>
+<code>Changes sitting there</code></p>
+<h4 id="older-version-of-this-file">older version of this file<a class="headerlink" href="#older-version-of-this-file" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git reset --hard
+
+
+or
+
+git reset HEAD@{3} --hard
+</pre></div>
+</td></tr></table>
+
+<h3 id="reset-back-to-previous-commits">Reset Back to previous commits.<a class="headerlink" href="#reset-back-to-previous-commits" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git log --oneline
+git reset HEAD~2 --hard
+</pre></div>
+</td></tr></table>
+
+<h3 id="last-commit-gone-but-changes-sitting-there">Last Commit gone but changes sitting there<a class="headerlink" href="#last-commit-gone-but-changes-sitting-there" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git reset HEAD~ --soft
+</pre></div>
+</td></tr></table>
+
+<h3 id="stash-file-no-need-to-put-into-stage">Stash -- file no need to put into stage<a class="headerlink" href="#stash-file-no-need-to-put-into-stage" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git stash
+</pre></div>
+</td></tr></table>
+
+<h3 id="taking-stash-file-to-the-staging-folder">Taking stash file to the staging folder<a class="headerlink" href="#taking-stash-file-to-the-staging-folder" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git stash pop
+git add --all
+git commit -m &quot;&lt;message&gt;&quot;
+</pre></div>
+</td></tr></table>
+
+<h3 id="switch-between-branches-ab-ba">Switch between branches A/B B/A<a class="headerlink" href="#switch-between-branches-ab-ba" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git checkout - 
+</pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot; Bubble sort &quot;&quot;&quot;</span>
+<span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="n">items</span><span class="p">):</span>
+<span class="hll">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)):</span>
+</span><span class="hll">        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">items</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">i</span><span class="p">):</span>
+</span>            <span class="k">if</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
+                <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">items</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</pre></div>
+</td></tr></table>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Django | Heroku" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Django | Heroku
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../designPattern/design-pattern-intro/" title="What is Design Pattern" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                What is Design Pattern
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Martin Donath
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="http://mohsinmahmood.me" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/mohsinmdl" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/joinmohsinmdl" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/mohsinmdl" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.2ba8dec4.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

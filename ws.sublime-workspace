@@ -1,0 +1,256 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "designPattern/creational/prototype/Person.java",
+			"settings":
+			{
+				"buffer_size": 250,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/GitHub/majesticApps",
+		"/D/GitHub/majesticApps/chat",
+		"/D/GitHub/majesticApps/chat/templates",
+		"/D/GitHub/majesticApps/chat/templates/chat",
+		"/D/GitHub/majesticApps/static_majestic",
+		"/D/GitHub/majesticApps/static_majestic/js"
+	],
+	"file_history":
+	[
+		"/D/MKdoc/simpledoc/docs/designPattern/creational/factory-method.md",
+		"/D/MKdoc/simpledoc/docs/designPattern/structural/test.java",
+		"/D/MKdoc/simpledoc/mkdocs.yml",
+		"/D/MKdoc/simpledoc/docs/git-guide-101.md",
+		"/D/MKdoc/simpledoc/docs/designPattern/creational/creational-dp.md",
+		"/D/MKdoc/simpledoc/docs/designPattern/structural/structural-dp.md",
+		"/D/MKdoc/simpledoc/docs/designPattern/creational/index.md",
+		"/D/MKdoc/simpledoc/docs/designPattern/design-pattern-intro.md",
+		"/D/MKdoc/simpledoc/docs/designPattern/creational/abstract.md",
+		"/C/Users/Mohsin/Downloads/Compressed/mkdocs-material-master/mkdocs-material-master/mkdocs.yml",
+		"/D/GitHub/majesticApps/chat/templates/chat/chat.html",
+		"/C/Users/Mohsin/Desktop/TODO.py",
+		"/C/Users/Mohsin/Desktop/Git Guide 101.md",
+		"/D/MKdoc/simpledoc/docs/index.md",
+		"/E/ecommerce/ecommerce/settings.py",
+		"/E/ecommerce/ecommerce/urls.py",
+		"/D/GitHub/Production Project/portfolio/jobs/views.py",
+		"/D/GitHub/Production Project/portfolio/jobs/templates/jobs/index.html",
+		"/D/GitHub/majesticApps/majesticApps/settings.py",
+		"/D/GitHub/gpaPrediction/manage.py",
+		"/D/GitHub/Production Project/majesticApps/tfidf_word_vectorizer.pickle",
+		"/D/GitHub/Production Project/majesticApps/.env",
+		"/D/GitHub/herokuapp/mysite/mysite/urls.py",
+		"//?/E:/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/Lab/Ex_Files_Java_Design_Patterns_Creational/Ex_Files_Java_Design_Patterns_Creational/Exercise Files/Ch03/03_03/after/SingletonExample/SingletonExample/src/singleton_threadsafe_example/PrintSpooler.java",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/Lab/Ex_Files_Java_Design_Patterns_Creational/Ex_Files_Java_Design_Patterns_Creational/Exercise Files/Ch03/03_02/after/SingletonExample/SingletonExample/src/singleton/ResourceManager.java",
+		"/D/GitHub/majesticApps/majesticApps/urls.py",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/LabTasks_DesignPattern/assignment1/PrintSpooler.java",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/LabTasks_DesignPattern/assignment1/Person.java",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/LabTasks_DesignPattern/assignment1/ResourceManager.java",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/LabTasks_DesignPattern/assignment1/StringBuilderExample.java",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/LabTasks_DesignPattern/assignment1/Car.java",
+		"/D/GitHub/Production Project/majesticApps/environment.yml",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/LabTasks_DesignPattern/src/AbstractFactory.java",
+		"/E/pictures/MOhsin Pics/Mohsin's Documents/Docs/sem7/Design Pattern/Lab/Ex_Files_Java_Design_Patterns_Creational/Ex_Files_Java_Design_Patterns_Creational/Exercise Files/Ch03/03_02/after/SingletonExample/SingletonExample/src/singleton/PrintSpooler.java",
+		"/C/Users/Mohsin/AppData/Local/Google/Chrome/User Data/Default/Extensions/gmlllbghnfkpflemihljekbapjopfjik/2.2016.128.11729_0/manifest.json",
+		"/D/majesticApps/environment.yml"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 116.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"in django\n\t|-- Duplicate card",
+			"card",
+			"|--"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "D:\\GitHub\\majesticApps"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "designPattern/creational/prototype/Person.java",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 250,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Java/Java.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 246.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

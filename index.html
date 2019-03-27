@@ -1,252 +1,767 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="None">
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Mohsin Mahmood Projects Documentations">
+      
+      
+        <link rel="canonical" href="https://mohsinmdl.github.io/">
+      
+      
+        <meta name="author" content="Mohsin Mahmood">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.0">
+    
+    
+      
+        <title>Mohsin | Projects Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css">
+      
+      
         
         
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <title>MDL Docs</title>
-        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="js/jquery-1.10.2.min.js" defer></script>
-        <script src="js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body class="homepage">
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href=".">MDL Docs</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li class="active">
-                                <a href=".">Home</a>
-                            </li>
-                            <li >
-                                <a href="about/">About</a>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li class="disabled">
-                                <a rel="next" >
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="about/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+        <meta name="theme-color" content="#009688">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.01ccdecf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#push-your-django-apps-to-heroku" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://mohsinmdl.github.io" title="Mohsin | Projects Docs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Mohsin | Projects Docs
+            </span>
+            <span class="md-header-nav__topic">
+              Django | Heroku
+            </span>
+          
         </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://mohsinmdl.github.io" title="Mohsin | Projects Docs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Mohsin | Projects Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#push-your-django-app-to-heroku">Push your Django App to Heroku</a></li>
-            <li><a href="#1-preparing-your-application">1. Preparing your application</a></li>
-            <li><a href="#2-initialize-git-repositor">2. Initialize Git Repositor</a></li>
-            <li><a href="#3-add-files-to-git">3. Add Files To Git</a></li>
-            <li><a href="#4-activate-virtual-environment">4. Activate Virtual Environment</a></li>
-            <li><a href="#5-modify-settingpy-file">5 Modify Setting.py file</a></li>
-            <li><a href="#6-create-a-file-env">6. Create a file .env</a></li>
-            <li><a href="#7-adding-more-to-settingpy">7. Adding more to setting.py</a></li>
-            <li><a href="#8-static-file-serving-for-web-apps">8. Static file serving for web apps</a></li>
-            <li><a href="#9-create-a-procfile">9. Create a Procfile</a></li>
-            <li><a href="#10-run-django-server">10. Run Django Server</a></li>
-            <li><a href="#11-creating-a-file-requirementstxt">11. Creating a file requirements.txt</a></li>
-            <li><a href="#12-heroku-sign-up">12. Heroku Sign up</a></li>
-            <li><a href="#13-update-git-repository">13. Update Git repository</a></li>
-            <li><a href="#14-finally-push-to-heroku">14. Finally Push to Heroku</a></li>
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Django | Heroku
+      </label>
+    
+    <a href="." title="Django | Heroku" class="md-nav__link md-nav__link--active">
+      Django | Heroku
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-preparing-your-application" title="1. Preparing your application" class="md-nav__link">
+    1. Preparing your application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-initialize-git-repositor" title="2. Initialize Git Repositor" class="md-nav__link">
+    2. Initialize Git Repositor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-add-files-to-git" title="3. Add Files To Git" class="md-nav__link">
+    3. Add Files To Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-activate-virtual-environment" title="4. Activate Virtual Environment" class="md-nav__link">
+    4. Activate Virtual Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-modify-settingpy-file" title="5 Modify Setting.py file" class="md-nav__link">
+    5 Modify Setting.py file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-create-a-file-env" title="6. Create a file .env" class="md-nav__link">
+    6. Create a file .env
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-adding-more-to-settingpy" title="7. Adding more to setting.py" class="md-nav__link">
+    7. Adding more to setting.py
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-static-file-serving-for-web-apps" title="8. Static file serving for web apps" class="md-nav__link">
+    8. Static file serving for web apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-create-a-procfile" title="9. Create a Procfile" class="md-nav__link">
+    9. Create a Procfile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-run-django-server" title="10. Run Django Server" class="md-nav__link">
+    10. Run Django Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-creating-a-file-requirementstxt" title="11. Creating a file requirements.txt" class="md-nav__link">
+    11. Creating a file requirements.txt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-heroku-sign-up" title="12. Heroku Sign up" class="md-nav__link">
+    12. Heroku Sign up
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-update-git-repository" title="13. Update Git repository" class="md-nav__link">
+    13. Update Git repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-finally-push-to-heroku" title="14. Finally Push to Heroku" class="md-nav__link">
+    14. Finally Push to Heroku
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
     </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+  
+</nav>
+    
+  </li>
 
-<h1 id="push-your-django-app-to-heroku">Push your Django App to Heroku</h1>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="git-guide-101/" title="Git Guide 101" class="md-nav__link">
+      Git Guide 101
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Design Pattern
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Design Pattern
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="designPattern/design-pattern-intro/" title="What is Design Pattern" class="md-nav__link">
+      What is Design Pattern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="designPattern/creational/creational-dp/" title="Creational Pattern" class="md-nav__link">
+      Creational Pattern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="designPattern/structural/structural-dp/" title="Structural Pattern" class="md-nav__link">
+      Structural Pattern
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="designPattern/behavioural/behaviour-dp/" title="Behaviour Pattern" class="md-nav__link">
+      Behaviour Pattern
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Contact
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Contact
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="Contact/about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-preparing-your-application" title="1. Preparing your application" class="md-nav__link">
+    1. Preparing your application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-initialize-git-repositor" title="2. Initialize Git Repositor" class="md-nav__link">
+    2. Initialize Git Repositor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-add-files-to-git" title="3. Add Files To Git" class="md-nav__link">
+    3. Add Files To Git
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-activate-virtual-environment" title="4. Activate Virtual Environment" class="md-nav__link">
+    4. Activate Virtual Environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-modify-settingpy-file" title="5 Modify Setting.py file" class="md-nav__link">
+    5 Modify Setting.py file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-create-a-file-env" title="6. Create a file .env" class="md-nav__link">
+    6. Create a file .env
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-adding-more-to-settingpy" title="7. Adding more to setting.py" class="md-nav__link">
+    7. Adding more to setting.py
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-static-file-serving-for-web-apps" title="8. Static file serving for web apps" class="md-nav__link">
+    8. Static file serving for web apps
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-create-a-procfile" title="9. Create a Procfile" class="md-nav__link">
+    9. Create a Procfile
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-run-django-server" title="10. Run Django Server" class="md-nav__link">
+    10. Run Django Server
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-creating-a-file-requirementstxt" title="11. Creating a file requirements.txt" class="md-nav__link">
+    11. Creating a file requirements.txt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-heroku-sign-up" title="12. Heroku Sign up" class="md-nav__link">
+    12. Heroku Sign up
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-update-git-repository" title="13. Update Git repository" class="md-nav__link">
+    13. Update Git repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-finally-push-to-heroku" title="14. Finally Push to Heroku" class="md-nav__link">
+    14. Finally Push to Heroku
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="push-your-django-apps-to-heroku"><small>Push your </small>Django Apps <small>to</small> Heroku<a class="headerlink" href="#push-your-django-apps-to-heroku" title="Permanent link">&para;</a></h1>
 <p>Mohsin Mahmood edited this page on May 22, 2019</p>
 <p><strong>Heroku</strong> is a cloud application platform, it is a <strong>PaaS (Platform-as-a-service)</strong> service. It allows you to deploy your web application from your localhost to cloud so that your application could be commercialized and could get production ready.</p>
-<h2 id="1-preparing-your-application">1. Preparing your application</h2>
+<h2 id="1-preparing-your-application">1. Preparing your application<a class="headerlink" href="#1-preparing-your-application" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Copy the Project folder separately for deployment.</p>
-<h2 id="2-initialize-git-repositor">2. Initialize Git Repositor</h2>
+<h2 id="2-initialize-git-repositor">2. Initialize Git Repositor<a class="headerlink" href="#2-initialize-git-repositor" title="Permanent link">&para;</a></h2>
 <hr />
 <ul>
 <li>Install <a href="https://git-scm.com/">Git</a></li>
-<li>Press <kbd>CTRL</kbd>+<kbd>R</kbd></li>
+<li>Press <kbd>WIN</kbd>+<kbd>R</kbd></li>
 <li>Type <code>cmd</code> and click OK</li>
 <li>Navigate to project folder</li>
 <li>Make sure your are in the directory where the <code>manage.py</code> exists</li>
 </ul>
-<pre><code class="commandline">git config --global user.name &quot;Your Name&quot;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git config --global user.name &quot;Your Name&quot;
 git config --global user.email &quot;you@youraddress.com&quot;    
 git config --global user.email &quot;you@youraddress.com&quot;
 git init
-</code></pre>
+</pre></div>
+</td></tr></table>
 
-<h2 id="3-add-files-to-git">3. Add Files To Git</h2>
+<h2 id="3-add-files-to-git">3. Add Files To Git<a class="headerlink" href="#3-add-files-to-git" title="Permanent link">&para;</a></h2>
 <hr />
-<pre><code class="commandline">git add --all
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git add --all
 git commit -m &quot;Commit Message&quot;
 git push
-</code></pre>
+</pre></div>
+</td></tr></table>
 
-<h2 id="4-activate-virtual-environment">4. Activate Virtual Environment</h2>
+<h2 id="4-activate-virtual-environment">4. Activate Virtual Environment<a class="headerlink" href="#4-activate-virtual-environment" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Activating virtual environment.</p>
-<pre><code class="text">manage.py         # The configuration file.
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>manage.py         # The configuration file.
 venv/
     Scripts/       
         activate
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <p>Run these command to activate the environment.</p>
-<pre><code class="text">cd venv/Scripts/
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd venv/Scripts/
 activate
-</code></pre>
-
-<p>If virtual environment not already exists.
+</pre></div>
+</td></tr></table>
+If virtual environment not already exists.
 Run these commands on command prompt. </p>
-<pre><code class="commandline">pip install virtualenv
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install virtualenv
+</pre></div>
+</td></tr></table>
 
 <ul>
 <li>Install all the required libraries that your project required via <code>pip</code>  command.</li>
 <li>Plus install the following dependencies in your virtual environment.</li>
 </ul>
-<pre><code class="commandline">pip install gunicorn
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip install gunicorn
 pip install django-heroku
 pip install python-decouple
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <blockquote>
 <p>django-heroku: official package by Heroku which made our deployment simple.</p>
 </blockquote>
-<h2 id="5-modify-settingpy-file">5 Modify <code>Setting.py</code> file</h2>
+<h2 id="5-modify-settingpy-file">5 Modify <code>Setting.py</code> file<a class="headerlink" href="#5-modify-settingpy-file" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Now, In app/settings.py file add below content</p>
-<pre><code class="python">#import os
-import django_heroku
-from decouple import config
-import dj_database_url
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#import os</span>
+<span class="kn">import</span> <span class="nn">django_heroku</span>
+<span class="kn">from</span> <span class="nn">decouple</span> <span class="kn">import</span> <span class="n">config</span>
+<span class="kn">import</span> <span class="nn">dj_database_url</span>
+</pre></div>
+</td></tr></table>
 
 <p>At the <strong>end</strong> of the <code>setting.py</code> file add this line also.</p>
-<pre><code class="python">django_heroku.settings(locals())
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">django_heroku</span><span class="o">.</span><span class="n">settings</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+</pre></div>
+</td></tr></table>
 
 <p>Now we need to hide the <code>SECRET_KEY</code> from the deployment code.
 For this, add this line of code before<br />
 <code>SECRET_KEY  = "Djfhslkdfsjf*(skdf0suerjwehksjdf"</code></p>
-<pre><code class="python">SECRET_KEY = config('SECRET_KEY')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">SECRET_KEY</span> <span class="o">=</span> <span class="n">config</span><span class="p">(</span><span class="s1">&#39;SECRET_KEY&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
 <p>Move your actual <code>SECRET_KEY</code> to the <code>.env</code> file that we are going to create.</p>
-<h2 id="6-create-a-file-env">6. Create a file <code>.env</code></h2>
+<h2 id="6-create-a-file-env">6. Create a file <code>.env</code><a class="headerlink" href="#6-create-a-file-env" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Now, run a command in your terminal.It will create a file <code>.env</code> in your app directory.  </p>
-<pre><code class="commandline">touch .env
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>touch .env
+</pre></div>
+</td></tr></table>
 
 <blockquote>
 <p>Add your <code>SECRET_KEY</code> from setting.py to <code>.env</code> file.</p>
 </blockquote>
-<h2 id="7-adding-more-to-settingpy">7. Adding more to <code>setting.py</code></h2>
+<h2 id="7-adding-more-to-settingpy">7. Adding more to <code>setting.py</code><a class="headerlink" href="#7-adding-more-to-settingpy" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Do this in your <strong>app/settings.py</strong>.</p>
-<pre><code class="python">STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, &quot;static&quot;)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">STATICFILES_DIRS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s2">&quot;static&quot;</span><span class="p">)</span>
 
-]
-</code></pre>
+<span class="p">]</span>
+</pre></div>
+</td></tr></table>
 
 <p>Make sure you do not have this command in setting.py file already. If so remain it as it is.</br>
 <a href="https://docs.djangoproject.com/en/2.1/howto/static-files/" target="_blank">For more info</a></p>
-<pre><code class="python">STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">STATIC_ROOT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">BASE_DIR</span><span class="p">,</span> <span class="s1">&#39;staticfiles&#39;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
 
-<h2 id="8-static-file-serving-for-web-apps">8. Static file serving for web apps</h2>
+<h2 id="8-static-file-serving-for-web-apps">8. Static file serving for web apps<a class="headerlink" href="#8-static-file-serving-for-web-apps" title="Permanent link">&para;</a></h2>
 <hr />
 <p>To serve static assets I use the WhiteNoise project. To install: <code>pip install whitenoise</code>
 <a href="http://whitenoise.evans.io/en/stable/" target="_blank">For more info </a></p>
 <p>Do this in your <strong>app/settings.py</strong> file.</p>
-<pre><code class="python">#...    
-#'django.middleware.security.SecurityMiddleware',
-'whitenoise.middleware.WhiteNoiseMiddleware',
-#'django.contrib.sessions.middleware.SessionMiddleware',
-#'django.middleware.common.CommonMiddleware',
-#...
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="c1">#...    </span>
+<span class="c1">#&#39;django.middleware.security.SecurityMiddleware&#39;,</span>
+<span class="s1">&#39;whitenoise.middleware.WhiteNoiseMiddleware&#39;</span><span class="p">,</span>
+<span class="c1">#&#39;django.contrib.sessions.middleware.SessionMiddleware&#39;,</span>
+<span class="c1">#&#39;django.middleware.common.CommonMiddleware&#39;,</span>
+<span class="c1">#...</span>
+</pre></div>
+</td></tr></table>
 
-<pre><code class="python">STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">STATICFILES_STORAGE</span> <span class="o">=</span> <span class="s1">&#39;whitenoise.storage.CompressedManifestStaticFilesStorage&#39;</span>
+</pre></div>
+</td></tr></table>
 
-<h2 id="9-create-a-procfile">9. Create a Procfile</h2>
+<h2 id="9-create-a-procfile">9. Create a Procfile<a class="headerlink" href="#9-create-a-procfile" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Open the command prompt in your directory and type this command.</p>
 <blockquote>
 <p>Make sure you type <code>Procfile</code> correctly (casesensitve)</p>
 </blockquote>
-<pre><code class="commandline">touch Procfile
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>touch Procfile
+</pre></div>
+</td></tr></table>
 
 <p>Open the Procfile and add this line in the file.</p>
-<pre><code class="text">web: gunicorn &lt;project name&gt;.wsgi
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>web: gunicorn &lt;project name&gt;.wsgi
+</pre></div>
+</td></tr></table>
 
-<h2 id="10-run-django-server">10. Run Django Server</h2>
+<h2 id="10-run-django-server">10. Run Django Server<a class="headerlink" href="#10-run-django-server" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Type this command in the command promt to open the django server.</p>
-<pre><code class="commandline">python manage.py runserver
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>python manage.py runserver
+</pre></div>
+</td></tr></table>
 
 <p>run this command too.</p>
-<pre><code class="commandline">python manage.py migrate
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>python manage.py migrate
+</pre></div>
+</td></tr></table>
 
 <p>If your site is working correctly then move to next step.</p>
-<h2 id="11-creating-a-file-requirementstxt">11. Creating a file <code>requirements.txt</code></h2>
+<h2 id="11-creating-a-file-requirementstxt">11. Creating a file <code>requirements.txt</code><a class="headerlink" href="#11-creating-a-file-requirementstxt" title="Permanent link">&para;</a></h2>
 <hr />
 <p>This command create a file requiremets.txt and add all the dependencies that your application needed while pushing to heroku.</p>
-<pre><code class="commandline">pip freeze &gt; requirements.txt
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>pip freeze &gt; requirements.txt
+</pre></div>
+</td></tr></table>
 
 <p>add dependency <code>requests==2.21.0</code> to the requirements.txt file. </p>
-<h2 id="12-heroku-sign-up">12. Heroku Sign up</h2>
+<h2 id="12-heroku-sign-up">12. Heroku Sign up<a class="headerlink" href="#12-heroku-sign-up" title="Permanent link">&para;</a></h2>
 <hr />
 <p>Start a 
 <a href="https://signup.heroku.com/" target="_blank">heroku</a>
@@ -255,123 +770,126 @@ account — Sign up.</p>
 <a href="https://devcenter.heroku.com/articles/heroku-cli" target="_blank">Heroku</a>
 Toolbelt commands</p>
 <p>After installing heroku toolbelt your terminal will support all the heroku commands.Open your terminal as administrator and run this code</p>
-<pre><code class="commandline">heroku login
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>heroku login
+</pre></div>
+</td></tr></table>
 
 <p>login to your heroku account via terminal</p>
 <blockquote>
 <p>Enter your Heroku credentials.</p>
 </blockquote>
-<pre><code class="commandline">
-Email: example@gmail.com
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Email: example@gmail.com
 Password (typing will be hidden):
 Authentication successful.
-
-</code></pre>
+</pre></div>
+</td></tr></table>
 
 <p>Inside the project root, create a Heroku App:</p>
-<pre><code class="commandline">heroku create
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>heroku create
+</pre></div>
+</td></tr></table>
 
 <p>Adding a Heroku app to Git remote</p>
-<pre><code class="commandline">heroku git:remote -a &lt;APPNAME&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>heroku git:remote -a &lt;APPNAME&gt;
+</pre></div>
+</td></tr></table>
 
 <p>Open the heroku <a href="https://dashboard.heroku.com/login">dashboard</a> and navigate to your new created app.</p>
 <p>In setting tab, add the config vars: <code>SECRET_KEY</code></p>
 <p><img alt="alt text" src="img/configvar.png" /></p>
-<h2 id="13-update-git-repository">13. Update Git repository</h2>
+<h2 id="13-update-git-repository">13. Update Git repository<a class="headerlink" href="#13-update-git-repository" title="Permanent link">&para;</a></h2>
 <hr />
-<pre><code class="commandline">git add --all
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git add --all
 git status    # to view all the changes
 git commit -m &quot;ready to push&quot;
-</code></pre>
+</pre></div>
+</td></tr></table>
 
-<h2 id="14-finally-push-to-heroku">14. Finally Push to Heroku</h2>
+<h2 id="14-finally-push-to-heroku">14. Finally Push to Heroku<a class="headerlink" href="#14-finally-push-to-heroku" title="Permanent link">&para;</a></h2>
 <hr />
-<pre><code class="commandline">git push heroku master
-</code></pre></div>
-        </div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git push heroku master
+</pre></div>
+</td></tr></table>
+                
+                  
+                
+              
+              
+                
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = ".",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="js/base.js" defer></script>
-        <script src="search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+              
+            </article>
+          </div>
         </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="git-guide-101/" title="Git Guide 101" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Git Guide 101
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Martin Donath
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css">
+    
+      <a href="http://mohsinmahmood.me" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/mohsinmdl" class="md-footer-social__link fa fa-github-alt"></a>
+    
+      <a href="https://twitter.com/joinmohsinmdl" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://linkedin.com/in/mohsinmdl" class="md-footer-social__link fa fa-linkedin"></a>
+    
+  </div>
 
-    </body>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.2ba8dec4.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+  </body>
 </html>
-
-<!--
-MkDocs version : 1.0.4
-Build Date UTC : 2019-03-22 13:33:02
--->
