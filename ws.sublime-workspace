@@ -8,12 +8,20 @@
 	"buffers":
 	[
 		{
-			"file": "designPattern/creational/prototype/Person.java",
+			"file": "/E/office work/GTIN latest/Back Up PyCharm Projects/GTIN_Django_Project/GTIN_Django_Project/settings.py",
 			"settings":
 			{
-				"buffer_size": 250,
+				"buffer_size": 3222,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/office work/GTIN latest/Back Up PyCharm Projects/GTIN_Django_Project/GTIN_Application/time_Series_Fb_Prophet.py",
+			"settings":
+			{
+				"buffer_size": 36228,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -47,37 +55,46 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-		"/D/GitHub/majesticApps",
-		"/D/GitHub/majesticApps/chat",
-		"/D/GitHub/majesticApps/chat/templates",
-		"/D/GitHub/majesticApps/chat/templates/chat",
-		"/D/GitHub/majesticApps/static_majestic",
-		"/D/GitHub/majesticApps/static_majestic/js"
-	],
 	"file_history":
 	[
+		"/E/office work/GTIN latest/GTIN v3/GTIN_Django_Project/GTIN_Django_Project/settings.py",
+		"/E/office work/GTIN latest/GTIN v4/GTIN_Django_Project/GTIN_Django_Project/settings.py",
+		"/C/Users/Mohsin/Desktop/TODO.py",
+		"/D/GitHub/Production Project/portfolio/jobs/admin.py",
+		"/D/GitHub/Deployed Projects/gtin-pro/env.yaml",
+		"/D/GitHub/gpaPrediction/manage.py",
+		"/E/office work/GTIN latest/GTIN v4/GTIN_Django_Project/manage.py",
+		"/C/Users/Mohsin/Desktop/Quiz_Python/Tic Tac Toe/Game.py",
+		"/D/GitHub/Production Project/portfolio/jobs/apps.py",
+		"/D/GitHub/Deployed Projects/gtin-pro/GTIN_Application/time_Series_Fb_Prophet.py",
+		"/C/Users/Mohsin/Downloads/Compressed/material-kit-master/material-kit-master/README.md",
+		"/C/Users/Mohsin/Downloads/Compressed/material-kit-master/material-kit-master/package.json",
+		"/C/Users/Mohsin/Downloads/Compressed/material-kit-master/material-kit-master/ISSUE_TEMPLATE.md",
+		"/C/Users/Mohsin/env.yaml",
+		"/D/MKdoc/simpledoc/docs/git-guide-101.md",
+		"/D/GitHub/Deployed Projects/gtin-pro/GTIN_Django_Project/settings.py",
+		"/D/GitHub/Deployed Projects/gtin-pro/GTIN_Application/views.py",
+		"/C/Users/Mohsin/Desktop/Git Guide 101.md",
+		"/C/Users/Mohsin/Downloads/Compressed/bakerydemo-master/bakerydemo-master/bakerydemo/settings/production.py",
+		"/D/MKdoc/simpledoc/docs/designPattern/structural/structural-dp.md",
+		"/D/MKdoc/simpledoc/docs/designPattern/creational/prototype/Person.java",
+		"/E/ecommerce/ecommerce/settings.py",
+		"/C/Users/Mohsin/Desktop/pdf files/1st class.txt",
+		"/E/Software/Programming and Science/Data Sciences/Install Jupyter Notebook and python 3.6 using Anaconda into ubuntu 16.04.odt",
 		"/D/MKdoc/simpledoc/docs/designPattern/creational/factory-method.md",
 		"/D/MKdoc/simpledoc/docs/designPattern/structural/test.java",
 		"/D/MKdoc/simpledoc/mkdocs.yml",
-		"/D/MKdoc/simpledoc/docs/git-guide-101.md",
 		"/D/MKdoc/simpledoc/docs/designPattern/creational/creational-dp.md",
-		"/D/MKdoc/simpledoc/docs/designPattern/structural/structural-dp.md",
 		"/D/MKdoc/simpledoc/docs/designPattern/creational/index.md",
 		"/D/MKdoc/simpledoc/docs/designPattern/design-pattern-intro.md",
 		"/D/MKdoc/simpledoc/docs/designPattern/creational/abstract.md",
 		"/C/Users/Mohsin/Downloads/Compressed/mkdocs-material-master/mkdocs-material-master/mkdocs.yml",
 		"/D/GitHub/majesticApps/chat/templates/chat/chat.html",
-		"/C/Users/Mohsin/Desktop/TODO.py",
-		"/C/Users/Mohsin/Desktop/Git Guide 101.md",
 		"/D/MKdoc/simpledoc/docs/index.md",
-		"/E/ecommerce/ecommerce/settings.py",
 		"/E/ecommerce/ecommerce/urls.py",
 		"/D/GitHub/Production Project/portfolio/jobs/views.py",
 		"/D/GitHub/Production Project/portfolio/jobs/templates/jobs/index.html",
 		"/D/GitHub/majesticApps/majesticApps/settings.py",
-		"/D/GitHub/gpaPrediction/manage.py",
 		"/D/GitHub/Production Project/majesticApps/tfidf_word_vectorizer.pickle",
 		"/D/GitHub/Production Project/majesticApps/.env",
 		"/D/GitHub/herokuapp/mysite/mysite/urls.py",
@@ -97,7 +114,7 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 48.0
 	},
 	"find_in_files":
 	{
@@ -111,6 +128,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pylatex",
+			"SECRET_KEY",
+			"dj_database_url",
+			"all_GTIN_Predictions",
 			"in django\n\t|-- Duplicate card",
 			"card",
 			"|--"
@@ -128,41 +149,65 @@
 		"whole_word": false,
 		"wrap": true
 	},
-	"folders":
-	[
-		{
-			"path": "D:\\GitHub\\majesticApps"
-		}
-	],
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "designPattern/creational/prototype/Person.java",
+					"file": "/E/office work/GTIN latest/Back Up PyCharm Projects/GTIN_Django_Project/GTIN_Django_Project/settings.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 250,
+						"buffer_size": 3222,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20,
-								20
+								3221,
+								3198
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Java/Java.sublime-syntax"
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2970.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/E/office work/GTIN latest/Back Up PyCharm Projects/GTIN_Django_Project/GTIN_Application/time_Series_Fb_Prophet.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 36228,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16457,
+								16463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 16497.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -173,7 +218,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 36.0
 	},
 	"input":
 	{
@@ -210,7 +255,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 64.0
+		"height": 68.0
 	},
 	"save_all_on_build": true,
 	"select_file":
