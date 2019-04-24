@@ -309,6 +309,27 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#facade-pattern" title="Facade Pattern" class="md-nav__link">
+    Facade Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decorator-pattern" title="Decorator Pattern" class="md-nav__link">
+    Decorator Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composite-pattern" title="Composite Pattern" class="md-nav__link">
+    Composite Pattern
+  </a>
+  
+</li>
+      
       
       
       
@@ -434,6 +455,27 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facade-pattern" title="Facade Pattern" class="md-nav__link">
+    Facade Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decorator-pattern" title="Decorator Pattern" class="md-nav__link">
+    Decorator Pattern
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composite-pattern" title="Composite Pattern" class="md-nav__link">
+    Composite Pattern
+  </a>
   
 </li>
       
@@ -879,6 +921,1512 @@
 
     <span class="o">}</span>
 
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<h2 id="facade-pattern">Facade Pattern<a class="headerlink" href="#facade-pattern" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="superfences-tabs">
+<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
+<label for="__tab_3_0">HomeTheater.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">facadePattern</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeTheater</span> <span class="o">{</span>
+
+    <span class="kd">private</span> <span class="n">Amplifier</span> <span class="n">amp</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">DVDPlayer</span> <span class="n">dvdPlayer</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Light</span> <span class="n">light</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Popcorn</span> <span class="n">popcorn</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="n">Projecter</span> <span class="n">projecter</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">HomeTheater</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">this</span><span class="o">.</span><span class="na">amp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Amplifier</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">dvdPlayer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DVDPlayer</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">light</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Light</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">popcorn</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Popcorn</span><span class="o">();</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">projecter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Projecter</span><span class="o">();</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">watchMovie</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="n">popcorn</span><span class="o">.</span><span class="na">load</span><span class="o">();</span>
+        <span class="n">popcorn</span><span class="o">.</span><span class="na">on</span><span class="o">();</span>
+
+        <span class="n">projecter</span><span class="o">.</span><span class="na">lower</span><span class="o">();</span>
+
+        <span class="n">amp</span><span class="o">.</span><span class="na">on</span><span class="o">();</span>
+        <span class="n">amp</span><span class="o">.</span><span class="na">medium</span><span class="o">();</span>
+        <span class="n">amp</span><span class="o">.</span><span class="na">inputDVD</span><span class="o">();</span>
+
+        <span class="n">dvdPlayer</span><span class="o">.</span><span class="na">on</span><span class="o">();</span>
+        <span class="n">dvdPlayer</span><span class="o">.</span><span class="na">load</span><span class="o">();</span>
+        <span class="n">dvdPlayer</span><span class="o">.</span><span class="na">sorround</span><span class="o">();</span>
+
+        <span class="n">projecter</span><span class="o">.</span><span class="na">on</span><span class="o">();</span>
+        <span class="n">projecter</span><span class="o">.</span><span class="na">inputDVD</span><span class="o">();</span>
+        <span class="n">projecter</span><span class="o">.</span><span class="na">wideScreen</span><span class="o">();</span>
+
+        <span class="n">light</span><span class="o">.</span><span class="na">dim</span><span class="o">();</span>
+
+        <span class="n">dvdPlayer</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_3" type="radio" id="__tab_3_1" />
+<label for="__tab_3_1">Amplifier.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">facadePattern</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Amplifier</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">inputDVD</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">medium</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_3" type="radio" id="__tab_3_2" />
+<label for="__tab_3_2">DVDPlayer.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">facadePattern</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DVDPlayer</span> <span class="o">{</span>
+
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sorround</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_3" type="radio" id="__tab_3_3" />
+<label for="__tab_3_3">Light.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">facadePattern</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Light</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">dim</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_3" type="radio" id="__tab_3_4" />
+<label for="__tab_3_4">Popcorn.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">facadePattern</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Popcorn</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Popcorn machine is loading.&quot;</span><span class="o">);</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;&quot;</span><span class="o">);</span>
+
+    <span class="o">}</span>
+
+
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_3" type="radio" id="__tab_3_5" />
+<label for="__tab_3_5">Projecter.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">facadePattern</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Projecter</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">lower</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">inputDVD</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">wideScreen</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// TODO Auto-generated method stub</span>
+
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_3" type="radio" id="__tab_3_6" />
+<label for="__tab_3_6">FacadeDemo.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">package</span> <span class="nn">facadePattern</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FacadeDemo</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">HomeTheater</span> <span class="n">theater</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HomeTheater</span><span class="o">();</span>
+        <span class="n">theater</span><span class="o">.</span><span class="na">watchMovie</span><span class="o">();</span>   
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<h2 id="decorator-pattern">Decorator Pattern<a class="headerlink" href="#decorator-pattern" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="superfences-tabs">
+<input name="__tabs_4" type="radio" id="__tab_4_0" checked="checked" />
+<label for="__tab_4_0">Beverage.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Beverage</span> <span class="o">{</span>
+
+    <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;Unknown Description&quot;</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="n">description</span><span class="o">;</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">();</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_1" />
+<label for="__tab_4_1">CondimentDecorator.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">CondimentDecorator</span> <span class="kd">extends</span> <span class="n">Beverage</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">();</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_2" />
+<label for="__tab_4_2">DarkRoast.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DarkRoast</span> <span class="kd">extends</span> <span class="n">Beverage</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">DarkRoast</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">3.0</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_3" />
+<label for="__tab_4_3">Decaf.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Decaf</span> <span class="kd">extends</span> <span class="n">Beverage</span><span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">Decaf</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">4.0</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_4" />
+<label for="__tab_4_4">Espresso.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Espresso</span> <span class="kd">extends</span> <span class="n">Beverage</span><span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">Espresso</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">6.0</span><span class="o">;</span>
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_5" />
+<label for="__tab_4_5">HouseBlend.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HouseBlend</span> <span class="kd">extends</span> <span class="n">Beverage</span> <span class="o">{</span>
+
+    <span class="kd">public</span> <span class="nf">HouseBlend</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">2.0</span><span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_6" />
+<label for="__tab_4_6">Mocha.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Mocha</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span> <span class="o">{</span>
+
+    <span class="n">Beverage</span> <span class="n">bev</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="nf">Mocha</span><span class="o">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="o">;</span>
+
+    <span class="o">}</span>
+
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="n">bev</span><span class="o">.</span><span class="na">getDescription</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">0.2</span> <span class="o">+</span> <span class="n">bev</span><span class="o">.</span><span class="na">cost</span><span class="o">()</span> <span class="o">;</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_7" />
+<label for="__tab_4_7">Soy.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Soy</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span><span class="o">{</span>
+
+
+    <span class="n">Beverage</span> <span class="n">bev</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="nf">Soy</span><span class="o">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="o">;</span>
+
+    <span class="o">}</span>
+
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="n">bev</span><span class="o">.</span><span class="na">getDescription</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">()</span> <span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">0.4</span> <span class="o">+</span> <span class="n">bev</span><span class="o">.</span><span class="na">cost</span><span class="o">()</span> <span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_8" />
+<label for="__tab_4_8">Beverage.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Beverage</span> <span class="o">{</span>
+
+    <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;Unknown Description&quot;</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="n">description</span><span class="o">;</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">();</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_9" />
+<label for="__tab_4_9">SteamedMilk.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SteamedMilk</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span> <span class="o">{</span>
+
+    <span class="n">Beverage</span> <span class="n">bev</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">SteamedMilk</span><span class="o">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="o">;</span>
+
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="n">bev</span><span class="o">.</span><span class="na">getDescription</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">0.6</span> <span class="o">+</span> <span class="n">bev</span><span class="o">.</span><span class="na">cost</span><span class="o">();</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_10" />
+<label for="__tab_4_10">WhippedMilk.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">WhippedMilk</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span><span class="o">{</span>
+
+    <span class="n">Beverage</span> <span class="n">bev</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">WhippedMilk</span><span class="o">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="o">;</span>
+
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="n">bev</span><span class="o">.</span><span class="na">getDescription</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="o">.</span><span class="na">getClass</span><span class="o">().</span><span class="na">getName</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="mf">0.9</span> <span class="o">+</span> <span class="n">bev</span><span class="o">.</span><span class="na">cost</span><span class="o">();</span>
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_4" type="radio" id="__tab_4_11" />
+<label for="__tab_4_11">MainStarBuzz.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 8, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainStarBuzz</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">HouseBlend</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HouseBlend</span><span class="o">();</span>
+        <span class="n">Mocha</span> <span class="n">moc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mocha</span><span class="o">(</span><span class="n">obj</span><span class="o">);</span>
+
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">obj</span><span class="o">.</span><span class="na">getDescription</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">obj</span><span class="o">.</span><span class="na">cost</span><span class="o">());</span>
+
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">moc</span><span class="o">.</span><span class="na">getDescription</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">moc</span><span class="o">.</span><span class="na">cost</span><span class="o">());</span>
+
+        <span class="n">Beverage</span> <span class="n">coffe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DarkRoast</span><span class="o">();</span>
+        <span class="n">coffe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mocha</span><span class="o">(</span><span class="n">coffe</span><span class="o">);</span>
+        <span class="n">coffe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Soy</span><span class="o">(</span><span class="n">coffe</span><span class="o">);</span>
+
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">coffe</span><span class="o">.</span><span class="na">getDescription</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">coffe</span><span class="o">.</span><span class="na">cost</span><span class="o">());</span>
+
+
+
+
+
+
+    <span class="o">}</span>
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+</div>
+<h2 id="composite-pattern">Composite Pattern<a class="headerlink" href="#composite-pattern" title="Permanent link">&para;</a></h2>
+<hr />
+<div class="superfences-tabs">
+<input name="__tabs_5" type="radio" id="__tab_5_0" checked="checked" />
+<label for="__tab_5_0">Beverage.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 24, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Employee</span> <span class="o">{</span>
+
+    <span class="c1">// Composite Method Specifically</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="o">();</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="o">();</span>
+
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">Employee</span> <span class="nf">getChild</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="c1">// Composite + leafItems Mehthods</span>
+
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="o">();</span>
+    <span class="o">}</span>
+
+
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_5" type="radio" id="__tab_5_1" />
+<label for="__tab_5_1">BankManager.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+
+<span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 24, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BankManager</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kt">double</span> <span class="n">salary</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">BankManager</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">double</span> <span class="n">salary</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="n">List</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span> <span class="n">employeelist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">employeelist</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">employee</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="o">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">employeelist</span><span class="o">.</span><span class="na">remove</span><span class="o">(</span><span class="n">employee</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">Employee</span> <span class="nf">getChild</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="n">employeelist</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">salary</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;======================================&quot;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Id = &quot;</span> <span class="o">+</span> <span class="n">getId</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Name = &quot;</span> <span class="o">+</span> <span class="n">getName</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Salaray = &quot;</span> <span class="o">+</span> <span class="n">getSalary</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;======================================&quot;</span><span class="o">);</span>
+
+        <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span> <span class="n">it</span> <span class="o">=</span> <span class="n">employeelist</span><span class="o">.</span><span class="na">iterator</span><span class="o">();</span>
+        <span class="k">while</span><span class="o">(</span><span class="n">it</span><span class="o">.</span><span class="na">hasNext</span><span class="o">()){</span>
+            <span class="n">Employee</span> <span class="n">emp</span> <span class="o">=</span> <span class="o">(</span><span class="n">Employee</span><span class="o">)</span> <span class="n">it</span><span class="o">.</span><span class="na">next</span><span class="o">();</span>
+            <span class="n">emp</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_5" type="radio" id="__tab_5_2" />
+<label for="__tab_5_2">Cashier.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 24, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cashier</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kt">double</span> <span class="n">salary</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Cashier</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">double</span> <span class="n">salary</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">salary</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;======================================&quot;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Id = &quot;</span> <span class="o">+</span> <span class="n">getId</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Name = &quot;</span> <span class="o">+</span> <span class="n">getName</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Salaray = &quot;</span> <span class="o">+</span> <span class="n">getSalary</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;======================================&quot;</span><span class="o">);</span>
+
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_5" type="radio" id="__tab_5_3" />
+<label for="__tab_5_3">Accountant.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 24, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Accountant</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="o">{</span>
+    <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
+    <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+    <span class="kt">double</span> <span class="n">salary</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="nf">Accountant</span><span class="o">(</span><span class="kt">int</span> <span class="n">id</span><span class="o">,</span> <span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">double</span> <span class="n">salary</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="o">;</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">id</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">name</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">salary</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;======================================&quot;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Id = &quot;</span> <span class="o">+</span> <span class="n">getId</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Name = &quot;</span> <span class="o">+</span> <span class="n">getName</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Salaray = &quot;</span> <span class="o">+</span> <span class="n">getSalary</span><span class="o">());</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;======================================&quot;</span><span class="o">);</span>
+
+    <span class="o">}</span>
+
+
+<span class="o">}</span>
+</pre></div>
+</td></tr></table></div>
+<input name="__tabs_5" type="radio" id="__tab_5_4" />
+<label for="__tab_5_4">CompositePatternDemo.java</label>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cm">/*</span>
+<span class="cm">*</span>
+<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
+<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
+<span class="cm">* Registration#:    SP16-BSE-060</span>
+<span class="cm">* Date:             Apr 24, 2019</span>
+<span class="cm">*/</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CompositePatternDemo</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+        <span class="n">Employee</span> <span class="n">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankManager</span><span class="o">(</span><span class="mi">101</span><span class="o">,</span> <span class="s">&quot;BankManager&quot;</span><span class="o">,</span> <span class="mf">80000.00</span><span class="o">);</span>
+        <span class="n">Employee</span> <span class="n">cash1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cashier</span><span class="o">(</span><span class="mi">202</span><span class="o">,</span> <span class="s">&quot;Cashier1&quot;</span><span class="o">,</span> <span class="mf">20000.00</span><span class="o">);</span>
+        <span class="n">Employee</span> <span class="n">cash2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cashier</span><span class="o">(</span><span class="mi">203</span><span class="o">,</span> <span class="s">&quot;Cashier2&quot;</span><span class="o">,</span> <span class="mf">20000.00</span><span class="o">);</span>
+        <span class="n">Employee</span> <span class="n">accountant</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Accountant</span><span class="o">(</span><span class="mi">204</span><span class="o">,</span> <span class="s">&quot;Accountant&quot;</span><span class="o">,</span> <span class="mf">42000.00</span><span class="o">);</span>
+
+        <span class="n">manager</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">cash1</span><span class="o">);</span>
+        <span class="n">manager</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">cash2</span><span class="o">);</span>
+        <span class="n">manager</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">accountant</span><span class="o">);</span>
+
+        <span class="n">manager</span><span class="o">.</span><span class="na">print</span><span class="o">();</span>
+
+    <span class="o">}</span>
 <span class="o">}</span>
 </pre></div>
 </td></tr></table></div>
