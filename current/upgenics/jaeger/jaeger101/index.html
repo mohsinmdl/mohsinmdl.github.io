@@ -89,6 +89,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#implementing-jaeger-tracing" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -178,6 +182,471 @@
       
       
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      Current Docs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        Current Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Jaeger Implementation
+      </label>
+    
+    <a href="./" title="Jaeger Implementation" class="md-nav__link md-nav__link--active">
+      Jaeger Implementation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modification" class="md-nav__link">
+    Modification
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-name" class="md-nav__link">
+    Service Name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-libraries" class="md-nav__link">
+    Importing Libraries
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask-api-tracing" class="md-nav__link">
+    Flask API Tracing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-traces-all-routes" class="md-nav__link">
+    Automated Traces All Routes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-traces-all-routes" class="md-nav__link">
+    Manual Traces All Routes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-editing-in-client-files" class="md-nav__link">
+    Batch Editing in Client files
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-libraries-without-regex" class="md-nav__link">
+    Import Libraries without Regex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-libraries-via-regrx" class="md-nav__link">
+    Import Libraries via Regrx
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_1" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_1" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-spans" class="md-nav__link">
+    Injecting Spans
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methods-with-try-except" class="md-nav__link">
+    Methods with try-except
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_2" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_2" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-without-try-except" class="md-nav__link">
+    Methods without try-except
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_3" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_3" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-exception" class="md-nav__link">
+    Handling Exception
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_4" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_4" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-return-statuses" class="md-nav__link">
+    Handling Return Statuses
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#return-variable-names" class="md-nav__link">
+    Return Variable Names
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_5" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_5" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-string" class="md-nav__link">
+    Return String
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_6" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_6" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-json-data" class="md-nav__link">
+    Return Json Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_7" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_7" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-graph-database-collections-query" class="md-nav__link">
+    Return Graph Database Collections Query
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_8" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_8" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-json-data_1" class="md-nav__link">
+    Return JSON Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_9" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_9" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keywords-used-in-all-apis" class="md-nav__link">
+    Keywords Used in All APIS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches-created-for-tracing" class="md-nav__link">
+    Branches Created for Tracing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#names-of-branches" class="md-nav__link">
+    Names of Branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
 
   <li class="md-nav__item">
     <a href="../../../.." title="Django | Heroku" class="md-nav__link">
@@ -217,13 +686,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Design Pattern
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         Design Pattern
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -235,7 +704,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../../designPattern/design-pattern-intro.md" title="What is Design Pattern" class="md-nav__link">
+    <a href="../../../../designPattern/design-pattern-intro/" title="What is Design Pattern" class="md-nav__link">
       What is Design Pattern
     </a>
   </li>
@@ -274,51 +743,6 @@
     <a href="../../../../designPattern/behavioural/behaviour-dp.md" title="Behaviour Pattern" class="md-nav__link">
       Behaviour Pattern
     </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
-    
-    <label class="md-nav__link" for="nav-5">
-      Current Docs
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Current Docs
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Jaeger Implementation" class="md-nav__link md-nav__link--active">
-      Jaeger Implementation
-    </a>
-    
   </li>
 
         
@@ -394,70 +818,621 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#modification" class="md-nav__link">
+    Modification
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#service-name" class="md-nav__link">
+    Service Name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importing-libraries" class="md-nav__link">
+    Importing Libraries
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#flask-api-tracing" class="md-nav__link">
+    Flask API Tracing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#automated-traces-all-routes" class="md-nav__link">
+    Automated Traces All Routes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manual-traces-all-routes" class="md-nav__link">
+    Manual Traces All Routes
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-editing-in-client-files" class="md-nav__link">
+    Batch Editing in Client files
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#import-libraries-without-regex" class="md-nav__link">
+    Import Libraries without Regex
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-libraries-via-regrx" class="md-nav__link">
+    Import Libraries via Regrx
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_1" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_1" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-spans" class="md-nav__link">
+    Injecting Spans
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#methods-with-try-except" class="md-nav__link">
+    Methods with try-except
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_2" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_2" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#methods-without-try-except" class="md-nav__link">
+    Methods without try-except
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_3" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_3" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-exception" class="md-nav__link">
+    Handling Exception
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_4" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_4" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#handling-return-statuses" class="md-nav__link">
+    Handling Return Statuses
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#return-variable-names" class="md-nav__link">
+    Return Variable Names
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_5" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_5" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-string" class="md-nav__link">
+    Return String
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_6" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_6" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-json-data" class="md-nav__link">
+    Return Json Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_7" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_7" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-graph-database-collections-query" class="md-nav__link">
+    Return Graph Database Collections Query
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_8" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_8" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#return-json-data_1" class="md-nav__link">
+    Return JSON Data
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#regex-pattern_9" class="md-nav__link">
+    Regex Pattern
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#regex-replace_9" class="md-nav__link">
+    Regex Replace
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keywords-used-in-all-apis" class="md-nav__link">
+    Keywords Used in All APIS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#branches-created-for-tracing" class="md-nav__link">
+    Branches Created for Tracing
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#names-of-branches" class="md-nav__link">
+    Names of Branches
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
                 
-                  <h1>Jaeger Implementation</h1>
-                
-                <div class="superfences-tabs">
-<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
-<label for="__tab_1_0">Bash</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash</span>
-
-<span class="nb">echo</span> <span class="s2">&quot;Hello world!&quot;</span>
+                <h1 id="implementing-jaeger-tracing">Implementing Jaeger Tracing<a class="headerlink" href="#implementing-jaeger-tracing" title="Permanent link">&para;</a></h1>
+<h2 id="modification">Modification<a class="headerlink" href="#modification" title="Permanent link">&para;</a></h2>
+<h4 id="service-name">Service Name<a class="headerlink" href="#service-name" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">service_name</span> <span class="o">=</span> <span class="s2">&quot;ShortlistCadidatesForJobAPI&quot;</span>
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_1" type="radio" id="__tab_1_1" />
-<label for="__tab_1_1">C</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+</td></tr></table>
+
+<h2 id="importing-libraries">Importing Libraries<a class="headerlink" href="#importing-libraries" title="Permanent link">&para;</a></h2>
+<h3 id="flask-api-tracing">Flask API Tracing<a class="headerlink" href="#flask-api-tracing" title="Permanent link">&para;</a></h3>
+<h4 id="automated-traces-all-routes">Automated Traces All Routes<a class="headerlink" href="#automated-traces-all-routes" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-  <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello world!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-<span class="p">}</span>
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Distributed Tracing</span>
+<span class="kn">import</span> <span class="nn">jaegerTracing</span>
+<span class="n">tracer</span> <span class="o">=</span> <span class="n">jaegerTracing</span><span class="o">.</span><span class="n">getTracerInstance</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">flask_opentracing</span> <span class="kn">import</span> <span class="n">FlaskTracing</span>
+<span class="n">tracing</span> <span class="o">=</span> <span class="n">FlaskTracing</span><span class="p">(</span><span class="n">tracer</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">app</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_1" type="radio" id="__tab_1_2" />
-<label for="__tab_1_2">C++</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+</td></tr></table>
+
+<h4 id="manual-traces-all-routes">Manual Traces All Routes<a class="headerlink" href="#manual-traces-all-routes" title="Permanent link">&para;</a></h4>
+<h5 id="regex-pattern">Regex Pattern<a class="headerlink" href="#regex-pattern" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nd">@app</span><span class="o">.</span><span class="n">route</span>
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace">Regex Replace<a class="headerlink" href="#regex-replace" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nd">@tracing</span><span class="o">.</span><span class="n">trace</span><span class="p">()</span>
+<span class="err">$</span><span class="mi">0</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="batch-editing-in-client-files">Batch Editing in Client files<a class="headerlink" href="#batch-editing-in-client-files" title="Permanent link">&para;</a></h3>
+<h4 id="import-libraries-without-regex">Import Libraries without Regex<a class="headerlink" href="#import-libraries-without-regex" title="Permanent link">&para;</a></h4>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-  <span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;Hello world!&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">std</span><span class="o">::</span><span class="n">endl</span><span class="p">;</span>
-  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Distributed Tracing</span>
+<span class="kn">from</span> <span class="nn">opentracing_instrumentation.request_context</span> <span class="kn">import</span> <span class="n">get_current_span</span><span class="p">,</span> <span class="n">span_in_context</span>
+<span class="kn">import</span> <span class="nn">jaegerTracing</span>
+<span class="n">tracer</span> <span class="o">=</span> <span class="n">jaegerTracing</span><span class="o">.</span><span class="n">getTracerInstance</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">opentracing.propagation</span> <span class="kn">import</span> <span class="n">Format</span>
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_1" type="radio" id="__tab_1_3" />
-<label for="__tab_1_3">C#</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+</td></tr></table>
+
+<h4 id="import-libraries-via-regrx">Import Libraries via Regrx<a class="headerlink" href="#import-libraries-via-regrx" title="Permanent link">&para;</a></h4>
+<h5 id="regex-pattern_1">Regex Pattern<a class="headerlink" href="#regex-pattern_1" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">class</span>\<span class="n">s</span>\<span class="n">w</span><span class="o">*</span>\<span class="p">(</span>\<span class="p">):</span>
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_1">Regex Replace<a class="headerlink" href="#regex-replace_1" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
 5
 6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Distributed Tracing</span>
+<span class="kn">from</span> <span class="nn">opentracing_instrumentation.request_context</span> <span class="kn">import</span> <span class="n">get_current_span</span><span class="p">,</span> <span class="n">span_in_context</span>
+<span class="kn">import</span> <span class="nn">jaegerTracing</span>
+<span class="n">tracer</span> <span class="o">=</span> <span class="n">jaegerTracing</span><span class="o">.</span><span class="n">getTracerInstance</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">opentracing.propagation</span> <span class="kn">import</span> <span class="n">Format</span>
 
-<span class="k">class</span> <span class="nc">Program</span> <span class="p">{</span>
-  <span class="k">static</span> <span class="k">void</span> <span class="nf">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;Hello world!&quot;</span><span class="p">);</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<span class="err">$</span><span class="mi">0</span>
 </code></pre></div>
-</td></tr></table></div>
-</div>
+</td></tr></table>
+
+<h2 id="injecting-spans">Injecting Spans<a class="headerlink" href="#injecting-spans" title="Permanent link">&para;</a></h2>
+<h3 id="methods-with-try-except">Methods with try-except<a class="headerlink" href="#methods-with-try-except" title="Permanent link">&para;</a></h3>
+<h5 id="regex-pattern_2">Regex Pattern<a class="headerlink" href="#regex-pattern_2" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(    )(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)\s*
+        (try:)
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_2">Regex Replace<a class="headerlink" href="#regex-replace_2" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$2
+    $5
+        with tracer.start_active_span(&#39;$3&#39;) as scope:
+            scope.span.set_tag(&#39;args&#39;, [$4])
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="methods-without-try-except">Methods without try-except<a class="headerlink" href="#methods-without-try-except" title="Permanent link">&para;</a></h3>
+<h5 id="regex-pattern_3">Regex Pattern<a class="headerlink" href="#regex-pattern_3" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(    )(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_3">Regex Replace<a class="headerlink" href="#regex-replace_3" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$2
+    with tracer.start_active_span(&#39;$3&#39;) as scope:
+        scope.span.set_tag(&#39;args&#39;, [$4])
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="handling-exception">Handling Exception<a class="headerlink" href="#handling-exception" title="Permanent link">&para;</a></h3>
+<h5 id="regex-pattern_4">Regex Pattern<a class="headerlink" href="#regex-pattern_4" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)except Exception as ex:
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_4">Regex Replace<a class="headerlink" href="#regex-replace_4" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$0
+    $1scope.span.set_tag(&#39;Exception&#39;, ex)
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="handling-return-statuses">Handling Return Statuses<a class="headerlink" href="#handling-return-statuses" title="Permanent link">&para;</a></h3>
+<h4 id="return-variable-names">Return Variable Names<a class="headerlink" href="#return-variable-names" title="Permanent link">&para;</a></h4>
+<h5 id="regex-pattern_5">Regex Pattern<a class="headerlink" href="#regex-pattern_5" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(([\w]*)\)
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_5">Regex Replace<a class="headerlink" href="#regex-replace_5" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, $2)$0
+</code></pre></div>
+</td></tr></table>
+
+<h4 id="return-string">Return String<a class="headerlink" href="#return-string" title="Permanent link">&para;</a></h4>
+<h5 id="regex-pattern_6">Regex Pattern<a class="headerlink" href="#regex-pattern_6" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(&quot;([\w\s]*)&quot;\)
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_6">Regex Replace<a class="headerlink" href="#regex-replace_6" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, &#39;$2&#39;)$0
+</code></pre></div>
+</td></tr></table>
+
+<h4 id="return-json-data">Return Json Data<a class="headerlink" href="#return-json-data" title="Permanent link">&para;</a></h4>
+<h5 id="regex-pattern_7">Regex Pattern<a class="headerlink" href="#regex-pattern_7" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(\{([&#39;\w:,\s\[\].+&quot;\(\)]*)\}\)
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_7">Regex Replace<a class="headerlink" href="#regex-replace_7" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, dict({$2}))$0
+</code></pre></div>
+</td></tr></table>
+
+<h4 id="return-graph-database-collections-query">Return Graph Database Collections Query<a class="headerlink" href="#return-graph-database-collections-query" title="Permanent link">&para;</a></h4>
+<h5 id="regex-pattern_8">Regex Pattern<a class="headerlink" href="#regex-pattern_8" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return list\(self\.Collection\.find\((\w*)
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_8">Regex Replace<a class="headerlink" href="#regex-replace_8" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, $2)$0
+</code></pre></div>
+</td></tr></table>
+
+<h4 id="return-json-data_1">Return JSON Data<a class="headerlink" href="#return-json-data_1" title="Permanent link">&para;</a></h4>
+<h5 id="regex-pattern_9">Regex Pattern<a class="headerlink" href="#regex-pattern_9" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return response\.json\(\)
+</code></pre></div>
+</td></tr></table>
+
+<h5 id="regex-replace_9">Regex Replace<a class="headerlink" href="#regex-replace_9" title="Permanent link">&para;</a></h5>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, response.json())
+$0
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="keywords-used-in-all-apis">Keywords Used in All APIS<a class="headerlink" href="#keywords-used-in-all-apis" title="Permanent link">&para;</a></h2>
+<p><code>args</code>
+<code>response</code></p>
+<h2 id="branches-created-for-tracing">Branches Created for Tracing<a class="headerlink" href="#branches-created-for-tracing" title="Permanent link">&para;</a></h2>
+<h3 id="names-of-branches">Names of Branches<a class="headerlink" href="#names-of-branches" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Tracing-bkmrk-candid,-candid-job-app-mgmt-api,-bkmrk-job-api</li>
+<li>Tracing-JobPost-API</li>
+<li>jeager_implementation_organizationalDataAPI</li>
+<li>shortlistedCandidate_tracing_with_Jaeger</li>
+</ul>
                 
                   
                 
@@ -479,28 +1454,14 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../../../git-guide-101/" title="Git Guide 101" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Git Guide 101
-              </span>
-            </div>
-          </a>
         
-        
-          <a href="../../../../Contact/about/" title="About" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../.." title="Django | Heroku" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                About
+                Django | Heroku
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
