@@ -591,12 +591,142 @@
 <div class="superfences-tabs">
 <input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
 <label for="__tab_1_0">API.py</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">jsonify</span>
+<span class="kn">from</span> <span class="nn">flask_cors</span> <span class="kn">import</span> <span class="n">CORS</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">import</span> <span class="nn">registrator</span>
+
+<span class="kn">from</span> <span class="nn">JaegerInjectAPI</span> <span class="kn">import</span> <span class="n">TestInject</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">cors</span> <span class="o">=</span> <span class="n">CORS</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">resources</span><span class="o">=</span><span class="p">{</span><span class="sa">r</span><span class="s2">&quot;/*&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;origins&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">}})</span>
+
+<span class="c1"># Connection to models</span>
+<span class="n">JaegerInjectAPI_Provider</span> <span class="o">=</span> <span class="n">TestInject</span><span class="p">()</span>
+
+<span class="c1"># Distributed Tracing</span>
+<span class="kn">import</span> <span class="nn">jaegerTracing</span>
+<span class="n">tracer</span> <span class="o">=</span> <span class="n">jaegerTracing</span><span class="o">.</span><span class="n">getTracerInstance</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">flask_opentracing</span> <span class="kn">import</span> <span class="n">FlaskTracing</span>
+<span class="n">tracing</span> <span class="o">=</span> <span class="n">FlaskTracing</span><span class="p">(</span><span class="n">tracer</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">app</span><span class="p">)</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/inject&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;GET&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">testjaegerInject</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">application_status</span> <span class="o">=</span> <span class="n">JaegerInjectAPI_Provider</span><span class="o">.</span><span class="n">injectSpan</span><span class="p">()</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">application_status</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ex</span><span class="p">)),</span> <span class="mi">500</span>
+
+
+
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></div>
 <input name="__tabs_1" type="radio" id="__tab_1_1" />
 <label for="__tab_1_1">JaegerInjectAPI.py</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">jsonify</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="c1"># Distributed Tracing</span>
+<span class="kn">from</span> <span class="nn">opentracing_instrumentation.request_context</span> <span class="kn">import</span> <span class="n">get_current_span</span><span class="p">,</span> <span class="n">span_in_context</span>
+<span class="kn">import</span> <span class="nn">jaegerTracing</span>
+<span class="n">tracer</span> <span class="o">=</span> <span class="n">jaegerTracing</span><span class="o">.</span><span class="n">getTracerInstance</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">opentracing.propagation</span> <span class="kn">import</span> <span class="n">Format</span>
+
+
+<span class="k">class</span> <span class="nc">TestInject</span><span class="p">():</span>
+
+    <span class="k">def</span> <span class="nf">injectSpan</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">with</span> <span class="n">tracer</span><span class="o">.</span><span class="n">start_active_span</span><span class="p">(</span><span class="s1">&#39;injectSpan&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">scope</span><span class="p">:</span>
+            <span class="n">scope</span><span class="o">.</span><span class="n">span</span><span class="o">.</span><span class="n">set_tag</span><span class="p">(</span><span class="s2">&quot;args&quot;</span><span class="p">,</span> <span class="s2">&quot;I hope you will see me in server side&quot;</span><span class="p">)</span>
+
+            <span class="n">carrier</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="n">tracer</span><span class="o">.</span><span class="n">inject</span><span class="p">(</span>
+                <span class="n">span_context</span><span class="o">=</span><span class="n">scope</span><span class="o">.</span><span class="n">span</span><span class="o">.</span><span class="n">context</span><span class="p">,</span>
+                <span class="nb">format</span><span class="o">=</span><span class="n">Format</span><span class="o">.</span><span class="n">TEXT_MAP</span><span class="p">,</span>
+                <span class="n">carrier</span><span class="o">=</span><span class="n">carrier</span><span class="p">)</span>
+
+            <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;http://jaegerextract:5000/extract&#39;</span>
+            <span class="c1"># url = &#39;http://localhost:6570/company/searchByName&#39;</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="s1">&#39;keyword&#39;</span><span class="p">:</span><span class="s2">&quot;Mohsin&quot;</span><span class="p">})</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="p">,</span> <span class="n">headers</span> <span class="o">=</span> <span class="n">carrier</span><span class="p">)</span>
+            <span class="c1">## &gt;&gt; importtant to finish span here</span>
+            <span class="n">scope</span><span class="o">.</span><span class="n">span</span><span class="o">.</span><span class="n">finish</span><span class="p">()</span>
+            <span class="k">return</span> <span class="n">response</span>
 </code></pre></div>
 </td></tr></table></div>
 </div>
@@ -604,12 +734,126 @@
 <div class="superfences-tabs">
 <input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
 <label for="__tab_2_0">API.py</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">Flask</span><span class="p">,</span> <span class="n">request</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">jsonify</span>
+<span class="kn">from</span> <span class="nn">flask_cors</span> <span class="kn">import</span> <span class="n">CORS</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">import</span> <span class="nn">registrator</span>
+
+<span class="kn">from</span> <span class="nn">JaegerExtractAPI</span> <span class="kn">import</span> <span class="n">TestExtract</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">cors</span> <span class="o">=</span> <span class="n">CORS</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">resources</span><span class="o">=</span><span class="p">{</span><span class="sa">r</span><span class="s2">&quot;/*&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;origins&quot;</span><span class="p">:</span> <span class="s2">&quot;*&quot;</span><span class="p">}})</span>
+
+<span class="c1"># Connection to models</span>
+<span class="n">TestExtract_Provider</span> <span class="o">=</span> <span class="n">TestExtract</span><span class="p">()</span>
+
+<span class="c1"># Distributed Tracing</span>
+<span class="kn">import</span> <span class="nn">jaegerTracing</span>
+<span class="n">tracer</span> <span class="o">=</span> <span class="n">jaegerTracing</span><span class="o">.</span><span class="n">getTracerInstance</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">flask_opentracing</span> <span class="kn">import</span> <span class="n">FlaskTracing</span>
+<span class="n">tracing</span> <span class="o">=</span> <span class="n">FlaskTracing</span><span class="p">(</span><span class="n">tracer</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">app</span><span class="p">)</span>
+
+
+<span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s1">&#39;/extract&#39;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;GET&#39;</span><span class="p">])</span>
+<span class="k">def</span> <span class="nf">testjaegerExtract</span><span class="p">():</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">application_status</span> <span class="o">=</span> <span class="n">TestExtract_Provider</span><span class="o">.</span><span class="n">extractSpan</span><span class="p">()</span>
+        <span class="k">return</span> <span class="s2">&quot;server1&quot;</span>
+    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">jsonify</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">ex</span><span class="p">)),</span> <span class="mi">500</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></div>
 <input name="__tabs_2" type="radio" id="__tab_2_1" />
 <label for="__tab_2_1">JaegerExtactAPI.py</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>
+<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">pymongo</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="kn">import</span> <span class="nn">pika</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">flask</span> <span class="kn">import</span> <span class="n">jsonify</span>
+<span class="kn">from</span> <span class="nn">bson.objectid</span> <span class="kn">import</span> <span class="n">ObjectId</span>
+
+
+<span class="c1"># Distributed Tracing</span>
+<span class="kn">from</span> <span class="nn">opentracing_instrumentation.request_context</span> <span class="kn">import</span> <span class="n">get_current_span</span><span class="p">,</span> <span class="n">span_in_context</span>
+<span class="kn">import</span> <span class="nn">jaegerTracing</span>
+<span class="n">tracer</span> <span class="o">=</span> <span class="n">jaegerTracing</span><span class="o">.</span><span class="n">getTracerInstance</span><span class="p">()</span>
+<span class="kn">from</span> <span class="nn">opentracing.propagation</span> <span class="kn">import</span> <span class="n">Format</span>
+
+
+
+<span class="k">class</span> <span class="nc">TestExtract</span><span class="p">():</span>
+
+
+    <span class="k">def</span> <span class="nf">extractSpan</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+
+        <span class="n">span_ctx</span> <span class="o">=</span> <span class="n">tracer</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="n">Format</span><span class="o">.</span><span class="n">TEXT_MAP</span><span class="p">,</span> <span class="n">carrier</span><span class="o">=</span><span class="p">{})</span>
+        <span class="n">span</span> <span class="o">=</span> <span class="n">tracer</span><span class="o">.</span><span class="n">start_span</span><span class="p">(</span><span class="n">operation_name</span><span class="o">=</span><span class="s1">&#39;extractSpan&#39;</span><span class="p">,</span> <span class="n">child_of</span><span class="o">=</span> <span class="n">span_ctx</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="s2">&quot;Server2</span>
 </code></pre></div>
 </td></tr></table></div>
 </div>
