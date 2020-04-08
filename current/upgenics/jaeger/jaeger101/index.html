@@ -42,7 +42,7 @@
     
     
       
-        <title>Jaeger Guide 101 - Mohsin | Projects Docs</title>
+        <title>Jaeger 101 - Mohsin | Projects Docs</title>
       
     
     
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Jaeger Guide 101
+                Jaeger 101
               
             </span>
           
@@ -197,6 +197,27 @@
   
 
 
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Jaeger Guide 101
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Jaeger Guide 101
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
@@ -205,11 +226,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Jaeger Guide 101
+        Jaeger 101
       </label>
     
-    <a href="./" title="Jaeger Guide 101" class="md-nav__link md-nav__link--active">
-      Jaeger Guide 101
+    <a href="./" title="Jaeger 101" class="md-nav__link md-nav__link--active">
+      Jaeger 101
     </a>
     
       
@@ -223,8 +244,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-service-name-in-jaegerpy" class="md-nav__link">
-    Adding Service name in jaeger.py
+  <a href="#adding-service-name-in-jaegertracingpy" class="md-nav__link">
+    Adding Service name in jaegerTracing.py
   </a>
   
 </li>
@@ -615,6 +636,23 @@
     
   </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../jaegerRPC/" title="Jaeger RPC" class="md-nav__link">
+      Jaeger RPC
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
     
       
       
@@ -805,8 +843,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#adding-service-name-in-jaegerpy" class="md-nav__link">
-    Adding Service name in jaeger.py
+  <a href="#adding-service-name-in-jaegertracingpy" class="md-nav__link">
+    Adding Service name in jaegerTracing.py
   </a>
   
 </li>
@@ -1205,7 +1243,8 @@
                 
                 
                 <h1 id="implementing-jaeger-tracing">Implementing Jaeger Tracing<a class="headerlink" href="#implementing-jaeger-tracing" title="Permanent link">&para;</a></h1>
-<h3 id="adding-service-name-in-jaegerpy">Adding Service name in <code>jaeger.py</code><a class="headerlink" href="#adding-service-name-in-jaegerpy" title="Permanent link">&para;</a></h3>
+<h3 id="adding-service-name-in-jaegertracingpy">Adding Service name in <code>jaegerTracing.py</code><a class="headerlink" href="#adding-service-name-in-jaegertracingpy" title="Permanent link">&para;</a></h3>
+<hr />
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">service_name</span> <span class="o">=</span> <span class="s2">&quot;ShortlistCadidatesForJobAPI&quot;</span>
 </code></pre></div>
 </td></tr></table>
@@ -1283,10 +1322,6 @@
 </div>
 <p><code>(def\s([\w]+)\s?\(self,*\s*([\w,\s=']*)\)\s*:)\s*
     (try:)</code></p>
-<div class="admonition caution">
-<p class="admonition-title">Caution</p>
-<p>Indentation of the file reduces the starting spaces upto 4 spaces with cause <code>except</code> to deviate from consective <code>try</code>. You should have to replace the spaces accouding to the starting try block.</p>
-</div>
 <h5 id="regex-pattern_2">Regex Pattern<a class="headerlink" href="#regex-pattern_2" title="Permanent link">&para;</a></h5>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(    )(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)\s*
@@ -1320,6 +1355,10 @@
 </code></pre></div>
 </td></tr></table>
 
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Indentation of the file reduces the starting spaces upto 4 spaces with cause <code>except</code> to deviate from consective <code>try</code>. You should have to replace the spaces accouding to the starting try block.</p>
+</div>
 <h3 id="handling-exception">Handling Exception<a class="headerlink" href="#handling-exception" title="Permanent link">&para;</a></h3>
 <h5 id="regex-pattern_4">Regex Pattern<a class="headerlink" href="#regex-pattern_4" title="Permanent link">&para;</a></h5>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)except Exception as ex:
@@ -1409,7 +1448,17 @@ $0
 </td></tr></table>
 
 <ul>
-<li><strong>Tracing_jobAPIs(all)</strong><ul>
+<li>
+<p><strong>Tracing_skill_social</strong></p>
+<ul>
+<li>Skill_Social/endorse_skill_api</li>
+<li>Skill_Social/rate_skill_api</li>
+<li>Skill_Social/skill_comment_api</li>
+</ul>
+</li>
+<li>
+<p><strong>Tracing_jobAPIs(all)</strong></p>
+<ul>
 <li>job_application_state_change_notice</li>
 <li>job_application_state_change_save</li>
 <li>job_application_state_change_web_notification</li>
@@ -1446,6 +1495,8 @@ $0
 </ul>
 </li>
 </ul>
+<p>regex</p>
+<p>(http://[\w./-:'+\s-]*)</p>
                 
                   
                 
@@ -1482,13 +1533,13 @@ $0
           </a>
         
         
-          <a href="../../../../git-guide-101/" title="Git Guide 101" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../jaegerRPC/" title="Jaeger RPC" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Git Guide 101
+                Jaeger RPC
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
