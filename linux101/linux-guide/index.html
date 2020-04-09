@@ -232,6 +232,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#copy-linux-files" class="md-nav__link">
+    Copy linux files
+  </a>
+  
+</li>
+      
       
       
       
@@ -491,6 +498,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#copy-linux-files" class="md-nav__link">
+    Copy linux files
+  </a>
+  
+</li>
+      
       
       
       
@@ -517,6 +531,111 @@
 
 <h2 id="create-file-and-directory-in-linux">Create file and directory in linux<a class="headerlink" href="#create-file-and-directory-in-linux" title="Permanent link">&para;</a></h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>mkdir docs/linux101/ &amp;&amp; cat &gt; docs/linux101/linux-guide.md
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="copy-linux-files">Copy linux files<a class="headerlink" href="#copy-linux-files" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>cp -Rv ../simpledoc/docs/ ./
+</code></pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>You can do this using -T option in cp.
+See Man page for cp.
+
+-T, --no-target-directory
+    treat DEST as a normal file
+So as per your example, following is the file structure.
+
+$ tree test
+test
+|-- bar
+|   |-- a
+|   `-- b
+`-- foo
+    |-- a
+    `-- b
+2 directories, 4 files
+You can see the clear difference when you use -v for Verbose.
+When you use just -R option.
+
+$ cp -Rv foo/ bar/
+`foo/&#39; -&gt; `bar/foo&#39;
+`foo/b&#39; -&gt; `bar/foo/b&#39;
+`foo/a&#39; -&gt; `bar/foo/a&#39;
+ $ tree
+ |-- bar
+ |   |-- a
+ |   |-- b
+ |   `-- foo
+ |       |-- a
+ |       `-- b
+ `-- foo
+     |-- a
+     `-- b
+3 directories, 6 files
+When you use the option -T it overwrites the contents, treating the destination like a normal file and not directory.
+
+$ cp -TRv foo/ bar/
+`foo/b&#39; -&gt; `bar/b&#39;
+`foo/a&#39; -&gt; `bar/a&#39;
+
+$ tree
+|-- bar
+|   |-- a
+|   `-- b
+`-- foo
+    |-- a
+    `-- b
+2 directories, 4 files
+This should solve your problem.
 </code></pre></div>
 </td></tr></table>
                 
