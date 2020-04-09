@@ -16,7 +16,8 @@ class TestInject():
         with tracer.start_active_span('injectSpan') as scope:
             scope.span.set_tag("args", "I hope you will see me in server side")
             
-            carrier = {}
+            # Distributed Tracing with Jaeger
+            carrier = {"Content-Type": "application/json"}
             tracer.inject(
                 span_context=scope.span.context,
                 format=Format.TEXT_MAP,
@@ -26,8 +27,6 @@ class TestInject():
             # url = 'http://localhost:6570/company/searchByName'
             data = json.dumps({'keyword':"Mohsin"})
             response = requests.get(url, data = data, headers = carrier)
-            ## >> importtant to finish span here
-            scope.span.finish()
             return response
 
 

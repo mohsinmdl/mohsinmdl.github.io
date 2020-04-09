@@ -18,8 +18,8 @@ class TestExtract():
     
 
     def extractSpan(self):
-
         span_ctx = tracer.extract(format=Format.TEXT_MAP, carrier={})
-        span = tracer.start_span(operation_name='extractSpan', child_of= span_ctx)
+        with tracer.start_active_span(operation_name='extractSpan', child_of=span_ctx) as scope:
+            scope.span.set_tag('args', 'input values here')
 
         return "Server2"
