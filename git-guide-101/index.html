@@ -522,6 +522,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#list-your-existing-remotes" class="md-nav__link">
+    List your existing remotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-a-remote-git-repository" class="md-nav__link">
+    Change a remote Git repository
+  </a>
+  
+</li>
+      
       
       
       
@@ -949,6 +963,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#list-your-existing-remotes" class="md-nav__link">
+    List your existing remotes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-a-remote-git-repository" class="md-nav__link">
+    Change a remote Git repository
+  </a>
+  
+</li>
+      
       
       
       
@@ -1149,6 +1177,34 @@ git commit -m &quot;&lt;message&gt;&quot;
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git remote add origin https://github.com/mohsinmdl/GTIN-Prediction-System.git
 git push -u origin master
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="list-your-existing-remotes">List your existing remotes<a class="headerlink" href="#list-your-existing-remotes" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ git remote -v
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="change-a-remote-git-repository">Change a remote Git repository<a class="headerlink" href="#change-a-remote-git-repository" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git remote set-url origin git@your.git.repo.example.com:user/repository2.git
+</code></pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>You can check the configs of your repository by :
+
+git config -l
+which contains your remote repository url.
+
+Also, you can use the following command :
+
+git remote -v
 </code></pre></div>
 </td></tr></table>
                 
