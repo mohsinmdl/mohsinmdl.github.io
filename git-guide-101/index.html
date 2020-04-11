@@ -1364,6 +1364,30 @@ See git-pull(1) for details.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git config --global credential.helper store
 </code></pre></div>
 </td></tr></table></p>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>git submodule add <a href="https://github.com/mohsinmdl/blogs-deploy">https://github.com/mohsinmdl/blogs-deploy</a> public
+'public' already exists in the index</p>
+</div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git ls-files
+</code></pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git rm --cached &lt;DIR&gt;
+</code></pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git rm -f --cached &lt;DIR&gt;
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>fatal: Please stage your changes to .gitmodules or stash them to proceed</p>
+</div>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git rm --cached .gitmodules
+</code></pre></div>
+</td></tr></table>
                 
                   
                 
