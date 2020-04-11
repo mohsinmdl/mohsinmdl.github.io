@@ -558,23 +558,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#123-testing" class="md-nav__link">
-    123 Testing
+  <a href="#error" class="md-nav__link">
+    Error
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    solution
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#345-testing" class="md-nav__link">
-    345 testing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-testing" class="md-nav__link">
-    Final Testing
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1053,23 +1052,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#123-testing" class="md-nav__link">
-    123 Testing
+  <a href="#error" class="md-nav__link">
+    Error
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solution" class="md-nav__link">
+    solution
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#345-testing" class="md-nav__link">
-    345 testing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-testing" class="md-nav__link">
-    Final Testing
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1319,9 +1317,33 @@ git remote -v
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="123-testing">123 Testing<a class="headerlink" href="#123-testing" title="Permanent link">&para;</a></h2>
-<h2 id="345-testing">345 testing<a class="headerlink" href="#345-testing" title="Permanent link">&para;</a></h2>
-<h2 id="final-testing">Final Testing<a class="headerlink" href="#final-testing" title="Permanent link">&para;</a></h2>
+<h2 id="error">Error<a class="headerlink" href="#error" title="Permanent link">&para;</a></h2>
+<p>Git refusing to merge unrelated histories </p>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>git  pull origin master
+From <a href="https://github.com/mohsinmdl/mdl-portfolio">https://github.com/mohsinmdl/mdl-portfolio</a>
+* branch            master     -&gt; FETCH_HEAD
+fatal: refusing to merge unrelated histories</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.</p>
+</div>
+<h3 id="solution">solution<a class="headerlink" href="#solution" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git pull origin branchname --allow-unrelated-histories
+</code></pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git --work-tree=&quot;.&quot; pull --allow-unrelated-histories
+</code></pre></div>
+</td></tr></table>
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git branch --set-upstream-to=origin/master
+</code></pre></div>
+</td></tr></table>
                 
                   
                 
