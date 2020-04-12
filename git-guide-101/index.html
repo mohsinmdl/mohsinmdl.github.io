@@ -1460,9 +1460,12 @@ See git-pull(1) for details.</p>
 cd .git
 cd modules/
 rm -rf mdl-docs/</p>
+<hr />
 <h3 id="git-pull-with-submodule">Git Pull with Submodule<a class="headerlink" href="#git-pull-with-submodule" title="Permanent link">&para;</a></h3>
 <p>For a repo with submodules, we can pull all submodules using
-git submodule update --init --recursive</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git submodule update --init --recursive
+</code></pre></div>
+</td></tr></table></p>
 <p>for the first time. All submodules will be pulled down locally.
 To update submodules, we can use
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git submodule update --recursive --remote
