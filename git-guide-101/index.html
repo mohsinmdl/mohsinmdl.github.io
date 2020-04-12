@@ -1465,9 +1465,9 @@ rm -rf mdl-docs/</p>
 <p>For a repo with submodules, we can pull all submodules using
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git submodule update --init --recursive
 </code></pre></div>
-</td></tr></table></p>
-<p>for the first time. All submodules will be pulled down locally.
-To update submodules, we can use
+</td></tr></table>
+for the first time. All submodules will be pulled down locally.</p>
+<p>To update submodules, we can use
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git submodule update --recursive --remote
 </code></pre></div>
 </td></tr></table></p>
@@ -1475,6 +1475,11 @@ To update submodules, we can use
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git pull --recurse-submodules
 </code></pre></div>
 </td></tr></table></p>
+<p><strong>Update Git submodule to latest commit on origin</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git submodule foreach git checkout master
+</code></pre></div>
+</td></tr></table>
+
 <hr />
 <h2 id="pushing-all-submodules-recursively">Pushing all submodules recursively<a class="headerlink" href="#pushing-all-submodules-recursively" title="Permanent link">&para;</a></h2>
 <p>git1.7.11 ([ANNOUNCE] Git 1.7.11.rc1) mentions:</p>
