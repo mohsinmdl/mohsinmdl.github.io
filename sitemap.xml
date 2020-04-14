@@ -1,67 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://mohsinmdl.github.io/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/linux101/linux-guide/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mohsinmdl.github.io/Ubuntu-guide-101/</loc>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/current/upgenics/jaeger/jaeger101/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/current/upgenics/jaeger/jaegerRPC/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/git-guide-101/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/git-guide-guru/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/flask-doc/Flask%20Guide%20101/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/designPattern/design-pattern-intro/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/designPattern/creational/creational-dp/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/designPattern/structural/structural-dp/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/designPattern/behavioural/behaviour-dp/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/Contact/ass2/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/mkdocs101/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/all-in-one/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/Contact/about/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.github.io/output/</loc>
-     <lastmod>2020-04-13</lastmod>
+     <lastmod>2020-04-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
