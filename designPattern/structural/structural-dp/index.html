@@ -219,15 +219,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../../../elasticsearch101/" title="Elasticsearch 101" class="md-nav__link">
+      Elasticsearch 101
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Jaeger Guide 101
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         Jaeger Guide 101
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -307,13 +319,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-9">
       Design Pattern
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-9">
         Design Pattern
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -402,20 +414,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#decorator-pattern" class="md-nav__link">
-    Decorator Pattern
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#composite-pattern" class="md-nav__link">
-    Composite Pattern
-  </a>
-  
-</li>
-      
       
       
       
@@ -487,13 +485,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Contact
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Contact
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -575,20 +573,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#decorator-pattern" class="md-nav__link">
-    Decorator Pattern
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#composite-pattern" class="md-nav__link">
-    Composite Pattern
-  </a>
-  
-</li>
-      
       
       
       
@@ -609,1421 +593,21 @@
                 <h1 id="structural-pattern">Structural Pattern<a class="headerlink" href="#structural-pattern" title="Permanent link">&para;</a></h1>
 <h2 id="flyweigt-pattern">Flyweigt Pattern<a class="headerlink" href="#flyweigt-pattern" title="Permanent link">&para;</a></h2>
 <hr />
-<div class="superfences-tabs">
-<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
-<label for="__tab_1_0">Shape.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Mar 28, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Shape</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="p">();</span>
-
-<span class="p">}</span>
+<p>``` java tab="Shape.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Mar 28, 2019
+*/</p>
+<p>public interface Shape {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public void draw();
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_1" type="radio" id="__tab_1_1" />
-<label for="__tab_1_1">Circle.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Mar 28, 2019</span>
-<span class="cm">*/</span>
+</td></tr></table>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Circle</span> <span class="kd">implements</span> <span class="n">Shape</span> <span class="p">{</span>
-    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">xcoor</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kt">int</span> <span class="n">ycoor</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="nf">Circle</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">super</span><span class="p">();</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="p">(</span><span class="n">String</span> <span class="n">name</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getXcoor</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">xcoor</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setXcoor</span><span class="p">(</span><span class="kt">int</span> <span class="n">xcoor</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">xcoor</span> <span class="o">=</span> <span class="n">xcoor</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getYcoor</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">return</span> <span class="n">ycoor</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setYCoor</span><span class="p">(</span><span class="kt">int</span> <span class="n">ycoor</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">ycoor</span> <span class="o">=</span> <span class="n">ycoor</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">draw</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Drawing a Circle having &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">+</span> <span class="s">&quot; Color at X: &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">xcoor</span> <span class="o">+</span> <span class="s">&quot; Y :&quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">ycoor</span>
-                <span class="o">+</span> <span class="s">&quot; Coordinates&quot;</span><span class="p">);</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_1" type="radio" id="__tab_1_2" />
-<label for="__tab_1_2">ShapeFactory.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="p">;</span>
-
-<span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Mar 28, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">ShapeFactory</span> <span class="p">{</span>
-
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="p">,</span> <span class="n">Shape</span><span class="o">&gt;</span> <span class="n">shapeMap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="n">Shape</span> <span class="nf">getShape</span><span class="p">(</span><span class="n">String</span> <span class="n">color</span><span class="p">)</span> <span class="p">{</span>
-
-        <span class="n">Circle</span> <span class="n">circle</span> <span class="o">=</span> <span class="p">(</span><span class="n">Circle</span><span class="p">)</span> <span class="n">shapeMap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">color</span><span class="p">);</span>
-
-        <span class="k">if</span> <span class="p">(</span><span class="n">circle</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">circle</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Circle</span><span class="p">(</span><span class="n">color</span><span class="p">);</span>
-            <span class="n">shapeMap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">color</span><span class="p">,</span> <span class="n">circle</span><span class="p">);</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Creating Circle of Color : &quot;</span> <span class="o">+</span> <span class="n">color</span><span class="p">);</span>
-        <span class="p">}</span>
-        <span class="k">return</span> <span class="n">circle</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_1" type="radio" id="__tab_1_3" />
-<label for="__tab_1_3">FlyweightPatternDemo.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
-
-<span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Mar 28, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FlyweightPatternDemo</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">color</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="s">&quot;Red&quot;</span><span class="p">,</span> <span class="s">&quot;Green&quot;</span><span class="p">,</span> <span class="s">&quot;Blue&quot;</span><span class="p">,</span> <span class="s">&quot;White&quot;</span><span class="p">,</span> <span class="s">&quot;Black&quot;</span> <span class="p">};</span>
-    <span class="kd">static</span> <span class="n">Random</span> <span class="n">rand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">20</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-
-            <span class="n">Circle</span> <span class="n">circle</span> <span class="o">=</span> <span class="p">(</span><span class="n">Circle</span><span class="p">)</span> <span class="n">ShapeFactory</span><span class="p">.</span><span class="na">getShape</span><span class="p">(</span><span class="n">getColor</span><span class="p">());</span>
-            <span class="n">circle</span><span class="p">.</span><span class="na">setXcoor</span><span class="p">(</span><span class="n">getRandX</span><span class="p">());</span>
-            <span class="n">circle</span><span class="p">.</span><span class="na">setYCoor</span><span class="p">(</span><span class="n">getRandY</span><span class="p">());</span>
-            <span class="n">circle</span><span class="p">.</span><span class="na">draw</span><span class="p">();</span>
-        <span class="p">}</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">private</span> <span class="kd">static</span> <span class="n">String</span> <span class="nf">getColor</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">color</span><span class="o">[</span><span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="n">color</span><span class="p">.</span><span class="na">length</span><span class="p">)</span><span class="o">]</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getRandX</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-    <span class="p">}</span>
-
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">int</span> <span class="nf">getRandY</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">100</span><span class="p">);</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-</div>
-<h3 id="flyweigt-pattern-example">Flyweigt Pattern Example<a class="headerlink" href="#flyweigt-pattern-example" title="Permanent link">&para;</a></h3>
-<hr />
-<div class="superfences-tabs">
-<input name="__tabs_2" type="radio" id="__tab_2_0" checked="checked" />
-<label for="__tab_2_0">AlphabetGenerator.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Mar 29, 2019</span>
-
-<span class="cm">*/</span>
-
-<span class="kn">package</span> <span class="nn">LabTask</span><span class="p">;</span>
-
-<span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AlphabetGenerator</span> <span class="p">{</span>
-
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">Character</span><span class="p">,</span> <span class="n">Character</span><span class="o">&gt;</span> <span class="n">charmap</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;&gt;</span><span class="p">();</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">char</span> <span class="nf">getChar</span><span class="p">(</span><span class="kt">char</span> <span class="n">ch</span><span class="p">)</span> <span class="p">{</span>
-
-        <span class="n">Character</span> <span class="n">retch</span> <span class="o">=</span> <span class="n">charmap</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">ch</span><span class="p">);</span>
-
-        <span class="k">if</span> <span class="p">(</span><span class="n">retch</span> <span class="o">==</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
-
-            <span class="n">retch</span> <span class="o">=</span> <span class="n">ch</span><span class="p">;</span>
-            <span class="n">charmap</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="n">ch</span><span class="p">,</span> <span class="n">ch</span><span class="p">);</span>
-
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Char &#39;&quot;</span> <span class="o">+</span> <span class="n">ch</span> <span class="o">+</span> <span class="s">&quot;&#39; is added to the Hashmap&quot;</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">else</span> 
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">retch</span><span class="p">);</span>
-
-        <span class="k">return</span> <span class="n">retch</span><span class="p">;</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_2" type="radio" id="__tab_2_1" />
-<label for="__tab_2_1">FlyweightDemo.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Mar 29, 2019</span>
-<span class="cm">* Task Description: Consider a Word text editor where a user can type alphabet and takes one byte in momory . </span>
-<span class="cm">                    Implemet flyweight patter to use memory efficeiently for storage of characters. </span>
-<span class="cm">                    Alphabets are A,B,C,D,E</span>
-<span class="cm">*/</span>
-
-<span class="kn">package</span> <span class="nn">LabTask</span><span class="p">;</span>
-
-<span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FlyweightDemo</span> <span class="p">{</span>
-
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">char</span> <span class="n">alpha</span><span class="o">[]</span> <span class="o">=</span> <span class="p">{</span> <span class="sc">&#39;A&#39;</span><span class="p">,</span> <span class="sc">&#39;B&#39;</span><span class="p">,</span> <span class="sc">&#39;C&#39;</span><span class="p">,</span> <span class="sc">&#39;D&#39;</span><span class="p">,</span> <span class="sc">&#39;E&#39;</span> <span class="p">};</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> 
-            <span class="n">AlphabetGenerator</span><span class="p">.</span><span class="na">getChar</span><span class="p">(</span> <span class="n">getRandomAlpha</span><span class="p">()</span> <span class="p">);</span>
-
-
-    <span class="p">}</span>
-
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">char</span> <span class="nf">getRandomAlpha</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="n">Random</span> <span class="n">rand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
-        <span class="k">return</span> <span class="n">alpha</span><span class="o">[</span><span class="n">rand</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span><span class="o">]</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-</div>
-<h2 id="facade-pattern">Facade Pattern<a class="headerlink" href="#facade-pattern" title="Permanent link">&para;</a></h2>
-<hr />
-<div class="superfences-tabs">
-<input name="__tabs_3" type="radio" id="__tab_3_0" checked="checked" />
-<label for="__tab_3_0">HomeTheater.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">package</span> <span class="nn">facadePattern</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HomeTheater</span> <span class="p">{</span>
-
-    <span class="kd">private</span> <span class="n">Amplifier</span> <span class="n">amp</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="n">DVDPlayer</span> <span class="n">dvdPlayer</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="n">Light</span> <span class="n">light</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="n">Popcorn</span> <span class="n">popcorn</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="n">Projecter</span> <span class="n">projecter</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="nf">HomeTheater</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">this</span><span class="p">.</span><span class="na">amp</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Amplifier</span><span class="p">();</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">dvdPlayer</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DVDPlayer</span><span class="p">();</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">light</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Light</span><span class="p">();</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">popcorn</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Popcorn</span><span class="p">();</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">projecter</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Projecter</span><span class="p">();</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">watchMovie</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="n">popcorn</span><span class="p">.</span><span class="na">load</span><span class="p">();</span>
-        <span class="n">popcorn</span><span class="p">.</span><span class="na">on</span><span class="p">();</span>
-
-        <span class="n">projecter</span><span class="p">.</span><span class="na">lower</span><span class="p">();</span>
-
-        <span class="n">amp</span><span class="p">.</span><span class="na">on</span><span class="p">();</span>
-        <span class="n">amp</span><span class="p">.</span><span class="na">medium</span><span class="p">();</span>
-        <span class="n">amp</span><span class="p">.</span><span class="na">inputDVD</span><span class="p">();</span>
-
-        <span class="n">dvdPlayer</span><span class="p">.</span><span class="na">on</span><span class="p">();</span>
-        <span class="n">dvdPlayer</span><span class="p">.</span><span class="na">load</span><span class="p">();</span>
-        <span class="n">dvdPlayer</span><span class="p">.</span><span class="na">sorround</span><span class="p">();</span>
-
-        <span class="n">projecter</span><span class="p">.</span><span class="na">on</span><span class="p">();</span>
-        <span class="n">projecter</span><span class="p">.</span><span class="na">inputDVD</span><span class="p">();</span>
-        <span class="n">projecter</span><span class="p">.</span><span class="na">wideScreen</span><span class="p">();</span>
-
-        <span class="n">light</span><span class="p">.</span><span class="na">dim</span><span class="p">();</span>
-
-        <span class="n">dvdPlayer</span><span class="p">.</span><span class="na">start</span><span class="p">();</span>
-
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_3" type="radio" id="__tab_3_1" />
-<label for="__tab_3_1">Amplifier.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">package</span> <span class="nn">facadePattern</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Amplifier</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">inputDVD</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">medium</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_3" type="radio" id="__tab_3_2" />
-<label for="__tab_3_2">DVDPlayer.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">package</span> <span class="nn">facadePattern</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DVDPlayer</span> <span class="p">{</span>
-
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sorround</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_3" type="radio" id="__tab_3_3" />
-<label for="__tab_3_3">Light.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">package</span> <span class="nn">facadePattern</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Light</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">dim</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_3" type="radio" id="__tab_3_4" />
-<label for="__tab_3_4">Popcorn.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">package</span> <span class="nn">facadePattern</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Popcorn</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Popcorn machine is loading.&quot;</span><span class="p">);</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
-
-    <span class="p">}</span>
-
-
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_3" type="radio" id="__tab_3_5" />
-<label for="__tab_3_5">Projecter.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">package</span> <span class="nn">facadePattern</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Projecter</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">lower</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">on</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">load</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">inputDVD</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">wideScreen</span><span class="p">()</span> <span class="p">{</span>
-        <span class="c1">// TODO Auto-generated method stub</span>
-
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_3" type="radio" id="__tab_3_6" />
-<label for="__tab_3_6">FacadeDemo.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">package</span> <span class="nn">facadePattern</span><span class="p">;</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">FacadeDemo</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-
-        <span class="n">HomeTheater</span> <span class="n">theater</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HomeTheater</span><span class="p">();</span>
-        <span class="n">theater</span><span class="p">.</span><span class="na">watchMovie</span><span class="p">();</span>   
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-</div>
-<h2 id="decorator-pattern">Decorator Pattern<a class="headerlink" href="#decorator-pattern" title="Permanent link">&para;</a></h2>
-<hr />
-<div class="superfences-tabs">
-<input name="__tabs_4" type="radio" id="__tab_4_0" checked="checked" />
-<label for="__tab_4_0">Beverage.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Beverage</span> <span class="p">{</span>
-
-    <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;Unknown Description&quot;</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">description</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">();</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_1" />
-<label for="__tab_4_1">CondimentDecorator.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">CondimentDecorator</span> <span class="kd">extends</span> <span class="n">Beverage</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="kd">abstract</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="p">();</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_2" />
-<label for="__tab_4_2">DarkRoast.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">DarkRoast</span> <span class="kd">extends</span> <span class="n">Beverage</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="nf">DarkRoast</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">3.0</span><span class="p">;</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_3" />
-<label for="__tab_4_3">Decaf.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Decaf</span> <span class="kd">extends</span> <span class="n">Beverage</span><span class="p">{</span>
-
-    <span class="kd">public</span> <span class="nf">Decaf</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">4.0</span><span class="p">;</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_4" />
-<label for="__tab_4_4">Espresso.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Espresso</span> <span class="kd">extends</span> <span class="n">Beverage</span><span class="p">{</span>
-
-    <span class="kd">public</span> <span class="nf">Espresso</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">6.0</span><span class="p">;</span>
-    <span class="p">}</span>
-
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_5" />
-<label for="__tab_4_5">HouseBlend.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HouseBlend</span> <span class="kd">extends</span> <span class="n">Beverage</span> <span class="p">{</span>
-
-    <span class="kd">public</span> <span class="nf">HouseBlend</span><span class="p">()</span> <span class="p">{</span>
-        <span class="n">description</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span>  <span class="s">&quot; Coffe&quot;</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">2.0</span><span class="p">;</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_6" />
-<label for="__tab_4_6">Mocha.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Mocha</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span> <span class="p">{</span>
-
-    <span class="n">Beverage</span> <span class="n">bev</span><span class="p">;</span>
-    <span class="kd">public</span> <span class="nf">Mocha</span><span class="p">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">bev</span><span class="p">.</span><span class="na">getDescription</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">()</span> <span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">0.2</span> <span class="o">+</span> <span class="n">bev</span><span class="p">.</span><span class="na">cost</span><span class="p">()</span> <span class="p">;</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_7" />
-<label for="__tab_4_7">Soy.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Soy</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span><span class="p">{</span>
-
-
-    <span class="n">Beverage</span> <span class="n">bev</span><span class="p">;</span>
-    <span class="kd">public</span> <span class="nf">Soy</span><span class="p">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">bev</span><span class="p">.</span><span class="na">getDescription</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">()</span> <span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">0.4</span> <span class="o">+</span> <span class="n">bev</span><span class="p">.</span><span class="na">cost</span><span class="p">()</span> <span class="p">;</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_8" />
-<label for="__tab_4_8">Beverage.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Beverage</span> <span class="p">{</span>
-
-    <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;Unknown Description&quot;</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">description</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">();</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_9" />
-<label for="__tab_4_9">SteamedMilk.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SteamedMilk</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span> <span class="p">{</span>
-
-    <span class="n">Beverage</span> <span class="n">bev</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="nf">SteamedMilk</span><span class="p">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">bev</span><span class="p">.</span><span class="na">getDescription</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">();</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">0.6</span> <span class="o">+</span> <span class="n">bev</span><span class="p">.</span><span class="na">cost</span><span class="p">();</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_10" />
-<label for="__tab_4_10">WhippedMilk.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">WhippedMilk</span> <span class="kd">extends</span> <span class="n">CondimentDecorator</span><span class="p">{</span>
-
-    <span class="n">Beverage</span> <span class="n">bev</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="nf">WhippedMilk</span><span class="p">(</span><span class="n">Beverage</span> <span class="n">bev</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">bev</span> <span class="o">=</span> <span class="n">bev</span><span class="p">;</span>
-
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getDescription</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="n">bev</span><span class="p">.</span><span class="na">getDescription</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; + &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="na">getClass</span><span class="p">().</span><span class="na">getName</span><span class="p">();</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">cost</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="mf">0.9</span> <span class="o">+</span> <span class="n">bev</span><span class="p">.</span><span class="na">cost</span><span class="p">();</span>
-    <span class="p">}</span>
-
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_4" type="radio" id="__tab_4_11" />
-<label for="__tab_4_11">MainStarBuzz.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 8, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">MainStarBuzz</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-
-        <span class="n">HouseBlend</span> <span class="n">obj</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HouseBlend</span><span class="p">();</span>
-        <span class="n">Mocha</span> <span class="n">moc</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mocha</span><span class="p">(</span><span class="n">obj</span><span class="p">);</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">getDescription</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">obj</span><span class="p">.</span><span class="na">cost</span><span class="p">());</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">moc</span><span class="p">.</span><span class="na">getDescription</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">moc</span><span class="p">.</span><span class="na">cost</span><span class="p">());</span>
-
-        <span class="n">Beverage</span> <span class="n">coffe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DarkRoast</span><span class="p">();</span>
-        <span class="n">coffe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mocha</span><span class="p">(</span><span class="n">coffe</span><span class="p">);</span>
-        <span class="n">coffe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Soy</span><span class="p">(</span><span class="n">coffe</span><span class="p">);</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">coffe</span><span class="p">.</span><span class="na">getDescription</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">coffe</span><span class="p">.</span><span class="na">cost</span><span class="p">());</span>
-
-
-
-
-
-
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-</td></tr></table></div>
-</div>
-<h2 id="composite-pattern">Composite Pattern<a class="headerlink" href="#composite-pattern" title="Permanent link">&para;</a></h2>
-<hr />
-<div class="superfences-tabs">
-<input name="__tabs_5" type="radio" id="__tab_5_0" checked="checked" />
-<label for="__tab_5_0">Beverage.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -2071,60 +655,1326 @@
 46
 47
 48
-49</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 24, 2019</span>
-<span class="cm">*/</span>
+49
+50</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Circle.java&quot;
 
-<span class="kd">public</span> <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Employee</span> <span class="p">{</span>
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Mar 28, 2019
+*/
 
-    <span class="c1">// Composite Method Specifically</span>
+public class Circle implements Shape {
+    private String name = null;
+    private int xcoor = 0;
+    private int ycoor = 0;
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="p">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">();</span>
+    public Circle(String name) {
+        super();
+        this.name = name;
+    }
 
-    <span class="p">}</span>
+    public String getName() {
+        return name;
+    }
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="p">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">();</span>
+    public void setName(String name) {
+        this.name = name;
+    }
 
-    <span class="p">}</span>
+    public int getXcoor() {
+        return xcoor;
+    }
 
-    <span class="kd">public</span> <span class="n">Employee</span> <span class="nf">getChild</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">();</span>
-    <span class="p">}</span>
+    public void setXcoor(int xcoor) {
+        this.xcoor = xcoor;
+    }
 
-    <span class="c1">// Composite + leafItems Mehthods</span>
+    public int getYcoor() {
+        return ycoor;
+    }
 
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">();</span>
-    <span class="p">}</span>
+    public void setYCoor(int ycoor) {
+        this.ycoor = ycoor;
+    }
 
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
-        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">();</span>
-    <span class="p">}</span>
+    public void draw() {
+        System.out.println(&quot;Drawing a Circle having &quot; + this.name + &quot; Color at X: &quot; + this.xcoor + &quot; Y :&quot; + this.ycoor
+                + &quot; Coordinates&quot;);
+    }
 
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">();</span>
-    <span class="p">}</span>
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">throw</span> <span class="k">new</span> <span class="n">UnsupportedOperationException</span><span class="p">();</span>
-    <span class="p">}</span>
-
-
-
-<span class="p">}</span>
+}
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_5" type="radio" id="__tab_5_1" />
-<label for="__tab_5_1">BankManager.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+</td></tr></table>
+
+<p>``` java tab="ShapeFactory.java"</p>
+<p>import java.util.HashMap;</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Mar 28, 2019
+*/</p>
+<p>public class ShapeFactory {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>private static final HashMap&lt;String, Shape&gt; shapeMap = new HashMap&lt;&gt;();
+
+public static Shape getShape(String color) {
+
+    Circle circle = (Circle) shapeMap.get(color);
+
+    if (circle == null) {
+        circle = new Circle(color);
+        shapeMap.put(color, circle);
+        System.out.println(&quot;Creating Circle of Color : &quot; + color);
+    }
+    return circle;
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;FlyweightPatternDemo.java&quot;
+
+import java.util.Random;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Mar 28, 2019
+*/
+
+public class FlyweightPatternDemo {
+
+    public static final String color[] = { &quot;Red&quot;, &quot;Green&quot;, &quot;Blue&quot;, &quot;White&quot;, &quot;Black&quot; };
+    static Random rand = new Random();
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i &lt; 20; i++) {
+
+            Circle circle = (Circle) ShapeFactory.getShape(getColor());
+            circle.setXcoor(getRandX());
+            circle.setYCoor(getRandY());
+            circle.draw();
+        }
+
+    }
+
+    private static String getColor() {
+
+        return color[rand.nextInt(color.length)];
+    }
+
+    private static int getRandX() {
+
+        return rand.nextInt(100);
+    }
+
+    private static int getRandY() {
+
+        return rand.nextInt(100);
+    }
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="flyweigt-pattern-example">Flyweigt Pattern Example<a class="headerlink" href="#flyweigt-pattern-example" title="Permanent link">&para;</a></h3>
+<hr />
+<p>``` java tab="AlphabetGenerator.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Mar 29, 2019</p>
+<p>*/</p>
+<p>package LabTask;</p>
+<p>import java.util.HashMap;</p>
+<p>public class AlphabetGenerator {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>private static final HashMap&lt;Character, Character&gt; charmap = new HashMap&lt;&gt;();
+
+public static char getChar(char ch) {
+
+    Character retch = charmap.get(ch);
+
+    if (retch == null) {
+
+        retch = ch;
+        charmap.put(ch, ch);
+
+        System.out.println(&quot;Char &#39;&quot; + ch + &quot;&#39; is added to the Hashmap&quot;);
+    } else 
+        System.out.println(retch);
+
+    return retch;
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;FlyweightDemo.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Mar 29, 2019
+* Task Description: Consider a Word text editor where a user can type alphabet and takes one byte in momory . 
+                    Implemet flyweight patter to use memory efficeiently for storage of characters. 
+                    Alphabets are A,B,C,D,E
+*/
+
+package LabTask;
+
+import java.util.Random;
+
+public class FlyweightDemo {
+
+    private static char alpha[] = { &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39; };
+
+    public static void main(String[] args) {
+
+        for (int i = 0; i &lt; 100; i++) 
+            AlphabetGenerator.getChar( getRandomAlpha() );
+
+
+    }
+
+    private static char getRandomAlpha() {
+
+        Random rand = new Random();
+        return alpha[rand.nextInt(5)];
+
+    }
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="facade-pattern">Facade Pattern<a class="headerlink" href="#facade-pattern" title="Permanent link">&para;</a></h2>
+<hr />
+<p>``` java tab="HomeTheater.java"</p>
+<p>package facadePattern;</p>
+<p>public class HomeTheater {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>private Amplifier amp;
+private DVDPlayer dvdPlayer;
+private Light light;
+private Popcorn popcorn;
+private Projecter projecter;
+
+public HomeTheater() {
+
+    this.amp = new Amplifier();
+    this.dvdPlayer = new DVDPlayer();
+    this.light = new Light();
+    this.popcorn = new Popcorn();
+    this.projecter = new Projecter();
+
+}
+
+public void watchMovie() {
+
+    popcorn.load();
+    popcorn.on();
+
+    projecter.lower();
+
+    amp.on();
+    amp.medium();
+    amp.inputDVD();
+
+    dvdPlayer.on();
+    dvdPlayer.load();
+    dvdPlayer.sorround();
+
+    projecter.on();
+    projecter.inputDVD();
+    projecter.wideScreen();
+
+    light.dim();
+
+    dvdPlayer.start();
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Amplifier.java&quot;
+
+package facadePattern;
+
+public class Amplifier {
+
+    public void on() {
+        // TODO Auto-generated method stub
+
+    }
+
+
+
+    public void inputDVD() {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void medium() {
+        // TODO Auto-generated method stub
+
+    }
+
+
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="DVDPlayer.java"</p>
+<p>package facadePattern;</p>
+<p>public class DVDPlayer {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public void load() {
+    // TODO Auto-generated method stub
+
+}
+
+public void sorround() {
+    // TODO Auto-generated method stub
+
+}
+
+public void start() {
+    // TODO Auto-generated method stub
+
+}
+
+public void on() {
+    // TODO Auto-generated method stub
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Light.java&quot;
+
+package facadePattern;
+
+public class Light {
+
+    public void dim() {
+        // TODO Auto-generated method stub
+
+    }
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="Popcorn.java"</p>
+<p>package facadePattern;</p>
+<p>public class Popcorn {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public void load() {
+    System.out.println(&quot;Popcorn machine is loading.&quot;);
+
+}
+
+public void on() {
+    System.out.println(&quot;&quot;);
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Projecter.java&quot;
+
+package facadePattern;
+
+public class Projecter {
+
+    public void lower() {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void on() {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void load() {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void inputDVD() {
+        // TODO Auto-generated method stub
+
+    }
+
+    public void wideScreen() {
+        // TODO Auto-generated method stub
+
+    }
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="FacadeDemo.java"</p>
+<p>package facadePattern;</p>
+<p>public class FacadeDemo {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public static void main(String[] args) {
+
+    HomeTheater theater = new HomeTheater();
+    theater.watchMovie();   
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>## Decorator Pattern
+***
+
+
+``` java tab=&quot;Beverage.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/
+
+public abstract class Beverage {
+
+    String description = &quot;Unknown Description&quot;;
+
+    public String getDescription() {
+
+        return description;
+
+    }
+
+    public abstract double cost();
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="CondimentDecorator.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/</p>
+<p>public abstract class CondimentDecorator extends Beverage {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public abstract String getDescription();
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;DarkRoast.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/
+
+public class DarkRoast extends Beverage {
+
+    public DarkRoast() {
+        description = this.getClass().getName() +  &quot; Coffe&quot;;
+    }
+
+    @Override
+    public double cost() {
+
+        return 3.0;
+    }
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="Decaf.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/</p>
+<p>public class Decaf extends Beverage{</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public Decaf() {
+    description = this.getClass().getName() +  &quot; Coffe&quot;;
+}
+
+@Override
+public double cost() {
+
+    return 4.0;
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Espresso.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/
+
+public class Espresso extends Beverage{
+
+    public Espresso() {
+        description = this.getClass().getName() +  &quot; Coffe&quot;;
+    }
+
+    @Override
+    public double cost() {
+
+        return 6.0;
+    }
+
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="HouseBlend.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/</p>
+<p>public class HouseBlend extends Beverage {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public HouseBlend() {
+    description = this.getClass().getName() +  &quot; Coffe&quot;;
+}
+
+@Override
+public double cost() {
+
+    return 2.0;
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Mocha.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/
+
+public class Mocha extends CondimentDecorator {
+
+    Beverage bev;
+    public Mocha(Beverage bev) {
+        this.bev = bev;
+
+    }
+
+
+    @Override
+    public String getDescription() {
+
+        return bev.getDescription() + &quot; + &quot; + this.getClass().getName() ;
+    }
+
+    @Override
+    public double cost() {
+
+        return 0.2 + bev.cost() ;
+    }
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="Soy.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/</p>
+<p>public class Soy extends CondimentDecorator{</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Beverage bev;
+public Soy(Beverage bev) {
+    this.bev = bev;
+
+}
+
+
+@Override
+public String getDescription() {
+
+    return bev.getDescription() + &quot; + &quot; + this.getClass().getName() ;
+}
+
+@Override
+public double cost() {
+
+    return 0.4 + bev.cost() ;
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Beverage.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/
+
+public abstract class Beverage {
+
+    String description = &quot;Unknown Description&quot;;
+
+    public String getDescription() {
+
+        return description;
+
+    }
+
+    public abstract double cost();
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="SteamedMilk.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/</p>
+<p>public class SteamedMilk extends CondimentDecorator {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Beverage bev;
+
+public SteamedMilk(Beverage bev) {
+    this.bev = bev;
+
+}
+
+@Override
+public String getDescription() {
+
+    return bev.getDescription() + &quot; + &quot; + this.getClass().getName();
+}
+
+@Override
+public double cost() {
+
+    return 0.6 + bev.cost();
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;WhippedMilk.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/
+
+public class WhippedMilk extends CondimentDecorator{
+
+    Beverage bev;
+
+    public WhippedMilk(Beverage bev) {
+        this.bev = bev;
+
+    }
+
+    @Override
+    public String getDescription() {
+
+        return bev.getDescription() + &quot; + &quot; + this.getClass().getName();
+    }
+
+    @Override
+    public double cost() {
+
+        return 0.9 + bev.cost();
+    }
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="MainStarBuzz.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 8, 2019
+*/</p>
+<p>public class MainStarBuzz {
+    public static void main(String[] args) {</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    HouseBlend obj = new HouseBlend();
+    Mocha moc = new Mocha(obj);
+
+    System.out.println(obj.getDescription());
+    System.out.println(obj.cost());
+
+    System.out.println(moc.getDescription());
+    System.out.println(moc.cost());
+
+    Beverage coffe = new DarkRoast();
+    coffe = new Mocha(coffe);
+    coffe = new Soy(coffe);
+
+    System.out.println(coffe.getDescription());
+    System.out.println(coffe.cost());
+
+
+
+
+
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>## Composite Pattern
+***
+
+
+``` java tab=&quot;Beverage.java&quot;
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 24, 2019
+*/
+
+public abstract class Employee {
+
+    // Composite Method Specifically
+
+    public void add(Employee employee) {
+        throw new UnsupportedOperationException();
+
+    }
+
+    public void remove(Employee employee) {
+        throw new UnsupportedOperationException();
+
+    }
+
+    public Employee getChild(int i) {
+        throw new UnsupportedOperationException();
+    }
+
+    // Composite + leafItems Mehthods
+
+    public int getId() {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getName() {
+        throw new UnsupportedOperationException();
+    }
+
+    public double getSalary() {
+
+        throw new UnsupportedOperationException();
+    }
+
+    public void print() {
+
+        throw new UnsupportedOperationException();
+    }
+
+
+
+}
+</code></pre></div>
+</td></tr></table>
+
+<p>``` java tab="BankManager.java"</p>
+<p>import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 24, 2019
+*/</p>
+<p>public class BankManager extends Employee {
+    int id;
+    String name;
+    double salary;</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -2183,109 +2033,71 @@
 57
 58
 59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">java.util.Iterator</span><span class="p">;</span>
-<span class="kn">import</span> <span class="nn">java.util.List</span><span class="p">;</span>
+60</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public BankManager(int id, String name, double salary) {
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+}
 
-<span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 24, 2019</span>
-<span class="cm">*/</span>
+List&lt;Employee&gt; employeelist = new ArrayList&lt;&gt;();
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">BankManager</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="n">salary</span><span class="p">;</span>
+@Override
+public void add(Employee employee) {
 
-    <span class="kd">public</span> <span class="nf">BankManager</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">salary</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="p">;</span>
-    <span class="p">}</span>
+    employeelist.add(employee);
+}
 
-    <span class="n">List</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span> <span class="n">employeelist</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+@Override
+public void remove(Employee employee) {
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="p">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="p">)</span> <span class="p">{</span>
+    employeelist.remove(employee);
+}
 
-        <span class="n">employeelist</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">employee</span><span class="p">);</span>
-    <span class="p">}</span>
+@Override
+public Employee getChild(int i) {
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">remove</span><span class="p">(</span><span class="n">Employee</span> <span class="n">employee</span><span class="p">)</span> <span class="p">{</span>
+    return employeelist.get(i);
+}
 
-        <span class="n">employeelist</span><span class="p">.</span><span class="na">remove</span><span class="p">(</span><span class="n">employee</span><span class="p">);</span>
-    <span class="p">}</span>
+@Override
+public int getId() {
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">Employee</span> <span class="nf">getChild</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+    return this.id;
+}
 
-        <span class="k">return</span> <span class="n">employeelist</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
-    <span class="p">}</span>
+@Override
+public String getName() {
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="p">()</span> <span class="p">{</span>
+    return this.name;
+}
 
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">id</span><span class="p">;</span>
-    <span class="p">}</span>
+@Override
+public double getSalary() {
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+    return this.salary;
+}
 
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
-    <span class="p">}</span>
+@Override
+public void print() {
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="p">()</span> <span class="p">{</span>
+    System.out.println(&quot;======================================&quot;);
+    System.out.println(&quot;Id = &quot; + getId());
+    System.out.println(&quot;Name = &quot; + getName());
+    System.out.println(&quot;Salaray = &quot; + getSalary());
+    System.out.println(&quot;======================================&quot;);
 
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">salary</span><span class="p">;</span>
-    <span class="p">}</span>
+    Iterator&lt;Employee&gt; it = employeelist.iterator();
+    while(it.hasNext()){
+        Employee emp = (Employee) it.next();
+        emp.print();
+    }
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;======================================&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Id = &quot;</span> <span class="o">+</span> <span class="n">getId</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Name = &quot;</span> <span class="o">+</span> <span class="n">getName</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Salaray = &quot;</span> <span class="o">+</span> <span class="n">getSalary</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;======================================&quot;</span><span class="p">);</span>
-
-        <span class="n">Iterator</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span> <span class="n">it</span> <span class="o">=</span> <span class="n">employeelist</span><span class="p">.</span><span class="na">iterator</span><span class="p">();</span>
-        <span class="k">while</span><span class="p">(</span><span class="n">it</span><span class="p">.</span><span class="na">hasNext</span><span class="p">()){</span>
-            <span class="n">Employee</span> <span class="n">emp</span> <span class="o">=</span> <span class="p">(</span><span class="n">Employee</span><span class="p">)</span> <span class="n">it</span><span class="p">.</span><span class="na">next</span><span class="p">();</span>
-            <span class="n">emp</span><span class="p">.</span><span class="na">print</span><span class="p">();</span>
-        <span class="p">}</span>
-
-    <span class="p">}</span>
-
-<span class="p">}</span>
+}
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_5" type="radio" id="__tab_5_2" />
-<label for="__tab_5_2">Cashier.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -2334,61 +2146,80 @@
 47
 48
 49
-50</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 24, 2019</span>
-<span class="cm">*/</span>
-
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cashier</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="n">salary</span><span class="p">;</span>
-
-    <span class="kd">public</span> <span class="nf">Cashier</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">salary</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">id</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">salary</span><span class="p">;</span>
-    <span class="p">}</span>
-
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;======================================&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Id = &quot;</span> <span class="o">+</span> <span class="n">getId</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Name = &quot;</span> <span class="o">+</span> <span class="n">getName</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Salaray = &quot;</span> <span class="o">+</span> <span class="n">getSalary</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;======================================&quot;</span><span class="p">);</span>
-
-    <span class="p">}</span>
+50
+51
+52
+53
+54</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;Cashier.java&quot;
 
 
-<span class="p">}</span>
+
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 24, 2019
+*/
+
+public class Cashier extends Employee {
+    int id;
+    String name;
+    double salary;
+
+    public Cashier(int id, String name, double salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+    }
+
+    @Override
+    public int getId() {
+
+        return this.id;
+    }
+
+    @Override
+    public String getName() {
+
+        return this.name;
+    }
+
+    @Override
+    public double getSalary() {
+
+        return this.salary;
+    }
+
+    @Override
+    public void print() {
+
+        System.out.println(&quot;======================================&quot;);
+        System.out.println(&quot;Id = &quot; + getId());
+        System.out.println(&quot;Name = &quot; + getName());
+        System.out.println(&quot;Salaray = &quot; + getSalary());
+        System.out.println(&quot;======================================&quot;);
+
+    }
+
+
+}
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_5" type="radio" id="__tab_5_3" />
-<label for="__tab_5_3">Accountant.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+</td></tr></table>
+
+<p>``` java tab="Accountant.java"</p>
+<p>/*
+*
+* <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/author" title="GitHub User: author">@author</a>:          Muhammad Mohsin Mahmood
+* email:            <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#109;&#111;&#104;&#115;&#105;&#110;&#109;&#97;&#104;&#109;&#111;&#111;&#100;&#109;&#100;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
+* Registration#:    SP16-BSE-060
+* Date:             Apr 24, 2019
+*/</p>
+<p>public class Accountant extends Employee {
+    int id;
+    String name;
+    double salary;</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -2421,77 +2252,45 @@
 31
 32
 33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 24, 2019</span>
-<span class="cm">*/</span>
+34</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>public Accountant(int id, String name, double salary) {
+    this.id = id;
+    this.name = name;
+    this.salary = salary;
+}
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Accountant</span> <span class="kd">extends</span> <span class="n">Employee</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">id</span><span class="p">;</span>
-    <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
-    <span class="kt">double</span> <span class="n">salary</span><span class="p">;</span>
+@Override
+public int getId() {
 
-    <span class="kd">public</span> <span class="nf">Accountant</span><span class="p">(</span><span class="kt">int</span> <span class="n">id</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">double</span> <span class="n">salary</span><span class="p">)</span> <span class="p">{</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">id</span> <span class="o">=</span> <span class="n">id</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">salary</span> <span class="o">=</span> <span class="n">salary</span><span class="p">;</span>
-    <span class="p">}</span>
+    return this.id;
+}
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getId</span><span class="p">()</span> <span class="p">{</span>
+@Override
+public String getName() {
 
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">id</span><span class="p">;</span>
-    <span class="p">}</span>
+    return this.name;
+}
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+@Override
+public double getSalary() {
 
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">name</span><span class="p">;</span>
-    <span class="p">}</span>
+    return this.salary;
+}
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">double</span> <span class="nf">getSalary</span><span class="p">()</span> <span class="p">{</span>
+@Override
+public void print() {
 
-        <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="na">salary</span><span class="p">;</span>
-    <span class="p">}</span>
+    System.out.println(&quot;======================================&quot;);
+    System.out.println(&quot;Id = &quot; + getId());
+    System.out.println(&quot;Name = &quot; + getName());
+    System.out.println(&quot;Salaray = &quot; + getSalary());
+    System.out.println(&quot;======================================&quot;);
 
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="p">()</span> <span class="p">{</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;======================================&quot;</span><span class="p">);</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Id = &quot;</span> <span class="o">+</span> <span class="n">getId</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Name = &quot;</span> <span class="o">+</span> <span class="n">getName</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Salaray = &quot;</span> <span class="o">+</span> <span class="n">getSalary</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;======================================&quot;</span><span class="p">);</span>
-
-    <span class="p">}</span>
-
-
-<span class="p">}</span>
+}
 </code></pre></div>
-</td></tr></table></div>
-<input name="__tabs_5" type="radio" id="__tab_5_4" />
-<label for="__tab_5_4">CompositePatternDemo.java</label>
-<div class="superfences-content"><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+</td></tr></table>
+
+<p>}</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -2514,33 +2313,36 @@
 21
 22
 23
-24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="cm">/*</span>
-<span class="cm">*</span>
-<span class="cm">* @author:          Muhammad Mohsin Mahmood</span>
-<span class="cm">* email:            mohsinmahmoodmdl@gmail.com</span>
-<span class="cm">* Registration#:    SP16-BSE-060</span>
-<span class="cm">* Date:             Apr 24, 2019</span>
-<span class="cm">*/</span>
+24
+25
+26</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>``` java tab=&quot;CompositePatternDemo.java&quot;
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">CompositePatternDemo</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+/*
+*
+* @author:          Muhammad Mohsin Mahmood
+* email:            mohsinmahmoodmdl@gmail.com
+* Registration#:    SP16-BSE-060
+* Date:             Apr 24, 2019
+*/
 
-        <span class="n">Employee</span> <span class="n">manager</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BankManager</span><span class="p">(</span><span class="mi">101</span><span class="p">,</span> <span class="s">&quot;BankManager&quot;</span><span class="p">,</span> <span class="mf">80000.00</span><span class="p">);</span>
-        <span class="n">Employee</span> <span class="n">cash1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cashier</span><span class="p">(</span><span class="mi">202</span><span class="p">,</span> <span class="s">&quot;Cashier1&quot;</span><span class="p">,</span> <span class="mf">20000.00</span><span class="p">);</span>
-        <span class="n">Employee</span> <span class="n">cash2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Cashier</span><span class="p">(</span><span class="mi">203</span><span class="p">,</span> <span class="s">&quot;Cashier2&quot;</span><span class="p">,</span> <span class="mf">20000.00</span><span class="p">);</span>
-        <span class="n">Employee</span> <span class="n">accountant</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Accountant</span><span class="p">(</span><span class="mi">204</span><span class="p">,</span> <span class="s">&quot;Accountant&quot;</span><span class="p">,</span> <span class="mf">42000.00</span><span class="p">);</span>
+public class CompositePatternDemo {
+    public static void main(String[] args) {
 
-        <span class="n">manager</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">cash1</span><span class="p">);</span>
-        <span class="n">manager</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">cash2</span><span class="p">);</span>
-        <span class="n">manager</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">accountant</span><span class="p">);</span>
+        Employee manager = new BankManager(101, &quot;BankManager&quot;, 80000.00);
+        Employee cash1 = new Cashier(202, &quot;Cashier1&quot;, 20000.00);
+        Employee cash2 = new Cashier(203, &quot;Cashier2&quot;, 20000.00);
+        Employee accountant = new Accountant(204, &quot;Accountant&quot;, 42000.00);
 
-        <span class="n">manager</span><span class="p">.</span><span class="na">print</span><span class="p">();</span>
+        manager.add(cash1);
+        manager.add(cash2);
+        manager.add(accountant);
 
-    <span class="p">}</span>
-<span class="p">}</span>
+        manager.print();
+
+    }
+}
 </code></pre></div>
-</td></tr></table></div>
-</div>
+</td></tr></table>
                 
                   
                 

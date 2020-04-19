@@ -219,15 +219,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../../elasticsearch101/" title="Elasticsearch 101" class="md-nav__link">
+      Elasticsearch 101
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Jaeger Guide 101
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         Jaeger Guide 101
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -305,13 +317,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-9">
       Design Pattern
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-9">
         Design Pattern
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -499,13 +511,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Contact
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Contact
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -641,7 +653,7 @@
 <blockquote>
 <p>Servlets can render complete web pages, whereas portlets renders html fragments.</p>
 </blockquote>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -700,7 +712,7 @@ Boolean, Byte, Character, Short, Long, BigDecimal</strong></p>
 </blockquote>
 <p>If you call the method twice with the same argument, it may return the same object thereby limiting the memory usage. This fits the definition of flyweight pattern.</p>
 <p>If we look at the source for valueOf, we can get a hint: Source of java.lang.Integer:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -726,7 +738,7 @@ Boolean, Byte, Character, Short, Long, BigDecimal</strong></p>
 <p>The Adapter pattern is pretty common in Java code. It’s very often used in systems based on some legacy code. In such cases, Adapters make legacy code with modern classes.</p>
 </blockquote>
 <p><strong>The asList() method of java.util.Arrays class is used to return a fixed-size list backed by the specified array.</strong></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -757,7 +769,7 @@ Boolean, Byte, Character, Short, Long, BigDecimal</strong></p>
 <h3 id="checked-collections-examples">Checked Collections Examples<a class="headerlink" href="#checked-collections-examples" title="Permanent link">&para;</a></h3>
 <p>The Collections class also provides the checkedXXX() methods that returns a dynamically typesafe view of the specified collection.</p>
 <p>Consider an example. The following statements create a checked list and pass it to a third-party library method:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">listNames</span> <span class="o">=</span> <span class="n">Collections</span><span class="p">.</span><span class="na">checkedList</span><span class="p">(</span><span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">(),</span> <span class="n">String</span><span class="p">.</span><span class="na">class</span><span class="p">);</span>
 
@@ -766,7 +778,7 @@ Boolean, Byte, Character, Short, Long, BigDecimal</strong></p>
 </td></tr></table>
 
 <p>Suppose that the third-party library method is written like this:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4

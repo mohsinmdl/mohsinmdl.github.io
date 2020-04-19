@@ -219,15 +219,27 @@
       
 
 
+  <li class="md-nav__item">
+    <a href="../elasticsearch101/" title="Elasticsearch 101" class="md-nav__link">
+      Elasticsearch 101
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Jaeger Guide 101
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         Jaeger Guide 101
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -305,13 +317,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-9">
       Design Pattern
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-9">
         Design Pattern
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -415,13 +427,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13" checked>
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Contact
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Contact
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -638,7 +650,7 @@ fun, try reading over the code below and predicting what it's going to do when
 run. (If you have no idea, that's fine!)</p>
 <p>Then click the "output" button to see
 the results of our program.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -665,7 +677,7 @@ the results of our program.</p>
 <p>There's a lot to unpack here! This silly program demonstrates many important
 aspects of what Python code looks like (its <em>syntax</em>) and how it works (its
 <em>semantics</em>). Let's run down the code from top to bottom.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">spam_amount</span> <span class="o">=</span> <span class="mi">0</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">spam_amount</span> <span class="o">=</span> <span class="mi">0</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -682,7 +694,7 @@ what type of value <code>spam_amount</code> is going to refer to. In fact, we ca
 on to reassign <code>spam_amount</code> to refer to a different sort of thing like a string
 or a boolean.</p>
 </blockquote>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">spam_amount</span><span class="p">)</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">spam_amount</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -690,7 +702,7 @@ or a boolean.</p>
 displays the value passed to it on the screen. We call functions by putting
 parentheses after their name, with the inputs to the function (or <em>arguments</em>)
 in between.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Ordering Spam, egg, Spam, Spam, bacon and Spam (4 more servings of Spam)</span>
 <span class="n">spam_amount</span> <span class="o">=</span> <span class="n">spam_amount</span> <span class="o">+</span> <span class="mi">4</span>
 </code></pre></div>
@@ -706,7 +718,7 @@ existing variable looks just the same as creating a variable - it still uses the
 encounters this line, Python evaluates the expression on the right-hand-side of
 the <code>=</code> (0 + 4 = 4), and then assigns that value to the variable on the left-
 hand-side.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="k">if</span> <span class="n">spam_amount</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;But I don&#39;t want ANY spam!&quot;</span><span class="p">)</span>
 </code></pre></div>
@@ -734,7 +746,7 @@ they're not a part of the <code>if</code>'s code block. We'll see more examples 
 code blocks later when we start defining functions and using loops.</p>
 <p>This code
 snippet is also our first sighting of a <strong>string</strong> in Python:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="s2">&quot;But I</span>
 <span class="n">don</span><span class="s1">&#39;t want ANY spam!&quot;</span>
 </code></pre></div>
@@ -744,7 +756,7 @@ snippet is also our first sighting of a <strong>string</strong> in Python:</p>
 quotation marks. (But because this particular string <em>contains</em> a single-quote
 character, we might confuse Python by trying to surround it with single-quotes,
 unless we're careful.)</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">viking_song</span> <span class="o">=</span> <span class="s2">&quot;Spam &quot;</span> <span class="o">*</span> <span class="n">spam_amount</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">viking_song</span><span class="p">)</span>
 </code></pre></div>
@@ -762,20 +774,20 @@ overloading</a>)</p>
 <h2 id="numbers-and-arithmetic-in-python">Numbers and arithmetic in Python<a class="headerlink" href="#numbers-and-arithmetic-in-python" title="Permanent link">&para;</a></h2>
 <p>We've already seen an example of a variable
 containing a number above:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">spam_amount</span> <span class="o">=</span> <span class="mi">0</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">spam_amount</span> <span class="o">=</span> <span class="mi">0</span>
 </code></pre></div>
 </td></tr></table>
 
 <p>"Number" is a fine informal name for the kind of thing, but if we wanted to be
 more technical, we could ask Python how it would describe the type of thing that
 <code>spam_amount</code> is:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">type</span><span class="p">(</span><span class="n">spam_amount</span><span class="p">)</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">type</span><span class="p">(</span><span class="n">spam_amount</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
 <p>It's an <code>int</code> - short for integer. There's another sort of number we commonly
 encounter in Python:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">type</span><span class="p">(</span><span class="mf">19.95</span><span class="p">)</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">type</span><span class="p">(</span><span class="mf">19.95</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
 
@@ -811,7 +823,7 @@ style="display:none">hack</span></p>
 <p>One interesting observation here is that,
 whereas your calculator probably just has one button for division, Python can do
 two kinds. "True division" is basically what your calculator does:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
@@ -820,7 +832,7 @@ two kinds. "True division" is basically what your calculator does:</p>
 <p>It always gives us a <code>float</code>. </p>
 <p>The <code>//</code> operator gives us a result that's
 rounded down to the next integer.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
@@ -836,16 +848,16 @@ these by a mnemonic such as <strong>PEMDAS</strong> - **P**arentheses, **E**xpon
 <p>Python follows
 similar rules about which calculations to perform first. They're mostly pretty
 intuitive.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mi">8</span> <span class="o">-</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="mi">8</span> <span class="o">-</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">2</span>
 </code></pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">2</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="o">-</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">2</span>
 </code></pre></div>
 </td></tr></table>
 
 <p>Sometimes the default order of operations isn't what we want:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -859,7 +871,7 @@ intuitive.</p>
 
 <p>Parentheses are your trump card. You can add them to force Python to evaluate
 sub-expressions in a different order (or just to make your code easier to read).</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">total_height_meters</span> <span class="o">=</span> <span class="p">(</span><span class="n">hat_height_cm</span> <span class="o">+</span> <span class="n">my_height_cm</span><span class="p">)</span> <span class="o">/</span> <span class="mi">100</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Height in meters =&quot;</span><span class="p">,</span> <span class="n">total_height_meters</span><span class="p">)</span>
 </code></pre></div>
@@ -868,14 +880,14 @@ sub-expressions in a different order (or just to make your code easier to read).
 <h3 id="builtin-functions-for-working-with-numbers">Builtin functions for working with numbers<a class="headerlink" href="#builtin-functions-for-working-with-numbers" title="Permanent link">&para;</a></h3>
 <p><code>min</code> and <code>max</code> return the
 minimum and maximum of their arguments, respectively...</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
 </td></tr></table>
 
 <p><code>abs</code> returns the absolute value of it argument:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="mi">32</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="o">-</span><span class="mi">32</span><span class="p">))</span>
 </code></pre></div>
@@ -884,7 +896,7 @@ minimum and maximum of their arguments, respectively...</p>
 <p>In addition to being the names of Python's two main numerical types, <code>int</code> and
 <code>float</code> can also be called as functions which convert their arguments to the
 corresponding type:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>

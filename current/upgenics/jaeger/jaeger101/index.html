@@ -218,18 +218,30 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../../../../elasticsearch101/" title="Elasticsearch 101" class="md-nav__link">
+      Elasticsearch 101
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
-    <label class="md-nav__link" for="nav-4">
+    <label class="md-nav__link" for="nav-5">
       Jaeger Guide 101
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
+      <label class="md-nav__title" for="nav-5">
         Jaeger Guide 101
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -576,13 +588,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
-    <label class="md-nav__link" for="nav-8">
+    <label class="md-nav__link" for="nav-9">
       Design Pattern
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-8">
+      <label class="md-nav__title" for="nav-9">
         Design Pattern
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -684,13 +696,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
     
-    <label class="md-nav__link" for="nav-12">
+    <label class="md-nav__link" for="nav-13">
       Contact
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-12">
+      <label class="md-nav__title" for="nav-13">
         Contact
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1003,16 +1015,17 @@
                 <h1 id="implementing-jaeger-tracing">Implementing Jaeger Tracing<a class="headerlink" href="#implementing-jaeger-tracing" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="adding-service-name">Adding Service Name<a class="headerlink" href="#adding-service-name" title="Permanent link">&para;</a></h2>
-<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">service_name</span> <span class="o">=</span> <span class="s2">&quot;ShortlistCadidatesForJobAPI&quot;</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">service_name</span> <span class="o">=</span> <span class="s2">&quot;ShortlistCadidatesForJobAPI&quot;</span>
 </code></pre></div>
 </td></tr></table>
-<strong>Files to exclude</strong>
+
+<p><strong>Files to exclude</strong>
 <code>Api.py, jaegerTracing.py, registrator.py</code></p>
 <hr />
 <h2 id="importing-libraries">Importing Libraries<a class="headerlink" href="#importing-libraries" title="Permanent link">&para;</a></h2>
 <h3 id="flask-api-tracing">Flask API Tracing<a class="headerlink" href="#flask-api-tracing" title="Permanent link">&para;</a></h3>
 <h4 id="automated-traces-all-routes">Automated Traces All Routes<a class="headerlink" href="#automated-traces-all-routes" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1025,12 +1038,13 @@
 </td></tr></table>
 
 <h4 id="import-libraries-via-regrx">Import Libraries via Regrx<a class="headerlink" href="#import-libraries-via-regrx" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>cors = CORS\(app, resources=\{r&quot;/\*&quot;: \{&quot;origins&quot;: &quot;\*&quot;\}\}\)
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>cors = CORS\(app, resources=\{r&quot;/\*&quot;: \{&quot;origins&quot;: &quot;\*&quot;\}\}\)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1044,11 +1058,12 @@ tracer = jaegerTracing.getTracerInstance()
 from flask_opentracing import FlaskTracing
 tracing = FlaskTracing(tracer, True, app)
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <hr />
 <h3 id="batch-editing-in-client-files">Batch Editing in Client files<a class="headerlink" href="#batch-editing-in-client-files" title="Permanent link">&para;</a></h3>
 <h4 id="import-libraries-without-regex">Import Libraries without Regex<a class="headerlink" href="#import-libraries-without-regex" title="Permanent link">&para;</a></h4>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1061,12 +1076,13 @@ tracing = FlaskTracing(tracer, True, app)
 </td></tr></table>
 
 <h4 id="import-libraries-via-regrx_1">Import Libraries via Regrx<a class="headerlink" href="#import-libraries-via-regrx_1" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>class\s\w*\(\):
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>class\s\w*\(\):
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1080,7 +1096,8 @@ from opentracing.propagation import Format
 
 $0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <hr />
 <h2 id="injecting-spans">Injecting Spans<a class="headerlink" href="#injecting-spans" title="Permanent link">&para;</a></h2>
 <h3 id="methods-with-try-except-without-class">Methods with try-except (Without Class)<a class="headerlink" href="#methods-with-try-except-without-class" title="Permanent link">&para;</a></h3>
@@ -1092,14 +1109,15 @@ $0
 <p class="admonition-title">Hint</p>
 <p>Add jaeger imports -- to the files with no class</p>
 </div>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>\n(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)\s*
     (try:)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1109,14 +1127,16 @@ $0
         with tracer.start_active_span(&#39;$2&#39;, child_of=span_ctx) as scope:
             scope.span.set_tag(&#39;args&#39;, [$3])
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h3 id="methods-without-try-except">Methods without try-except<a class="headerlink" href="#methods-without-try-except" title="Permanent link">&para;</a></h3>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>\n(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>\n(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1
@@ -1124,17 +1144,19 @@ $0
     with tracer.start_active_span(&#39;$2&#39;, child_of=span_ctx) as scope:
         scope.span.set_tag(&#39;args&#39;, [$3])
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <hr />
 <h3 id="methods-with-try-except">Methods with try-except<a class="headerlink" href="#methods-with-try-except" title="Permanent link">&para;</a></h3>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(    )(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)\s*
         (try:)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1144,14 +1166,16 @@ $0
         with tracer.start_active_span(&#39;$3&#39;, child_of=span_ctx) as scope:
             scope.span.set_tag(&#39;args&#39;, [$4])
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h3 id="methods-without-try-except_1">Methods without try-except<a class="headerlink" href="#methods-without-try-except_1" title="Permanent link">&para;</a></h3>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(    )(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(    )(def\s([\w]+)\s?\(self,*\s*([\w,\s=&#39;]*)\)\s*:)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$2
@@ -1159,124 +1183,145 @@ $0
     with tracer.start_active_span(&#39;$3&#39;, child_of=span_ctx) as scope:
         scope.span.set_tag(&#39;args&#39;, [$4])
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p>Indentation of the file reduces the starting spaces upto 4 spaces with cause <code>except</code> to deviate from consective <code>try</code>. You should have to replace the spaces accouding to the starting try block.</p>
 </div>
 <h3 id="handling-exception">Handling Exception<a class="headerlink" href="#handling-exception" title="Permanent link">&para;</a></h3>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)except Exception as ex:
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)except Exception as ex:
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$0
     $1scope.span.set_tag(&#39;Exception&#39;, ex)
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h3 id="handling-return-statuses">Handling Return Statuses<a class="headerlink" href="#handling-return-statuses" title="Permanent link">&para;</a></h3>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Make sure <code>regex</code> button is pressed in vscode search field.</p>
 </div>
 <h4 id="01-return-variable-names">01 - Return <code>Variable Names</code><a class="headerlink" href="#01-return-variable-names" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(([\w]*)\)
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(([\w]*)\)
 </code></pre></div>
-</td></tr></table></p>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, $2)$0
+</td></tr></table>
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, $2)$0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h4 id="02-return-strings">02 - Return <code>Strings</code><a class="headerlink" href="#02-return-strings" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>JSON String</p>
 </blockquote>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(&quot;([\w\s]*)&quot;\)
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(&quot;([\w\s]*)&quot;\)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, &#39;$2&#39;)$0
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, &#39;$2&#39;)$0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <blockquote>
 <p>Simple String</p>
 </blockquote>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return\s*[&quot;&#39;]([\w\s]*)[&#39;&quot;]
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return\s*[&quot;&#39;]([\w\s]*)[&#39;&quot;]
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, &quot;$2&quot;)$0
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, &quot;$2&quot;)$0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h4 id="03-return-json-data">03 - Return <code>Json Data</code><a class="headerlink" href="#03-return-json-data" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong> 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(\{([&#39;\w:,\s\[\].+&quot;\(\)]*)\}\)
+<p><strong>Regex Pattern</strong> </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return jsonify\(\{([&#39;\w:,\s\[\].+&quot;\(\)]*)\}\)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, dict({$2}))$0
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, dict({$2}))$0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h4 id="04-return-graph-database-collections-query">04 - Return <code>Graph Database Collections Query</code><a class="headerlink" href="#04-return-graph-database-collections-query" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong> 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return list\(self\.Collection\.find\((\w*)
+<p><strong>Regex Pattern</strong> </p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return list\(self\.Collection\.find\((\w*)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, $2)$0
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, $2)$0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>add the following snippet</p>
 </div>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>self.graph.run 
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>self.graph.run 
 </code></pre></div>
 </td></tr></table>
 
 <h4 id="05-return-responsejson">05 - Return <code>response.json()</code><a class="headerlink" href="#05-return-responsejson" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return response\.json\(\)
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return response\.json\(\)
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;, response.json())
 $0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h4 id="06-return-truefalse">06 - Return True/False<a class="headerlink" href="#06-return-truefalse" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return True
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return True
 </code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;,  &#39;True&#39;)
 $0
 </code></pre></div>
-</td></tr></table></p>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return False
+</td></tr></table>
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>(\s*)return False
 </code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&#39;response&#39;,  &#39;False&#39;)
 $0
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h4 id="07-adding-print-logging-to-jaeger">07 - Adding Print logging to jaeger<a class="headerlink" href="#07-adding-print-logging-to-jaeger" title="Permanent link">&para;</a></h4>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>([\s]*)print\(([&quot;&#39;][\w\s:.&quot;]*[+\sstr\(\w\)]*)\)\n
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>([\s]*)print\(([&quot;&#39;][\w\s:.&quot;]*[+\sstr\(\w\)]*)\)\n
 </code></pre></div>
 </td></tr></table>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&quot;log&quot;, $2)$0
+
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1scope.span.set_tag(&quot;log&quot;, $2)$0
 </code></pre></div>
 </td></tr></table>
-<img alt="alt text" src="../../../../img/jaeger/log-span.png" /></p>
+
+<p><img alt="alt text" src="../../../../img/jaeger/log-span.png" /></p>
 <hr />
 <h2 id="keywords-used-in-all-apis">Keywords Used in All APIS<a class="headerlink" href="#keywords-used-in-all-apis" title="Permanent link">&para;</a></h2>
 <p><code>args</code>
@@ -1290,12 +1335,13 @@ $0
 <p class="admonition-title">Hint</p>
 <p>Do not include url with KONG calling</p>
 </div>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>([\s]*)response\s*=\s*requests.
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>([\s]*)response\s*=\s*requests.
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
@@ -1309,38 +1355,45 @@ $1    format=Format.TEXT_MAP,
 $1    carrier=carrier)
 $0
 </code></pre></div>
-</td></tr></table></p>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>headers\s*=\s*\{([\w\s&quot; &#39;-:]*)\}
+</td></tr></table>
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>headers\s*=\s*\{([\w\s&quot; &#39;-:]*)\}
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>headers= carrier
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>headers= carrier
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <h4 id="extracting-spans-replacement">Extracting Spans Replacement<a class="headerlink" href="#extracting-spans-replacement" title="Permanent link">&para;</a></h4>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>This portion is already implemented while injecting spans</p>
 </div>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>([\s]*)with tracer.start_active_span
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>([\s]*)with tracer.start_active_span
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$1span_ctx = tracer.extract(format=Format.TEXT_MAP, carrier={})
 $0
 </code></pre></div>
-</td></tr></table></p>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>) as scope:
+</td></tr></table>
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>) as scope:
 </code></pre></div>
 </td></tr></table>
-<strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>, child_of=span_ctx) as scope:
+
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>, child_of=span_ctx) as scope:
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <hr />
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -1350,18 +1403,36 @@ $0
 <p class="admonition-title">Tip</p>
 <p>After applying regex, methods were reindented from their actual location, you have to manually indent the methods. <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-bracket-right">]</kbd></span></p>
 </div>
-<p><strong>Regex Pattern</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>class\s\w*\(\):
+<p><strong>Regex Pattern</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>class\s\w*\(\):
 </code></pre></div>
-</td></tr></table></p>
+</td></tr></table>
+
 <hr />
 <h2 id="branches-created-for-tracing">Branches Created for Tracing<a class="headerlink" href="#branches-created-for-tracing" title="Permanent link">&para;</a></h2>
 <h3 id="names-of-branches">Names of Branches<a class="headerlink" href="#names-of-branches" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git branch
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git branch
 </code></pre></div>
 </td></tr></table>
 
 <ul>
+<li>
+<p><strong>✔Tracing--RemaingAPIs-4✔</strong></p>
+<ul>
+<li>Organizational Data (revamp)</li>
+</ul>
+</li>
+<li>
+<p><strong>✔Tracing--RemaingAPIs-3✔</strong></p>
+<ul>
+<li>Publisher_Bridge</li>
+<li>Schedular</li>
+<li>system_configuration_api</li>
+<li>system_configuration_set_jobpost_to_expire_routine</li>
+<li>top_data_api</li>
+<li>URL_meta_data_api</li>
+</ul>
+</li>
 <li>
 <p><strong>✔Tracing--RemaingAPIs-2✔</strong></p>
 <ul>
@@ -1443,7 +1514,7 @@ $0
 </ul>
 </li>
 <li>
-<p><strong>Tracing_skill_social</strong></p>
+<p><strong>✔Tracing_skill_social✔</strong></p>
 <ul>
 <li>Skill_Social/endorse_skill_api</li>
 <li>Skill_Social/rate_skill_api</li>
@@ -1469,12 +1540,13 @@ $0
 </li>
 <li><strong>Tracing-JobPost-API</strong><ul>
 <li>revamp_laravel_to_python_apis<ul>
-<li>jobpost_python_apis</li>
+<li>✔jobpost_python_apisjobpost_python_apis✔</li>
 </ul>
 </li>
 </ul>
 </li>
 <li><strong>shortlistedCandidate_tracing_with_Jaeger</strong> <ul>
+<li>✔scheduler_api✔</li>
 <li>✔ shortlist_candidates_api ✔</li>
 <li>revamp_laravel_to_python_apis<ul>
 <li>✔ admin_operation_python_apis ✔         </li>
@@ -1485,8 +1557,8 @@ $0
 </li>
 </ul>
 </li>
-<li><strong>jeager_implementation_organizationalDataAPI</strong><ul>
-<li>organizational_data</li>
+<li><strong>jeager_implementation_organizationalDataAPI</strong> (obsolete)<ul>
+<li>organizational_data (deprecated)</li>
 </ul>
 </li>
 </ul>
@@ -1516,7 +1588,7 @@ regex
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../../../Ubuntu-guide-101/" title="Ubuntu Guide 101" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../../../elasticsearch101/" title="Elasticsearch 101" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1525,7 +1597,7 @@ regex
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Ubuntu Guide 101
+                Elasticsearch 101
               </span>
             </div>
           </a>
