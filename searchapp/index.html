@@ -669,7 +669,7 @@
                 <h1 id="search-app-with-react-elasticsearch">Search App with React &amp; Elasticsearch<a class="headerlink" href="#search-app-with-react-elasticsearch" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="aim">Aim<a class="headerlink" href="#aim" title="Permanent link">&para;</a></h2>
-<p>The aim of this documentation is to provide knowledge of working of the following technologies together.</p>
+<p>The aim of this documentation is to provide  working knowledge of the following technologies.</p>
 <ul>
 <li>Neo4j</li>
 <li>Elasticsearch</li>
@@ -694,68 +694,10 @@
 <blockquote>
 <p>docker-compose.yml</p>
 </blockquote>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>version: <span class="s2">&quot;3&quot;</span>
-services:
-
-  neo4j:
-    image: neo4j:3.5.6
-    networks:
-       kong-net:
-          aliases:
-          - neo4j
-    ports:
-      - <span class="s2">&quot;7474:7474&quot;</span>
-      - <span class="s2">&quot;7473:7473&quot;</span>
-      - <span class="s2">&quot;7687:7687&quot;</span>
-    working_dir: /var/lib/neo4j/data
-    volumes:
-      - <span class="nv">$HOME</span>/neo4j/conf:/var/lib/neo4j/conf
-      - <span class="nv">$HOME</span>/neo4j/data:/var/lib/neo4j/data
-      - <span class="nv">$HOME</span>/neo4j/logs:/var/lib/neo4j/logs
-      - <span class="nv">$HOME</span>/neo4j/import:/var/lib/neo4j/import
-      - <span class="nv">$HOME</span>/neo4j/plugins:/var/lib/neo4j/plugins
-    deploy:
-      replicas: <span class="m">1</span>
-
-networks:
-  kong-net:
-    external: <span class="nb">true</span>
-volumes:
-  neo4j-data:
-  neo4j-conf:
-  neo4j-plugins:
-</code></pre></div>
-</td></tr></table>
-
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>you can find <code>docker-compose.yml</code> file in the attached <code>helping-scripts</code> folder.</p>
+</div>
 <p><strong>Step 02 - Download Plugins</strong></p>
 <p>Download the jar from the <a href="https://github.com/neo4j-contrib/neo4j-elasticsearch/releases">latest release.</a></p>
 <p>and put the jar file to $NEO4J_HOME/plugins folder.</p>
@@ -874,29 +816,20 @@ networks:
 </code></pre></div>
 </td></tr></table>
 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>you can find <code>docker-compose.yml</code> file in the attached <code>helping-scripts</code> folder.</p>
+</div>
 <p><strong>Step 05 - Append the following snippet to elasticsaerch.yml file</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>you can find <code>elasticsearch.yml</code> file in the attached <code>helping-scripts</code>.</p>
 </div>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code># CORS
-
-http.cors.enabled : true
-http.cors.allow-origin : &quot;*&quot;
-http.cors.allow-methods : OPTIONS, HEAD, GET, POST, PUT, DELETE
-http.cors.allow-headers : &quot;X-Requested-With,X-Auth-Token,Content-Type, Content-Length, Authorization&quot;
-http.cors.allow-credentials: true
-</code></pre></div>
-</td></tr></table>
-
 <h2 id="searching-data-from-elasticsearch-using-react">Searching data from Elasticsearch using React<a class="headerlink" href="#searching-data-from-elasticsearch-using-react" title="Permanent link">&para;</a></h2>
 <p>This react app provide you an interface to search the data from the elasticsearch.</p>
+<blockquote>
+<p>index.html</p>
+</blockquote>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>  1
   2
   3
@@ -1257,8 +1190,13 @@ http.cors.allow-credentials: true
 </code></pre></div>
 </td></tr></table>
 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>you can find <code>index.html</code> file in the attached <code>helping-scripts</code> folder.</p>
+</div>
 <h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
-<p>It then presents a working example of making a simple search app for elasticsearch data.Hope it helps. Please let me know if you have any questions or feedback. I might miss something, I need to hear from you. JazakAllahu khaira :)</p>
+<p>This documentation presents a working example of making a simple search app for elasticsearch data.</p>
+<p>Hope it helps, please let me know if you have any questions or feedback. I might miss something, I need to hear from you. JazakAllahu khaira :)</p>
                 
                   
                 
