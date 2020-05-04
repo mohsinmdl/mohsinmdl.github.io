@@ -678,6 +678,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-to-change-my-git-username-in-terminal" class="md-nav__link">
+    How to change my Git username in terminal?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-can-view-all-of-your-settings-and-where-they-are-coming-from-using" class="md-nav__link">
+    You can view all of your settings and where they are coming from using:
+  </a>
+  
+</li>
+      
       
       
       
@@ -1249,6 +1263,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#how-to-change-my-git-username-in-terminal" class="md-nav__link">
+    How to change my Git username in terminal?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#you-can-view-all-of-your-settings-and-where-they-are-coming-from-using" class="md-nav__link">
+    You can view all of your settings and where they are coming from using:
+  </a>
+  
+</li>
+      
       
       
       
@@ -1593,6 +1621,37 @@ So you can use:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git branch --sort<span class="o">=</span>-committerdate  <span class="c1"># DESC</span>
 git branch --sort<span class="o">=</span>committerdate  <span class="c1"># ASC</span>
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="how-to-change-my-git-username-in-terminal">How to change my Git username in terminal?<a class="headerlink" href="#how-to-change-my-git-username-in-terminal" title="Permanent link">&para;</a></h2>
+<p>To set your account's default identity globally run below commands
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git config --global user.email &quot;you@example.com&quot;
+git config --global user.name &quot;Your Name&quot;
+git config --global user.password &quot;your password&quot;
+</code></pre></div>
+</td></tr></table></p>
+<p>To set the identity only in current repository , remove --global and run below commands in your Project/Repo root directory
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git config user.email &quot;you@example.com&quot;
+git config user.name &quot;Your Name&quot;
+git config user.password &quot;your password&quot;
+</code></pre></div>
+</td></tr></table>
+Example:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>email -&gt; organization email Id
+name  -&gt; mostly &lt;employee Id&gt; or &lt;FirstName, LastName&gt; 
+</code></pre></div>
+</td></tr></table></p>
+<div class="admonition note">
+<p>**Note: ** you can check these values in your GitHub profile or Bitbucket profile</p>
+</div>
+<h2 id="you-can-view-all-of-your-settings-and-where-they-are-coming-from-using">You can view all of your settings and where they are coming from using:<a class="headerlink" href="#you-can-view-all-of-your-settings-and-where-they-are-coming-from-using" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>$ git config --list --show-origin
 </code></pre></div>
 </td></tr></table>
                 
