@@ -374,6 +374,55 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#advanced-database-queries-in-the-rails-console" class="md-nav__link">
+    Advanced Database Queries in the Rails Console
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-routes-in-ruby-on-rails" class="md-nav__link">
+    Introduction to Routes in Ruby on Rails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-a-custom-controller-in-rails" class="md-nav__link">
+    How to Create a Custom Controller in Rails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-custom-routes-for-non-crud-pages" class="md-nav__link">
+    How to Create Custom Routes for Non CRUD Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-integrate-images-into-a-rails-application" class="md-nav__link">
+    How to Integrate Images into a Rails Application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rails-models" class="md-nav__link">
+    Rails Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-devise-gem-for-authentication" class="md-nav__link">
+    Installing the Devise Gem for Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#authorization" class="md-nav__link">
     Authorization
   </a>
@@ -397,20 +446,6 @@
         <li class="md-nav__item">
   <a href="#databse-restart" class="md-nav__link">
     Databse restart
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#find-current-user-id-controller-to-pass-in-views" class="md-nav__link">
-    find current user id controller to pass in views
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#form-select-for-collection" class="md-nav__link">
-    form select for collection
   </a>
   
 </li>
@@ -634,6 +669,55 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#advanced-database-queries-in-the-rails-console" class="md-nav__link">
+    Advanced Database Queries in the Rails Console
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-to-routes-in-ruby-on-rails" class="md-nav__link">
+    Introduction to Routes in Ruby on Rails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-a-custom-controller-in-rails" class="md-nav__link">
+    How to Create a Custom Controller in Rails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-create-custom-routes-for-non-crud-pages" class="md-nav__link">
+    How to Create Custom Routes for Non CRUD Pages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-integrate-images-into-a-rails-application" class="md-nav__link">
+    How to Integrate Images into a Rails Application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rails-models" class="md-nav__link">
+    Rails Models
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-the-devise-gem-for-authentication" class="md-nav__link">
+    Installing the Devise Gem for Authentication
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#authorization" class="md-nav__link">
     Authorization
   </a>
@@ -661,20 +745,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#find-current-user-id-controller-to-pass-in-views" class="md-nav__link">
-    find current user id controller to pass in views
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#form-select-for-collection" class="md-nav__link">
-    form select for collection
-  </a>
-  
-</li>
-      
       
       
       
@@ -693,10 +763,10 @@
                 
                 
                 <h1 id="ruby-on-rails">Ruby on Rails<a class="headerlink" href="#ruby-on-rails" title="Permanent link">&para;</a></h1>
-<p><strong><em>Creating a new Project</em></strong>
+<p><strong>Creating a new Project</strong>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails new taski 
-rails new myapp --database=postgresql
+rails new myapp --database<span class="o">=</span>postgresql
 </code></pre></div>
 </td></tr></table></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails new --help
@@ -707,7 +777,7 @@ rails new myapp --database=postgresql
 </code></pre></div>
 </td></tr></table>
 
-<p><strong><em>Starting Rails Server</em></strong>
+<p><strong>Starting Rails Server</strong>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -717,12 +787,12 @@ or
 rails s
 </code></pre></div>
 </td></tr></table></p>
-<p><strong><em>Explore the List of Database Rake Tasks</em></strong></p>
-<p><strong><em>App Project Folder Overview</em></strong></p>
-<p><strong><em>Should you Use Scaffolds or Generators</em></strong></p>
-<p>Scaffolds: add pretty much useless code also.
-Generators: We will use Generators.</p>
-<p><strong><em>Creating Your First Rails Scaffold</em></strong>
+<p><strong>Should you Use Scaffolds or Generators</strong></p>
+<ul>
+<li>Scaffolds: add pretty much useless code also.</li>
+<li>Generators: We will use Generators.</li>
+</ul>
+<p><strong>Creating Your First Rails Scaffold</strong>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g scaffold Project title:string description:text percent_complete:decimal
 </code></pre></div>
 </td></tr></table></p>
@@ -740,114 +810,91 @@ Generators: We will use Generators.</p>
 </code></pre></div>
 </td></tr></table>
 
-<p><strong><em>How to Create Records in the Rails Console</em></strong></p>
-<p>10.times do |project|
-Project.create!(title: "Projcect #{project}", description:"Test Description")
-end</p>
-<p><strong><em>How to Update and Delete Records in the Rails Console</em></strong>
-```rails c
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Project.all
-
-Project.count
-
-p = Project.last
-p.update!(title:&quot;Super title&quot;)
-
-p.delete
-
-***Advanced Database Queries in the Rails Console***
-
-
-***Find single record by ID***
-Project.find(5)
-
-a = Project.find([5,8])
-a.each do |rec|
-puts rec.description
+<p><strong>How to Create Records in the Rails Console</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="m">10</span>.times <span class="k">do</span> <span class="p">|</span>project<span class="p">|</span>
+Project.create!<span class="o">(</span>title: <span class="s2">&quot;Projcect #{project}&quot;</span>, description:<span class="s2">&quot;Test Description&quot;</span><span class="o">)</span>
 end
-
-
-***Find Record by String***
-
-Project.where(title:&quot;Projcect 8&quot;)
-Project.where.not(title:&quot;Projcect 8&quot;)
-
-Project.where(&quot;LENGTH(title) &gt; 20&quot;)
-
-
-## Introduction to Routes in Ruby on Rails
-
-
-### RESTful Routing in Rails
-
-app/controllers/projects_controller.rb
-
-## How to Create a Custom Controller in Rails
-
-
-rails g controller Pages contact about home
-
-
-## How to Create Custom Routes for Non CRUD Pages
-get &#39;about&#39;, to:&#39;pages#about&#39;
-
-file_path: app/controllers/pages_controller.rb
-
-
-Defining Instance Variable to be used in views
 </code></pre></div>
 </td></tr></table>
-def about
-    <a class="magiclink magiclink-github magiclink-mention" href="https://github.com/title" title="GitHub User: title">@title</a> = "Muhammad Mohsin Mahmood"
+
+<p><strong>How to Update and Delete Records in the Rails Console</strong>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails c
+</code></pre></div>
+</td></tr></table></p>
+<p>Project.all</p>
+<p>Project.count</p>
+<p>p = Project.last
+p.update!(title:"Super title")</p>
+<p>p.delete</p>
+<h2 id="advanced-database-queries-in-the-rails-console">Advanced Database Queries in the Rails Console<a class="headerlink" href="#advanced-database-queries-in-the-rails-console" title="Permanent link">&para;</a></h2>
+<p><strong>Find single record by ID</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Project.find<span class="o">(</span><span class="m">5</span><span class="o">)</span>
+
+<span class="nv">a</span> <span class="o">=</span> Project.find<span class="o">([</span><span class="m">5</span>,8<span class="o">])</span>
+a.each <span class="k">do</span> <span class="p">|</span>rec<span class="p">|</span>
+puts rec.description
 end
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>Find Record by String</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Project.where<span class="o">(</span>title:<span class="s2">&quot;Projcect 8&quot;</span><span class="o">)</span>
+Project.where.not<span class="o">(</span>title:<span class="s2">&quot;Projcect 8&quot;</span><span class="o">)</span>
+
+Project.where<span class="o">(</span><span class="s2">&quot;LENGTH(title) &gt; 20&quot;</span><span class="o">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="introduction-to-routes-in-ruby-on-rails">Introduction to Routes in Ruby on Rails<a class="headerlink" href="#introduction-to-routes-in-ruby-on-rails" title="Permanent link">&para;</a></h2>
+<p><strong>RESTful Routing in Rails</strong></p>
+<p>app/controllers/projects_controller.rb</p>
+<h2 id="how-to-create-a-custom-controller-in-rails">How to Create a Custom Controller in Rails<a class="headerlink" href="#how-to-create-a-custom-controller-in-rails" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g controller Pages contact about home
+</code></pre></div>
+</td></tr></table>
+
+<h2 id="how-to-create-custom-routes-for-non-crud-pages">How to Create Custom Routes for Non CRUD Pages<a class="headerlink" href="#how-to-create-custom-routes-for-non-crud-pages" title="Permanent link">&para;</a></h2>
+<p>get 'about', to:'pages#about'</p>
+<p>file_path: app/controllers/pages_controller.rb</p>
+<p>Defining Instance Variable to be used in views
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>def about
+    @title <span class="o">=</span> <span class="s2">&quot;Muhammad Mohsin Mahmood&quot;</span>
+end
+</code></pre></div>
+</td></tr></table></p>
+<p><strong>How to Set the Homepage for a Rails Application</strong></p>
+<p>root "pages#home"</p>
+<p><strong>How to Integrate Routing Redirects in Rails</strong></p>
+<ul>
+<li>get "*path", to:redirect('/error')</li>
+<li>get "blog", to: redirect("<a href="https://mohsinmdl.com/docs">https://mohsinmdl.com/docs</a>")</li>
+</ul>
+<p><strong>Overview of the Master Application Layout File</strong></p>
+<p><strong>How to Use View Partials</strong>
+    &lt;%= render 'shared/nav' %&gt;</p>
+<p>file name nav in share/ should be _nav.html.erb(Partial)</p>
+<h2 id="how-to-integrate-images-into-a-rails-application">How to Integrate Images into a Rails Application<a class="headerlink" href="#how-to-integrate-images-into-a-rails-application" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    &lt;%= image_tag(&quot;logos/profile.png&quot;, width:&quot;150px&quot;)%&gt;
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Fat Models/Skinny Controllers Rule</p>
+</div>
+<h2 id="rails-models">Rails Models<a class="headerlink" href="#rails-models" title="Permanent link">&para;</a></h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -861,77 +908,7 @@ end
 11
 12
 13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>## How to Set the Homepage for a Rails Application
-
-root &quot;pages#home&quot;
-
-
-## How to Integrate Routing Redirects in Rails
-
-  get &quot;*path&quot;, to:redirect(&#39;/error&#39;)
-  get &quot;blog&quot;, to: redirect(&quot;https://mohsinmdl.com/docs&quot;)
-
-***Overview of the Master Application Layout File***
-
-***How to Use View Partials***
-    &lt;%= render &#39;shared/nav&#39; %&gt;
-
-
-file name nav in share/ should be _nav.html.erb(Partial)
-
-
-## How to Integrate Images into a Rails Application
-
-        &lt;%= image_tag(&quot;logos/profile.png&quot;, width:&quot;150px&quot;)%&gt;
-
-
-## Rails Controller
-Fat Models/Skinny Controllers Rule
-
-## Rails Models
-
-
-rails g model task title:string description:text project:references
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g model task title:string description:text project:references
 rake db:migrate
 
 
@@ -943,60 +920,92 @@ rake db:migrate
 rails g migration change_data_type_for_stage
   def change
     change_column :projects, :stage, :string
-    #Ex:- change_column(&quot;admin_users&quot;, &quot;email&quot;, :string, :limit =&gt;25)
+    <span class="c1">#Ex:- change_column(&quot;admin_users&quot;, &quot;email&quot;, :string, :limit =&gt;25)</span>
   end
+</code></pre></div>
+</td></tr></table>
 
+<h2 id="installing-the-devise-gem-for-authentication">Installing the Devise Gem for Authentication<a class="headerlink" href="#installing-the-devise-gem-for-authentication" title="Permanent link">&para;</a></h2>
+<p>gem 'devise'</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>bundle install
+</code></pre></div>
+</td></tr></table>
 
-## Installing the Devise Gem for Authentication
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails generate devise:install
+</code></pre></div>
+</td></tr></table>
 
-gem &#39;devise&#39;
+<p>rails g devise:views</p>
+<p><strong>Creating user Model</strong>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g devise User
 
-bundle install
+rake db:migrate
 
-```bash
-rails generate devise:install
+rake route <span class="p">|</span> grep users
 </code></pre></div>
 </td></tr></table></p>
-<p>rails g devise:views</p>
-<p><strong><em>Creating user Model</em></strong></p>
-<p>rails g devise User</p>
-<p>rake db:migrate</p>
-<p>rake route | grep users</p>
 <h2 id="authorization">Authorization<a class="headerlink" href="#authorization" title="Permanent link">&para;</a></h2>
 <p>gem 'cancan'
 gem 'cancancan' </p>
 <h2 id="adding-jquery">Adding Jquery<a class="headerlink" href="#adding-jquery" title="Permanent link">&para;</a></h2>
 <p><a href="https://www.botreetechnologies.com/blog/introducing-jquery-in-rails-6-using-webpacker">https://www.botreetechnologies.com/blog/introducing-jquery-in-rails-6-using-webpacker</a></p>
-<% fields_for :project_bugs, @bug.project_bugs do |assign_form|%>
-        <%= assign_form.hidden_field :id%>
-        <%= assign_form.select_fids :project_id, Project.collect {} %>
-<%end%>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">&lt;</span>% fields_for :project_bugs, @bug.project_bugs do |assign_form|%&gt;
+        <span class="err">&lt;</span>%= assign_form.hidden_field :id%&gt;
+        <span class="err">&lt;</span>%= assign_form.select_fids :project_id, Project.collect {} %&gt;
+<span class="err">&lt;</span>%end%&gt;
+</code></pre></div>
+</td></tr></table>
 
 <h2 id="populate-select-with-collectiondatabase">Populate select with collection/Database<a class="headerlink" href="#populate-select-with-collectiondatabase" title="Permanent link">&para;</a></h2>
-<%= form.select :project, options_from_collection_for_select(Bug.all, "id", "title"), {},:multiple=> true,:validate=> true,:class=> 'form-control' %>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">&lt;</span>%= form.select :project, options_from_collection_for_select(Bug.all, &quot;id&quot;, &quot;title&quot;), {},:multiple=&gt; true,:validate=&gt; true,:class=&gt; &#39;form-control&#39; %&gt;
+</code></pre></div>
+</td></tr></table>
 
 <h2 id="databse-restart">Databse restart<a class="headerlink" href="#databse-restart" title="Permanent link">&para;</a></h2>
-<p>sudo service postgresql restart
-rake db:reset</p>
-<p>!error
-ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column teachers.classroom_id does not exist)
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo service postgresql restart
+rake db:reset
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column teachers.classroom_id does not exist)
 LINE 1: ...ers".* FROM "teachers" INNER JOIN "classrooms" ON "teachers"...</p>
+</div>
+<div class="admonition success">
 <p>SOlution =&gt; belongs_to in join column insted of has_many</p>
+</div>
 <div class="admonition error">
 <p class="admonition-title">Error</p>
-</div>
 <p>NameError (uninitialized constant Student::Teachers)</p>
+</div>
+<div class="admonition success">
 <p>Solution: make object singlular in front of : belogns_to :patient insted of patient(s)</p>
+</div>
 <div class="admonition error">
 <p class="admonition-title">Error</p>
-</div>
 <p>uninitialized constant Project::ProjectUser</p>
+</div>
+<div class="admonition success">
 <p>Solution: make sure you are using the correct model name in controller
 like the obove error had resolved via changing ProjectUser to Project(s)User</p>
-<h2 id="find-current-user-id-controller-to-pass-in-views">find current user id controller to pass in views<a class="headerlink" href="#find-current-user-id-controller-to-pass-in-views" title="Permanent link">&para;</a></h2>
-<p><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/current_user" title="GitHub User: current_user">@current_user</a> ||= User.find_by(id: session[:user_id])</p>
-<h2 id="form-select-for-collection">form select for collection<a class="headerlink" href="#form-select-for-collection" title="Permanent link">&para;</a></h2>
-<p>&lt;%= form.select :project, options_from_collection_for_select(Bug.all, "id", "title"), {},:multiple=&gt; true,:validate=&gt; true,:class=&gt; 'form-control' %&gt;</p>
+</div>
+<p><strong>Find current user id controller to pass in views</strong></p>
+<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>@current_user <span class="o">||=</span> User.find_by<span class="o">(</span>id: session<span class="o">[</span>:user_id<span class="o">])</span>
+</code></pre></div>
+</td></tr></table>
+<strong>Form select for collection</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">&lt;</span>%= form.select :project, options_from_collection_for_select(Bug.all, &quot;id&quot;, &quot;title&quot;), {},:multiple=&gt; true,:validate=&gt; true,:class=&gt; &#39;form-control&#39; %&gt;
+</code></pre></div>
+</td></tr></table>
                 
                   
                 
