@@ -1,95 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://mohsinmdl.com/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/linux101/linux-guide/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/Ubuntu-guide-101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/elasticsearch101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/current/upgenics/jaeger/jaeger101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/current/upgenics/jaeger/jaegerRPC/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/nodejs101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/socketio/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/searchapp/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/git-guide-101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/flask-doc/Flask%20Guide%20101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/rails101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://mohsinmdl.com/rails_advance/</loc>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/designPattern/design-pattern-intro/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/designPattern/creational/creational-dp/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/designPattern/structural/structural-dp/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/designPattern/behavioural/behaviour-dp/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/Contact/ass2/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/mkdocs101/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/keyShortcut/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/Contact/about/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/output/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/branches/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://mohsinmdl.com/all-in-one/</loc>
-     <lastmod>2020-06-15</lastmod>
+     <lastmod>2020-06-16</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -13,7 +13,7 @@
         <meta name="description" content="Mohsin Mahmood Projects Documentations">
       
       
-        <link rel="canonical" href="https://mohsinmdl.com/rails101/">
+        <link rel="canonical" href="https://mohsinmdl.com/rails_advance/">
       
       
         <meta name="author" content="Mohsin Mahmood">
@@ -42,7 +42,7 @@
     
     
       
-        <title>Ruby on Rails 101 - Mohsin | Projects Docs</title>
+        <title>Ruby on Rails Advance - Mohsin | Projects Docs</title>
       
     
     
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#ruby-on-rails" tabindex="0" class="md-skip">
+      <a href="#database-migration" tabindex="0" class="md-skip">
         Skip to content
       </a>
     
@@ -115,7 +115,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Ruby on Rails 101
+                Ruby on Rails Advance
               
             </span>
           
@@ -338,6 +338,18 @@
       
       
 
+
+  <li class="md-nav__item">
+    <a href="../rails101/" title="Ruby on Rails 101" class="md-nav__link">
+      Ruby on Rails 101
+    </a>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
@@ -349,11 +361,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ruby on Rails 101
+        Ruby on Rails Advance
       </label>
     
-    <a href="./" title="Ruby on Rails 101" class="md-nav__link md-nav__link--active">
-      Ruby on Rails 101
+    <a href="./" title="Ruby on Rails Advance" class="md-nav__link md-nav__link--active">
+      Ruby on Rails Advance
     </a>
     
       
@@ -367,85 +379,148 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-the-rails-console" class="md-nav__link">
-    Introduction to the Rails Console
+  <a href="#show-all-tables-in-database-via-concole" class="md-nav__link">
+    Show all tables in database via concole
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-database-queries-in-the-rails-console" class="md-nav__link">
-    Advanced Database Queries in the Rails Console
+  <a href="#reset-database" class="md-nav__link">
+    Reset Database
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-routes-in-ruby-on-rails" class="md-nav__link">
-    Introduction to Routes in Ruby on Rails
+  <a href="#model-without-timestamp" class="md-nav__link">
+    model without timestamp
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-create-a-custom-controller-in-rails" class="md-nav__link">
-    How to Create a Custom Controller in Rails
+  <a href="#add-index-to-column" class="md-nav__link">
+    Add index to column
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-create-custom-routes-for-non-crud-pages" class="md-nav__link">
-    How to Create Custom Routes for Non CRUD Pages
+  <a href="#add-references-to-column" class="md-nav__link">
+    Add references to column
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-integrate-images-into-a-rails-application" class="md-nav__link">
-    How to Integrate Images into a Rails Application
+  <a href="#raise-activemethod-irreversible-migration" class="md-nav__link">
+    Raise activemethod irreversible migration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rails-models" class="md-nav__link">
-    Rails Models
+  <a href="#undo-last-migration" class="md-nav__link">
+    Undo last Migration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-the-devise-gem-for-authentication" class="md-nav__link">
-    Installing the Devise Gem for Authentication
+  <a href="#migrate-status" class="md-nav__link">
+    Migrate status
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#authorization" class="md-nav__link">
-    Authorization
+  <a href="#revert-migration" class="md-nav__link">
+    Revert Migration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-jquery" class="md-nav__link">
-    Adding Jquery
+  <a href="#join-table" class="md-nav__link">
+    Join Table
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#populate-select-with-collectiondatabase" class="md-nav__link">
-    Populate select with collection/Database
+  <a href="#control-migration-output" class="md-nav__link">
+    Control Migration Output
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#databse-restart" class="md-nav__link">
-    Databse restart
+  <a href="#dump-the-database-schema" class="md-nav__link">
+    Dump the database schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-seed-data" class="md-nav__link">
+    Define seed data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crud-record-with-a-block" class="md-nav__link">
+    CRUD Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-record-with-a-block" class="md-nav__link">
+    Create Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-record-with-a-block" class="md-nav__link">
+    Update Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-record-with-a-block" class="md-nav__link">
+    Delete Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toggle-attribute-value" class="md-nav__link">
+    Toggle attribute value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increment-and-dec-columns-values" class="md-nav__link">
+    Increment and Dec columns values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#track-changes-to-object" class="md-nav__link">
+    Track changes to Object
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-find-recored" class="md-nav__link">
+    Other find Recored
   </a>
   
 </li>
@@ -458,18 +533,6 @@
   
 </nav>
     
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../rails_advance/" title="Ruby on Rails Advance" class="md-nav__link">
-      Ruby on Rails Advance
-    </a>
   </li>
 
     
@@ -674,85 +737,148 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-the-rails-console" class="md-nav__link">
-    Introduction to the Rails Console
+  <a href="#show-all-tables-in-database-via-concole" class="md-nav__link">
+    Show all tables in database via concole
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#advanced-database-queries-in-the-rails-console" class="md-nav__link">
-    Advanced Database Queries in the Rails Console
+  <a href="#reset-database" class="md-nav__link">
+    Reset Database
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduction-to-routes-in-ruby-on-rails" class="md-nav__link">
-    Introduction to Routes in Ruby on Rails
+  <a href="#model-without-timestamp" class="md-nav__link">
+    model without timestamp
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-create-a-custom-controller-in-rails" class="md-nav__link">
-    How to Create a Custom Controller in Rails
+  <a href="#add-index-to-column" class="md-nav__link">
+    Add index to column
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-create-custom-routes-for-non-crud-pages" class="md-nav__link">
-    How to Create Custom Routes for Non CRUD Pages
+  <a href="#add-references-to-column" class="md-nav__link">
+    Add references to column
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-to-integrate-images-into-a-rails-application" class="md-nav__link">
-    How to Integrate Images into a Rails Application
+  <a href="#raise-activemethod-irreversible-migration" class="md-nav__link">
+    Raise activemethod irreversible migration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#rails-models" class="md-nav__link">
-    Rails Models
+  <a href="#undo-last-migration" class="md-nav__link">
+    Undo last Migration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#installing-the-devise-gem-for-authentication" class="md-nav__link">
-    Installing the Devise Gem for Authentication
+  <a href="#migrate-status" class="md-nav__link">
+    Migrate status
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#authorization" class="md-nav__link">
-    Authorization
+  <a href="#revert-migration" class="md-nav__link">
+    Revert Migration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adding-jquery" class="md-nav__link">
-    Adding Jquery
+  <a href="#join-table" class="md-nav__link">
+    Join Table
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#populate-select-with-collectiondatabase" class="md-nav__link">
-    Populate select with collection/Database
+  <a href="#control-migration-output" class="md-nav__link">
+    Control Migration Output
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#databse-restart" class="md-nav__link">
-    Databse restart
+  <a href="#dump-the-database-schema" class="md-nav__link">
+    Dump the database schema
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#define-seed-data" class="md-nav__link">
+    Define seed data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crud-record-with-a-block" class="md-nav__link">
+    CRUD Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-record-with-a-block" class="md-nav__link">
+    Create Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-record-with-a-block" class="md-nav__link">
+    Update Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-record-with-a-block" class="md-nav__link">
+    Delete Record with a block
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#toggle-attribute-value" class="md-nav__link">
+    Toggle attribute value
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#increment-and-dec-columns-values" class="md-nav__link">
+    Increment and Dec columns values
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#track-changes-to-object" class="md-nav__link">
+    Track changes to Object
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#other-find-recored" class="md-nav__link">
+    Other find Recored
   </a>
   
 </li>
@@ -774,250 +900,173 @@
               
                 
                 
-                <h1 id="ruby-on-rails">Ruby on Rails<a class="headerlink" href="#ruby-on-rails" title="Permanent link">&para;</a></h1>
-<p><strong>Creating a new Project</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails new taski 
-rails new myapp --database<span class="o">=</span>postgresql
-</code></pre></div>
-</td></tr></table></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails new --help
-</code></pre></div>
-</td></tr></table>
-
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rake db:create:all
-</code></pre></div>
-</td></tr></table>
-
-<p><strong>Starting Rails Server</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails server
-or
-
-rails s
-</code></pre></div>
-</td></tr></table></p>
-<p><strong>Should you Use Scaffolds or Generators</strong></p>
-<ul>
-<li>Scaffolds: add pretty much useless code also.</li>
-<li>Generators: We will use Generators.</li>
-</ul>
-<p><strong>Creating Your First Rails Scaffold</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g scaffold Project title:string description:text percent_complete:decimal
-</code></pre></div>
-</td></tr></table></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rake db:migrate
-</code></pre></div>
-</td></tr></table>
-
-<h2 id="introduction-to-the-rails-console">Introduction to the Rails Console<a class="headerlink" href="#introduction-to-the-rails-console" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails c
-</code></pre></div>
-</td></tr></table>
-
-<p>Sandbox Mode (Any modifications you make will be rolled back on exit)</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails c --sandbox
-</code></pre></div>
-</td></tr></table>
-
-<p><strong>How to Create Records in the Rails Console</strong></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="m">10</span>.times <span class="k">do</span> <span class="p">|</span>project<span class="p">|</span>
-Project.create!<span class="o">(</span>title: <span class="s2">&quot;Projcect #{project}&quot;</span>, description:<span class="s2">&quot;Test Description&quot;</span><span class="o">)</span>
-end
-</code></pre></div>
-</td></tr></table>
-
-<p><strong>How to Update and Delete Records in the Rails Console</strong>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails c
-</code></pre></div>
-</td></tr></table></p>
-<p>Project.all</p>
-<p>Project.count</p>
-<p>p = Project.last
-p.update!(title:"Super title")</p>
-<p>p.delete</p>
-<h2 id="advanced-database-queries-in-the-rails-console">Advanced Database Queries in the Rails Console<a class="headerlink" href="#advanced-database-queries-in-the-rails-console" title="Permanent link">&para;</a></h2>
-<p><strong>Find single record by ID</strong></p>
+                <h1 id="database-migration">Database Migration<a class="headerlink" href="#database-migration" title="Permanent link">&para;</a></h1>
+<h2 id="show-all-tables-in-database-via-concole">Show all tables in database via concole<a class="headerlink" href="#show-all-tables-in-database-via-concole" title="Permanent link">&para;</a></h2>
+<p>ActiveRecord::Base.connection.tables</p>
+<h2 id="reset-database">Reset Database<a class="headerlink" href="#reset-database" title="Permanent link">&para;</a></h2>
+<p>rails db:reset</p>
+<h2 id="model-without-timestamp">model without timestamp<a class="headerlink" href="#model-without-timestamp" title="Permanent link">&para;</a></h2>
+<p>rails g model product --no-timestamps
+rails g model style --no-timestamps</p>
+<h2 id="add-index-to-column">Add index to column<a class="headerlink" href="#add-index-to-column" title="Permanent link">&para;</a></h2>
+<p>rails g migration AddRefNumToProducts ref_num:string:index</p>
+<p>rails g migration add_style_to_product style:references</p>
+<h2 id="add-references-to-column">Add references to column<a class="headerlink" href="#add-references-to-column" title="Permanent link">&para;</a></h2>
+<p>rails g migration AddStyleToProducts style:references</p>
+<h2 id="raise-activemethod-irreversible-migration">Raise activemethod irreversible migration<a class="headerlink" href="#raise-activemethod-irreversible-migration" title="Permanent link">&para;</a></h2>
+<p>(Type of exception: in the model down method)
+raise ActiveRecord::IrreversibleMigration</p>
+<h2 id="undo-last-migration">Undo last Migration<a class="headerlink" href="#undo-last-migration" title="Permanent link">&para;</a></h2>
+<p>rails db:rollback </p>
+<h2 id="migrate-status">Migrate status<a class="headerlink" href="#migrate-status" title="Permanent link">&para;</a></h2>
+<p>rails db:migrate:status</p>
+<h2 id="revert-migration">Revert Migration<a class="headerlink" href="#revert-migration" title="Permanent link">&para;</a></h2>
+<p>rails g migration revert_add_style_to_products</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Project.find<span class="o">(</span><span class="m">5</span><span class="o">)</span>
-
-<span class="nv">a</span> <span class="o">=</span> Project.find<span class="o">([</span><span class="m">5</span>,8<span class="o">])</span>
-a.each <span class="k">do</span> <span class="p">|</span>rec<span class="p">|</span>
-puts rec.description
-end
-</code></pre></div>
-</td></tr></table>
-
-<p><strong>Find Record by String</strong></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>Project.where<span class="o">(</span>title:<span class="s2">&quot;Projcect 8&quot;</span><span class="o">)</span>
-Project.where.not<span class="o">(</span>title:<span class="s2">&quot;Projcect 8&quot;</span><span class="o">)</span>
-
-Project.where<span class="o">(</span><span class="s2">&quot;LENGTH(title) &gt; 20&quot;</span><span class="o">)</span>
-</code></pre></div>
-</td></tr></table>
-
-<h2 id="introduction-to-routes-in-ruby-on-rails">Introduction to Routes in Ruby on Rails<a class="headerlink" href="#introduction-to-routes-in-ruby-on-rails" title="Permanent link">&para;</a></h2>
-<p><strong>RESTful Routing in Rails</strong></p>
-<p>app/controllers/projects_controller.rb</p>
-<h2 id="how-to-create-a-custom-controller-in-rails">How to Create a Custom Controller in Rails<a class="headerlink" href="#how-to-create-a-custom-controller-in-rails" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g controller Pages contact about home
-</code></pre></div>
-</td></tr></table>
-
-<h2 id="how-to-create-custom-routes-for-non-crud-pages">How to Create Custom Routes for Non CRUD Pages<a class="headerlink" href="#how-to-create-custom-routes-for-non-crud-pages" title="Permanent link">&para;</a></h2>
-<p>get 'about', to:'pages#about'</p>
-<p>file_path: app/controllers/pages_controller.rb</p>
-<p>Defining Instance Variable to be used in views
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>def about
-    @title <span class="o">=</span> <span class="s2">&quot;Muhammad Mohsin Mahmood&quot;</span>
-end
-</code></pre></div>
-</td></tr></table></p>
-<p><strong>How to Set the Homepage for a Rails Application</strong></p>
-<p>root "pages#home"</p>
-<p><strong>How to Integrate Routing Redirects in Rails</strong></p>
-<ul>
-<li>get "*path", to:redirect('/error')</li>
-<li>get "blog", to: redirect("<a href="https://mohsinmdl.com/docs">https://mohsinmdl.com/docs</a>")</li>
-</ul>
-<p><strong>Overview of the Master Application Layout File</strong></p>
-<p><strong>How to Use View Partials</strong>
-    &lt;%= render 'shared/nav' %&gt;</p>
-<p>file name nav in share/ should be _nav.html.erb(Partial)</p>
-<h2 id="how-to-integrate-images-into-a-rails-application">How to Integrate Images into a Rails Application<a class="headerlink" href="#how-to-integrate-images-into-a-rails-application" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>    &lt;%= image_tag(&quot;logos/profile.png&quot;, width:&quot;150px&quot;)%&gt;
-</code></pre></div>
-</td></tr></table>
-
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Fat Models/Skinny Controllers Rule</p>
-</div>
-<h2 id="rails-models">Rails Models<a class="headerlink" href="#rails-models" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g model task title:string description:text project:references
-rake db:migrate
-
-
-rails g migration add_completed_to_tasks completed:boolean
-
-rails g migration add_stage_to_tasks stage:integer
-rake db:migrate
-
-rails g migration change_data_type_for_stage
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>require_relative &#39;20200612070523_add_style_to_product&#39;
+class RevertAddStyleToProducts &lt; ActiveRecord::Migration[6.0]
   def change
-    change_column :projects, :stage, :string
-    <span class="c1">#Ex:- change_column(&quot;admin_users&quot;, &quot;email&quot;, :string, :limit =&gt;25)</span>
+    revert AddStyleToProduct
   end
+end
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="installing-the-devise-gem-for-authentication">Installing the Devise Gem for Authentication<a class="headerlink" href="#installing-the-devise-gem-for-authentication" title="Permanent link">&para;</a></h2>
-<p>gem 'devise'</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>bundle install
-</code></pre></div>
-</td></tr></table>
-
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails generate devise:install
-</code></pre></div>
-</td></tr></table>
-
-<p>rails g devise:views</p>
-<p><strong>Creating user Model</strong>
+<h2 id="join-table">Join Table<a class="headerlink" href="#join-table" title="Permanent link">&para;</a></h2>
+<p>(mailing_lists and products)</p>
+<p>rails g migration create_join_table_products_mailing_lists mailing_lists products</p>
+<h2 id="control-migration-output">Control Migration Output<a class="headerlink" href="#control-migration-output" title="Permanent link">&para;</a></h2>
+<p>puts "Message"
+say "Message", indent:true</p>
+<p>say_with_time 'Message' do 
+  sleep 5
+end</p>
+<p>supress_messages do 
+  puts 'Hello from puts'
+  say "hello from say"
+  say "hello from say", true
+end</p>
+<p>rails db:migrate VERBOSE=false</p>
+<h2 id="dump-the-database-schema">Dump the database schema<a class="headerlink" href="#dump-the-database-schema" title="Permanent link">&para;</a></h2>
+<p>rails db:schema:dump
+rails db:schema:load</p>
+<p>rails db:structure:dump
+rails db:structure:load</p>
+<h2 id="define-seed-data">Define seed data<a class="headerlink" href="#define-seed-data" title="Permanent link">&para;</a></h2>
+<p>Character.create(name: 'Luke', movie: movies.first)</p>
+<h2 id="crud-record-with-a-block">CRUD Record with a block<a class="headerlink" href="#crud-record-with-a-block" title="Permanent link">&para;</a></h2>
+<h2 id="create-record-with-a-block">Create Record with a block<a class="headerlink" href="#create-record-with-a-block" title="Permanent link">&para;</a></h2>
+<p>product = Product.create do |p|
+  p.name = 'Fancy Couch'
+  p.price = 65.34
+end
+product.save</p>
+<h2 id="update-record-with-a-block">Update Record with a block<a class="headerlink" href="#update-record-with-a-block" title="Permanent link">&para;</a></h2>
+<p>product.update_attribute(:name, 'xyz')
+product.update_attribute(:name =&gt; 'xyz')
+product.update(:name =&gt; 'xyz')</p>
+<p><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/products" title="GitHub User: products">@products</a>.each do |product|
+  product.update_attribute(:visible =&gt; true)
+end </p>
+<p>Class Method
+Product.update_all(:visible =&gt; true)</p>
+<h2 id="delete-record-with-a-block">Delete Record with a block<a class="headerlink" href="#delete-record-with-a-block" title="Permanent link">&para;</a></h2>
+<p>product.destroy
+product.delete</p>
+<p><a class="magiclink magiclink-github magiclink-mention" href="https://github.com/product" title="GitHub User: product">@product</a>.each do |product|
+  product.destroy
+end</p>
+<p>Class method</p>
+<p>Product.destroy(152)
+Product.destroy([152,153,158])</p>
+<p>product.outdated.destroy_all
+product.outdated.delete_all</p>
+<p>*** Touch Record ***</p>
+<p>product.touch # updates updated_at
+product.touch(:restocked_at) updates restocked_at
+product.touch(:restocked_at, :time =&gt; 2.minutes.ago)</p>
+<h2 id="toggle-attribute-value">Toggle attribute value<a class="headerlink" href="#toggle-attribute-value" title="Permanent link">&para;</a></h2>
+<p>blog_post = BlogPost.find(123)
+blog_post.published?
+//false</p>
+<p>blog_post.toggle(:published)
+blog_post.published?
+//true</p>
+<p>hint! not changed in database</p>
+<p>if you also need to change in database as well you can do it with the bang(!)</p>
+<p>blog_post.toggle!(:published)</p>
+<h2 id="increment-and-dec-columns-values">Increment and Dec columns values<a class="headerlink" href="#increment-and-dec-columns-values" title="Permanent link">&para;</a></h2>
+<p>product.increment(:qty_sold) # increment by 1
+product.increment(:qty_sold, 5) # increment by 5</p>
+<p>// fresh copy from database product.reload</p>
+<p>to make changes in database
+product.increment!(:qty_sold, 5) # increment by 5</p>
+<h2 id="track-changes-to-object">Track changes to Object<a class="headerlink" href="#track-changes-to-object" title="Permanent link">&para;</a></h2>
+<p>product.changed?  # true
+product.changed # ["name"]</p>
+<p>product.changes # {"name" =&gt; ["BlueSHirt", "GreenShirt"]}
+product.changed_attribute # {"name" =&gt; ["BlueSHirt"]} // only original values</p>
+<p>product.save  </p>
+<p>*** trach changes to attribute ***
+product.name_changed?
+product.name_change
+product.name_was</p>
+<p>product.name_changed(:from =&gt; "Couch", :to =&gt; "Sofa") # true</p>
+<p>*** Restore Attributes ***
+product.restore_attributes
+//similar to : product.name = product.name_was</p>
+<h2 id="other-find-recored">Other find Recored<a class="headerlink" href="#other-find-recored" title="Permanent link">&para;</a></h2>
+<p>find_by     // return single object insted of array of object like in where clause
+find_by_attr</p>
+<p>Product.find_by(:name =&gt; 'couch')</p>
+<p>*** Dynamic Finder ***
+Product.find_by_name('Couch') #first match
+Product.find_by_name_and_price('Couch', 500) #first match</p>
+<p>*** Assign if not find ***
+Product.find_or_create_by(:name =&gt; 'couch')</p>
+<h1 id="exists">exists?<a class="headerlink" href="#exists" title="Permanent link">&para;</a></h1>
+<h1 id="any">any?<a class="headerlink" href="#any" title="Permanent link">&para;</a></h1>
+<h1 id="many">many?<a class="headerlink" href="#many" title="Permanent link">&para;</a></h1>
+<p>Product.where(:name =&gt; 'couch') # array
+Product.exists?(:name =&gt; 'couch') #boolean</p>
+<p>Product.where(:name =&gt; 'couch').any? # boolean
+Product.where(:name =&gt; 'couch').many? # boolean</p>
+<h2 id="select-partial-record-data-remaining">Select Partial Record Data (Remaining)<a class="headerlink" href="#select-partial-record-data-remaining" title="Permanent link">&para;</a></h2>
+<h2 id="join-tables-query">Join Tables Query<a class="headerlink" href="#join-tables-query" title="Permanent link">&para;</a></h2>
+<p>products = Product.joins(:category).all
+*** One Query instead of two queries ***
+products = Product.joins(:category).where(:categories =&gt; {:name =&gt; 'Furniture'})
+products = Product.joins(:category).where(:categories =&gt; {:name =&gt; 'Furniture'}).count
+products = Product.joins(:category).order('categories.name ASC').all</p>
+<p>*** Two Queries  ***
+category = Category.find_by_name("Furniture")
+products = Product.where(:categery_id =&gt; category.id)</p>
+<h2 id="distinct-record">Distinct Record<a class="headerlink" href="#distinct-record" title="Permanent link">&para;</a></h2>
+<p>Product.joins(:category).pluck(:name)
+Category.joins(:product).distinct.pluck(:name)
+*** Left Outer Joins *** 
+Category.lef_outer_joins(:product).distinct.pluck(:name)</p>
+<h2 id="eager-loading">Eager Loading<a class="headerlink" href="#eager-loading" title="Permanent link">&para;</a></h2>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3
-4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>rails g devise User
-
-rake db:migrate
-
-rake route <span class="p">|</span> grep users
-</code></pre></div>
-</td></tr></table></p>
-<h2 id="authorization">Authorization<a class="headerlink" href="#authorization" title="Permanent link">&para;</a></h2>
-<p>gem 'cancan'
-gem 'cancancan' </p>
-<h2 id="adding-jquery">Adding Jquery<a class="headerlink" href="#adding-jquery" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.botreetechnologies.com/blog/introducing-jquery-in-rails-6-using-webpacker">https://www.botreetechnologies.com/blog/introducing-jquery-in-rails-6-using-webpacker</a></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">&lt;</span>% fields_for :project_bugs, @bug.project_bugs do |assign_form|%&gt;
-        <span class="err">&lt;</span>%= assign_form.hidden_field :id%&gt;
-        <span class="err">&lt;</span>%= assign_form.select_fids :project_id, Project.collect {} %&gt;
-<span class="err">&lt;</span>%end%&gt;
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>products.each do |product|
+  names &lt;&lt; product.category.name 
+end
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="populate-select-with-collectiondatabase">Populate select with collection/Database<a class="headerlink" href="#populate-select-with-collectiondatabase" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">&lt;</span>%= form.select :project, options_from_collection_for_select(Bug.all, &quot;id&quot;, &quot;title&quot;), {},:multiple=&gt; true,:validate=&gt; true,:class=&gt; &#39;form-control&#39; %&gt;
+<p>vs</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>products.includes(:category).all
 </code></pre></div>
 </td></tr></table>
 
-<h2 id="databse-restart">Databse restart<a class="headerlink" href="#databse-restart" title="Permanent link">&para;</a></h2>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>sudo service postgresql restart
-rake db:reset
-</code></pre></div>
-</td></tr></table>
-
-<div class="admonition error">
-<p class="admonition-title">Error</p>
-<p>ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column teachers.classroom_id does not exist)
-LINE 1: ...ers".* FROM "teachers" INNER JOIN "classrooms" ON "teachers"...</p>
-</div>
-<div class="admonition success">
-<p>SOlution =&gt; belongs_to in join column insted of has_many</p>
-</div>
-<div class="admonition error">
-<p class="admonition-title">Error</p>
-<p>NameError (uninitialized constant Student::Teachers)</p>
-</div>
-<div class="admonition success">
-<p>Solution: make object singlular in front of : belogns_to :patient insted of patient(s)</p>
-</div>
-<div class="admonition error">
-<p class="admonition-title">Error</p>
-<p>uninitialized constant Project::ProjectUser</p>
-</div>
-<div class="admonition success">
-<p>Solution: make sure you are using the correct model name in controller
-like the obove error had resolved via changing ProjectUser to Project(s)User</p>
-</div>
-<p><strong>Find current user id controller to pass in views</strong></p>
-<p><table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>@current_user <span class="o">||=</span> User.find_by<span class="o">(</span>id: session<span class="o">[</span>:user_id<span class="o">])</span>
-</code></pre></div>
-</td></tr></table>
-<strong>Form select for collection</strong></p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">&lt;</span>%= form.select :project, options_from_collection_for_select(Bug.all, &quot;id&quot;, &quot;title&quot;), {},:multiple=&gt; true,:validate=&gt; true,:class=&gt; &#39;form-control&#39; %&gt;
-</code></pre></div>
-</td></tr></table>
+<p>products = Product.includes(:category).where("categer.name = 'Furniture').references(:category)</p>
+<p>products = Product.includes(:category).where(:category =&gt; {:name =&gt; "Furniture"})</p>
+<h2 id="associations">Associations<a class="headerlink" href="#associations" title="Permanent link">&para;</a></h2>
                 
                   
                 
@@ -1039,7 +1088,7 @@ like the obove error had resolved via changing ProjectUser to Project(s)User</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../flask-doc/Flask%20Guide%20101/" title="Flask Guide 101" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../rails101/" title="Ruby on Rails 101" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1048,19 +1097,19 @@ like the obove error had resolved via changing ProjectUser to Project(s)User</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Flask Guide 101
+                Ruby on Rails 101
               </span>
             </div>
           </a>
         
         
-          <a href="../rails_advance/" title="Ruby on Rails Advance" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../designPattern/design-pattern-intro/" title="What is Design Pattern" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Ruby on Rails Advance
+                What is Design Pattern
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
